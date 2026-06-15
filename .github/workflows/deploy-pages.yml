@@ -35,6 +35,16 @@ jobs:
             measurementId: "${{ vars.FIREBASE_MEASUREMENT_ID }}"
           };
           EOF
+      - name: Build image manifest
+        run: |
+          mkdir -p images
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          exts = {'.jpg', '.jpeg', '.png', '.webp'}
+          files = sorted(p.name for p in Path('images').iterdir() if p.is_file() and p.suffix.lower() in exts)
+          Path('images/manifest.json').write_text(json.dumps(files, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
