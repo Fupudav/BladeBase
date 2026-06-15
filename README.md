@@ -22,6 +22,21 @@ Pour GitHub Pages, utiliser le workflow GitHub Actions fourni et configurer :
 
 Dans Firebase Console, ajouter le domaine GitHub Pages dans Authentication > Settings > Authorized domains.
 
+## Synchronisation Firestore
+
+Les produits integres restent locaux dans `index.html`. Firestore ne stocke que les donnees utilisateur, sous l'utilisateur connecte :
+
+- `users/{uid}/profile/main`
+- `users/{uid}/data/collection`
+- `users/{uid}/data/settings`
+- `users/{uid}/data/customProducts`
+- `users/{uid}/data/userPhotos`
+- `users/{uid}/data/meta`
+
+L'application affiche toujours la sauvegarde locale en premier, puis compare les dates locale/cloud apres connexion. Si les deux sauvegardes different, l'utilisateur peut choisir cloud, local ou fusion. Hors ligne, les changements restent en local et sont renvoyes au cloud quand la connexion revient.
+
+Les photos personnelles restent locales si leur document Firestore depasse la limite pratique d'environ 900 Ko.
+
 ## Images produits
 
 BladeBase ne charge plus de photos depuis Internet. Ajouter les images officielles dans `images/`, en priorite sous la forme `CODE.jpg` par exemple `G1536.jpg`.

@@ -40,7 +40,7 @@
 <section id="assistantView" style="display:none"><div class="card"><h2>Assistant local collection</h2><div class="note">Pose une question simple sur ta collection. Exemples : “Quels BX me manquent ?”, “mes doublons”, “valeur totale”, “wishlist 2026”, “pièces 4-60”.</div><textarea id="assistantQuestion" placeholder="Écris ta question…" style="margin-top:12px;min-height:90px"></textarea><div style="margin-top:10px"><button class="primary" id="assistantAskBtn">Analyser</button></div><div id="assistantAnswer" class="note answerBox" style="margin-top:12px">En attente.</div></div></section>
 <section id="productView" style="display:none"><div class="card"><button class="primary" id="backToCollectionBtn">← Retour à la collection</button><div id="productDetailContent" style="margin-top:14px"></div></div></section>
 <section id="partView" style="display:none"><div class="card"><button class="primary" id="backFromPartBtn">← Retour à la collection</button><div id="partDetailContent" style="margin-top:14px"></div></div></section>
-<section id="settingsView" style="display:none"><div class="accountGrid"><div class="card"><h2>Paramètres → Compte</h2><div class="note">Le compte Firebase sert uniquement à l'identification. La collection, la wishlist, les doublons, les notes, les prix, les dates, les photos et les produits manuels restent sauvegardés localement sur cet appareil.</div><div class="kv"><b>État</b><span id="accountStatus">Non connecté</span></div><div class="kv"><b>Email</b><span id="accountEmail">—</span></div><div class="kv"><b>Nom</b><span id="accountName">—</span></div></div><div class="card"><h2>Connexion</h2><div class="accountForm"><input id="authEmail" type="email" autocomplete="email" placeholder="Adresse email"><input id="authPassword" type="password" autocomplete="current-password" placeholder="Mot de passe"></div><div class="accountActions"><button class="primary" id="authSignupBtn">Créer un compte</button><button class="good" id="authLoginBtn">Se connecter</button><button id="authGoogleBtn">Google</button><button class="warn" id="authResetBtn">Mot de passe oublié</button><button class="danger" id="authLogoutBtn">Déconnexion</button></div><div id="authMessage" class="small" style="margin-top:10px">Firebase Auth se charge…</div></div></div></section>
+<section id="settingsView" style="display:none"><div class="accountGrid"><div class="card"><h2>Paramètres → Compte</h2><div class="note">Le compte Firebase identifie l'utilisateur et active la synchronisation Firestore. La collection reste toujours sauvegardée localement en premier.</div><div class="kv"><b>État</b><span id="accountStatus">Non connecté</span></div><div class="kv"><b>Email</b><span id="accountEmail">—</span></div><div class="kv"><b>Nom</b><span id="accountName">—</span></div><div class="kv"><b>Synchro</b><span id="syncStatus">Hors compte</span></div><div class="kv"><b>Locale</b><span id="syncLocalAt">—</span></div><div class="kv"><b>Cloud</b><span id="syncCloudAt">—</span></div><div class="accountActions"><button class="primary" id="syncSaveNowBtn">Sauvegarder maintenant</button><button class="good" id="syncPullBtn">Restaurer depuis le cloud</button><button class="warn" id="syncPushBtn">Envoyer la sauvegarde locale vers le cloud</button></div></div><div class="card"><h2>Connexion</h2><div class="accountForm"><input id="authEmail" type="email" autocomplete="email" placeholder="Adresse email"><input id="authPassword" type="password" autocomplete="current-password" placeholder="Mot de passe"></div><div class="accountActions"><button class="primary" id="authSignupBtn">Créer un compte</button><button class="good" id="authLoginBtn">Se connecter</button><button id="authGoogleBtn">Google</button><button class="warn" id="authResetBtn">Mot de passe oublié</button><button class="danger" id="authLogoutBtn">Déconnexion</button></div><div id="authMessage" class="small" style="margin-top:10px">Firebase Auth se charge…</div></div></div></section>
 <section id="backupView" style="display:none"><div class="card"><h2>Sauvegarde locale</h2><div class="note">Les coches, statuts, doublons, notes, prix d'achat, valeurs estimées, dates d'achat, photos personnelles, corrections photo, produits manuels et priorités sont sauvegardés automatiquement dans ce navigateur. Les mises à jour de l'application ne suppriment pas ces données.</div><div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px"><button class="primary" id="exportBtn2">Exporter ma collection</button><button class="good" id="importBtn">Importer une sauvegarde</button><button class="warn" id="sampleBtn">Télécharger modèle vide</button><button class="danger" id="resetBtn">Archiver puis réinitialiser</button><input class="hiddenFile" type="file" id="importFile" accept="application/json"></div></div><div class="card" style="margin-top:14px"><h2>Mode application</h2><div class="note">Sur Android/Chrome : ouvre le site GitHub Pages, menu ⋮, puis <b>Ajouter à l'écran d'accueil</b>. BladeBase fonctionne hors ligne après la première ouverture et se met à jour automatiquement quand une nouvelle version est publiée. Pour éviter les blocages GitHub Pages, l'application ne récupère plus de photos sur Internet : ajoute les images officielles dans le dossier <b>images/</b>.</div></div></section>
 </main><div id="toast" class="toast"></div><div id="imageModal" class="modal"><div class="modalInner"><div class="modalHeader"><b id="modalTitle"></b><button class="closeBtn" id="modalClose">Fermer</button></div><img id="modalImg" alt="Photo agrandie"></div></div>
 <script>
@@ -169,15 +169,17 @@ products.forEach(p=>p.wave=waveOf(p));
 function waveOf(p){const c=p.cat||'', n=p.name||''; if(c.includes('Custom Line'))return 'CX'; if(c.includes('Infinity'))return 'Infinity'; if(c.includes('Basic/Unique'))return /Buster|Wand|Shadow|Garuda|Wolf|Shelter|Golem|Hammer|Medusa|Phoenix/.test(n)?'UX':'BX'; if(c.includes('X-Over'))return 'X-Over'; if(c.includes('Multipack'))return 'Collab'; if(c.includes('Bey Packs'))return 'Pack/Set'; if(c.includes('Stadium'))return 'Stadium'; if(c.includes('Battle Sets'))return 'Battle Set'; if(c.includes('Accessories'))return 'Accessoire'; return 'BX/Hasbro';}
 const STORE_KEY='beyblade_x_hasbro_collection_v2';
 const VERSION_KEY='bladebase_app_version';
+const SYNC_SCHEMA_VERSION=1;
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const idOf=p=>(p.code||p.name).replace(/\W+/g,'_');
 let forcedView='collection';
 let state=loadState();
+function ensureStateMeta(){if(!state._meta||typeof state._meta!=='object')state._meta={};return state._meta}
 function ensureCustomProducts(){if(!Array.isArray(state.customProducts))state.customProducts=[];state.customProducts.forEach(p=>{p.custom=true;p.wave=p.wave||waveOf(p);if(!products.some(x=>idOf(x)===idOf(p)))products.push(p);});}
 ensureCustomProducts();
 function loadState(){try{const raw=localStorage.getItem(STORE_KEY);const parsed=raw?JSON.parse(raw):{};return parsed&&typeof parsed==='object'?parsed:{}}catch(e){return {}}}
 function backupCurrentState(reason='backup'){try{localStorage.setItem(`${STORE_KEY}_${reason}_${Date.now()}`,JSON.stringify({app:'BladeBase',reason,createdAt:new Date().toISOString(),state}));}catch(e){}}
-function saveRaw(){try{localStorage.setItem(STORE_KEY,JSON.stringify(state));}catch(e){toast('Stockage local plein : exporte ta collection pour conserver les dernières modifications')}}
+function saveRaw(options={}){try{if(options.touch!==false){const meta=ensureStateMeta();meta.localUpdatedAt=new Date().toISOString();meta.schemaVersion=SYNC_SCHEMA_VERSION;}localStorage.setItem(STORE_KEY,JSON.stringify(state));window.bladeUpdateLocalSyncUi?.();if(options.touch!==false)window.bladeScheduleCloudSync?.('auto');}catch(e){toast('Stockage local plein : exporte ta collection pour conserver les dernières modifications')}}
 function saveState(){saveRaw(); toast('Sauvegarde locale effectuée');}
 function rec(p){const id=idOf(p); if(!state[id]) state[id]={owned:false,status:'',qty:'1',condition:'',complete:'',estimated:'',note:'',paid:'',buyDate:'',priority:'',img:'',badImgs:[],photoIssue:false}; if(state[id].img===undefined)state[id].img=''; if(state[id].status===undefined)state[id].status=''; if(state[id].qty===undefined)state[id].qty='1'; if(state[id].condition===undefined)state[id].condition=''; if(state[id].complete===undefined)state[id].complete=''; if(state[id].estimated===undefined)state[id].estimated=''; if(state[id].photoIssue===undefined)state[id].photoIssue=false; if(!Array.isArray(state[id].badImgs))state[id].badImgs=[]; return state[id];}
 function owned(p){const r=rec(p);return !!r.owned||r.status==='owned'||r.status==='duplicate'}
@@ -307,6 +309,9 @@ function showProductPage(p){
   forcedView='product'; showMainView('product'); bindRows(); window.scrollTo({top:0,behavior:'smooth'});
 }
 function renderExtraViews(){if(forcedView==='hunter')renderHunter(); if(forcedView==='timeline')renderTimeline(); if(forcedView==='parts')renderParts(); if(forcedView==='trades')renderTrades(); if(forcedView==='add')renderCustomList();}
+function reloadCustomProductsFromState(){for(let i=products.length-1;i>=0;i--){if(products[i].custom)products.splice(i,1)}ensureCustomProducts();}
+function replaceLocalState(nextState,options={}){backupCurrentState(options.reason||'before_cloud_replace');state=nextState&&typeof nextState==='object'?nextState:{};reloadCustomProductsFromState();saveRaw({touch:options.touch!==false});fillFilters();render();renderExtraViews();}
+window.bladeLocal={getState:()=>state,replaceState:replaceLocalState,saveRaw,reload:()=>{reloadCustomProductsFromState();fillFilters();render();renderExtraViews();},productIds:()=>products.map(idOf)};
 
 function exportData(filename='collection_beyblade_x_hasbro_sauvegarde.json', includeProducts=true){const payload={app:'Beyblade X Hasbro Collection Tracker',version:5,exportedAt:new Date().toISOString(),state,products:includeProducts?products:undefined};download(filename,JSON.stringify(payload,null,2),'application/json');}
 function download(filename,content,type){const blob=new Blob([content],{type});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=filename;a.click();URL.revokeObjectURL(a.href);}
@@ -339,9 +344,56 @@ const authEls = {
   logout: document.querySelector("#authLogoutBtn"),
   message: document.querySelector("#authMessage")
 };
+const syncEls = {
+  status: document.querySelector("#syncStatus"),
+  localAt: document.querySelector("#syncLocalAt"),
+  cloudAt: document.querySelector("#syncCloudAt"),
+  saveNow: document.querySelector("#syncSaveNowBtn"),
+  pull: document.querySelector("#syncPullBtn"),
+  push: document.querySelector("#syncPushBtn")
+};
+let cloudSync={
+  user:null,db:null,firestore:null,busy:false,ready:false,cloudUpdatedAt:'',timer:null,lastError:'',lastCloudPayload:null
+};
 
 function authToast(message){ if(window.toast) window.toast(message); }
 function setAuthMessage(message){ if(authEls.message) authEls.message.textContent=message; }
+function syncToast(message){ if(window.toast) window.toast(message); }
+function setSyncStatus(message){ if(syncEls.status) syncEls.status.textContent=message; }
+function formatSyncDate(value){if(!value)return '—';const d=new Date(value);return Number.isNaN(d.getTime())?String(value):d.toLocaleString('fr-FR');}
+function localState(){return window.bladeLocal?.getState?.()||{}}
+function stateMeta(){const s=localState();if(!s._meta||typeof s._meta!=='object')s._meta={};return s._meta}
+function localUpdatedAt(){return stateMeta().localUpdatedAt||''}
+function updateLocalSyncUi(){if(syncEls.localAt)syncEls.localAt.textContent=formatSyncDate(localUpdatedAt());if(syncEls.cloudAt)syncEls.cloudAt.textContent=formatSyncDate(cloudSync.cloudUpdatedAt);}
+window.bladeUpdateLocalSyncUi=updateLocalSyncUi;
+function hasLocalUserData(s=localState()){return Object.entries(s).some(([k,v])=>k!=='_meta'&&k!=='customProducts'&&k!=='settings'&&v&&typeof v==='object'&&isMeaningfulRecord(v))||Array.isArray(s.customProducts)&&s.customProducts.length>0||Object.keys(s.settings||{}).length>0}
+function isMeaningfulRecord(r){return !!(r.owned||r.status||r.qty&&r.qty!=='1'||r.condition||r.complete||r.estimated||r.note||r.paid||r.buyDate||r.priority||r.color||r.img||r.photoIssue||Array.isArray(r.badImgs)&&r.badImgs.length)}
+function cleanRecordForCloud(r){const out={};['owned','status','qty','condition','complete','estimated','note','paid','buyDate','priority','color','photoIssue'].forEach(k=>{if(r[k]!==undefined&&r[k]!==''&&!(k==='qty'&&r[k]==='1')&&!(k==='owned'&&r[k]===false)&&!(k==='photoIssue'&&r[k]===false))out[k]=r[k]});if(Array.isArray(r.badImgs)&&r.badImgs.length)out.badImgs=r.badImgs;return out}
+function splitStateForCloud(s=localState()){
+  const collection={}, userPhotos={}, settings=s.settings&&typeof s.settings==='object'?s.settings:{};
+  Object.entries(s).forEach(([key,value])=>{
+    if(['_meta','customProducts','settings'].includes(key)||!value||typeof value!=='object'||Array.isArray(value))return;
+    if(!isMeaningfulRecord(value))return;
+    const clean=cleanRecordForCloud(value);
+    if(Object.keys(clean).length)collection[key]=clean;
+    if(value.img)userPhotos[key]={img:value.img};
+  });
+  return {collection,settings,customProducts:Array.isArray(s.customProducts)?s.customProducts:[],userPhotos,meta:{schemaVersion:1,updatedAt:new Date().toISOString(),localUpdatedAt:localUpdatedAt()||new Date().toISOString()}};
+}
+function bytesOf(obj){return new Blob([JSON.stringify(obj)]).size}
+function cloudToState(payload){
+  const next={_meta:{schemaVersion:1,localUpdatedAt:payload.meta?.localUpdatedAt||payload.meta?.updatedAt||new Date().toISOString()},customProducts:Array.isArray(payload.customProducts)?payload.customProducts:[],settings:payload.settings||{}};
+  Object.entries(payload.collection||{}).forEach(([id,record])=>next[id]={...record});
+  Object.entries(payload.userPhotos||{}).forEach(([id,photo])=>{if(photo?.img){if(!next[id])next[id]={};next[id].img=photo.img;}});
+  return next;
+}
+function mergeCustomProducts(a=[],b=[]){const map=new Map();[...a,...b].forEach(p=>{if(p&&typeof p==='object')map.set((p.code||p.name||JSON.stringify(p)),p)});return [...map.values()]}
+function mergeStates(local,cloud){const merged={...cloud,...local,_meta:{schemaVersion:1,localUpdatedAt:new Date().toISOString()},settings:{...(cloud.settings||{}),...(local.settings||{})},customProducts:mergeCustomProducts(cloud.customProducts,local.customProducts)};return merged}
+function chooseSyncResolution(localTime,cloudTime){
+  const choice=prompt(`Une sauvegarde locale (${formatSyncDate(localTime)}) et une sauvegarde cloud (${formatSyncDate(cloudTime)}) existent.\n\nTape : cloud, local ou fusionner`, cloudTime>localTime?'cloud':'fusionner');
+  return String(choice||'').trim().toLowerCase();
+}
+function setSyncButtonsDisabled(disabled){[syncEls.saveNow,syncEls.pull,syncEls.push].forEach(btn=>{if(btn)btn.disabled=disabled})}
 function authCredentials(){
   const email=(authEls.inputEmail?.value||"").trim();
   const password=authEls.inputPassword?.value||"";
@@ -361,29 +413,109 @@ function authErrorMessage(error){
 }
 
 try{
-  const [{firebaseConfig},{initializeApp},firebaseAuth]=await Promise.all([
+  const [{firebaseConfig},{initializeApp},firebaseAuth,firestoreSdk]=await Promise.all([
     import("./firebase-config.js"),
     import("https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js"),
-    import("https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js")
+    import("https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js"),
+    import("https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js")
   ]);
   const {browserLocalPersistence,createUserWithEmailAndPassword,getAuth,getRedirectResult,GoogleAuthProvider,onAuthStateChanged,sendPasswordResetEmail,setPersistence,signInWithEmailAndPassword,signInWithPopup,signInWithRedirect,signOut}=firebaseAuth;
+  const {doc,getDoc,setDoc,getFirestore,initializeFirestore,persistentLocalCache,persistentSingleTabManager}=firestoreSdk;
   const app=initializeApp(firebaseConfig);
   import("https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js")
     .then(({getAnalytics,isSupported})=>isSupported().then(ok=>{if(ok)getAnalytics(app);}))
     .catch(()=>{});
   const auth=getAuth(app);
+  let db;
+  try{db=initializeFirestore(app,{localCache:persistentLocalCache({tabManager:persistentSingleTabManager()})});}
+  catch(e){db=getFirestore(app);}
+  cloudSync.db=db;
+  cloudSync.firestore={doc,getDoc,setDoc};
   const googleProvider=new GoogleAuthProvider();
   await setPersistence(auth,browserLocalPersistence);
   await getRedirectResult(auth).catch(error=>setAuthMessage(authErrorMessage(error)));
+
+  const refFor=(uid,path)=>doc(db,`users/${uid}/${path}`);
+  async function readCloudPayload(uid){
+    const [profileSnap,collectionSnap,settingsSnap,customSnap,photosSnap,metaSnap]=await Promise.all([
+      getDoc(refFor(uid,'profile/main')),
+      getDoc(refFor(uid,'data/collection')),
+      getDoc(refFor(uid,'data/settings')),
+      getDoc(refFor(uid,'data/customProducts')),
+      getDoc(refFor(uid,'data/userPhotos')),
+      getDoc(refFor(uid,'data/meta'))
+    ]);
+    return {
+      empty:![collectionSnap,settingsSnap,customSnap,photosSnap,metaSnap].some(s=>s.exists()),
+      profile:profileSnap.exists()?profileSnap.data():{},
+      collection:collectionSnap.exists()?collectionSnap.data().items||{}:{},
+      settings:settingsSnap.exists()?settingsSnap.data().settings||{}:{},
+      customProducts:customSnap.exists()?customSnap.data().items||[]:[],
+      userPhotos:photosSnap.exists()?photosSnap.data().items||{}:{},
+      meta:metaSnap.exists()?metaSnap.data():{}
+    };
+  }
+  async function pushLocalToCloud(reason='manual'){
+    if(!cloudSync.user||!cloudSync.db)return;
+    cloudSync.busy=true;setSyncButtonsDisabled(true);setSyncStatus('Synchronisation en cours...');
+    try{
+      const uid=cloudSync.user.uid, payload=splitStateForCloud(localState()), now=new Date().toISOString();
+      payload.meta={...payload.meta,updatedAt:now,reason};
+      const photoDoc={items:payload.userPhotos,updatedAt:now};
+      if(bytesOf(photoDoc)>900000){photoDoc.items={};photoDoc.skipped=true;photoDoc.reason='Photos personnelles trop volumineuses pour un seul document Firestore';setSyncStatus('Cloud OK, photos perso trop volumineuses');}
+      await Promise.all([
+        setDoc(refFor(uid,'profile/main'),{email:cloudSync.user.email||'',displayName:cloudSync.user.displayName||'',updatedAt:now},{merge:true}),
+        setDoc(refFor(uid,'data/collection'),{items:payload.collection,updatedAt:now,schemaVersion:1}),
+        setDoc(refFor(uid,'data/settings'),{settings:payload.settings,updatedAt:now,schemaVersion:1}),
+        setDoc(refFor(uid,'data/customProducts'),{items:payload.customProducts,updatedAt:now,schemaVersion:1}),
+        setDoc(refFor(uid,'data/userPhotos'),photoDoc),
+        setDoc(refFor(uid,'data/meta'),payload.meta,{merge:true})
+      ]);
+      cloudSync.cloudUpdatedAt=payload.meta.updatedAt;cloudSync.lastCloudPayload=payload;setSyncStatus('Synchronisé');updateLocalSyncUi();
+    }catch(error){cloudSync.lastError=error?.message||String(error);setSyncStatus(navigator.onLine?'Erreur cloud':'Hors ligne, en attente');}
+    finally{cloudSync.busy=false;setSyncButtonsDisabled(false);}
+  }
+  async function restoreCloudToLocal(){
+    if(!cloudSync.user)return;
+    setSyncStatus('Lecture du cloud...');
+    const payload=await readCloudPayload(cloudSync.user.uid);
+    if(payload.empty){setSyncStatus('Aucune sauvegarde cloud');return;}
+    const next=cloudToState(payload);
+    window.bladeLocal.replaceState(next,{touch:false,reason:'before_cloud_restore'});
+    cloudSync.cloudUpdatedAt=payload.meta?.updatedAt||payload.meta?.localUpdatedAt||'';
+    setSyncStatus('Cloud restauré en local');updateLocalSyncUi();
+  }
+  async function initialCloudReconcile(user){
+    cloudSync.user=user;cloudSync.ready=true;setSyncStatus(navigator.onLine?'Connexion au cloud...':'Hors ligne');updateLocalSyncUi();
+    try{
+      const payload=await readCloudPayload(user.uid);
+      cloudSync.cloudUpdatedAt=payload.meta?.updatedAt||payload.meta?.localUpdatedAt||'';
+      updateLocalSyncUi();
+      const localTime=Date.parse(localUpdatedAt()||'')||0, cloudTime=Date.parse(cloudSync.cloudUpdatedAt||'')||0;
+      if(payload.empty&&hasLocalUserData()){await pushLocalToCloud('first_upload');return;}
+      if(payload.empty){setSyncStatus('Connecté, aucune sauvegarde cloud');return;}
+      if(cloudTime>localTime+1000){const choice=chooseSyncResolution(localTime,cloudTime);if(choice==='cloud'){await restoreCloudToLocal();return;}if(choice==='local'){await pushLocalToCloud('user_kept_local');return;}if(choice.startsWith('fusion')){const merged=mergeStates(localState(),cloudToState(payload));window.bladeLocal.replaceState(merged,{touch:true,reason:'before_cloud_merge'});await pushLocalToCloud('merged');return;}setSyncStatus('Synchro en attente de choix');return;}
+      if(localTime>cloudTime+1000){await pushLocalToCloud('local_newer');return;}
+      setSyncStatus('Synchronisé');
+    }catch(error){cloudSync.lastError=error?.message||String(error);setSyncStatus(navigator.onLine?'Firestore indisponible':'Hors ligne');}
+  }
+  window.bladeScheduleCloudSync=(reason='auto')=>{if(!cloudSync.user||cloudSync.busy)return;clearTimeout(cloudSync.timer);cloudSync.timer=setTimeout(()=>pushLocalToCloud(reason),1800);setSyncStatus(navigator.onLine?'Changements en attente...':'Hors ligne, changements locaux gardés');};
+  window.addEventListener('online',()=>{if(cloudSync.user){setSyncStatus('Connexion revenue, synchronisation...');pushLocalToCloud('online');}});
+  window.addEventListener('offline',()=>setSyncStatus('Hors ligne, sauvegarde locale active'));
+  syncEls.saveNow?.addEventListener('click',()=>pushLocalToCloud('manual_save'));
+  syncEls.push?.addEventListener('click',()=>pushLocalToCloud('manual_push'));
+  syncEls.pull?.addEventListener('click',()=>{if(confirm('Restaurer la sauvegarde cloud sur cet appareil ? Une archive locale sera créée avant remplacement.'))restoreCloudToLocal();});
 
   onAuthStateChanged(auth,user=>{
     if(user){
       if(authEls.status)authEls.status.textContent="Connecté";
       if(authEls.email)authEls.email.textContent=user.email||"—";
       if(authEls.name)authEls.name.textContent=user.displayName||"—";
-      setAuthMessage("Session Firebase active. Les données de collection restent locales.");
+      setAuthMessage("Session Firebase active. La synchronisation Firestore est disponible.");
       authEls.logout?.removeAttribute("disabled");
+      initialCloudReconcile(user);
     }else{
+      cloudSync.user=null;cloudSync.ready=false;cloudSync.cloudUpdatedAt='';setSyncStatus('Hors compte');updateLocalSyncUi();
       if(authEls.status)authEls.status.textContent="Non connecté";
       if(authEls.email)authEls.email.textContent="—";
       if(authEls.name)authEls.name.textContent="—";
