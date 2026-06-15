@@ -31,12 +31,15 @@ Les produits integres restent locaux dans `index.html`. Firestore ne stocke que 
 - `users/{uid}/data/settings`
 - `users/{uid}/data/customProducts`
 - `users/{uid}/data/userPhotos`
+- `users/{uid}/userPhotos/{productId}`
 - `users/{uid}/data/meta`
 
 L'application affiche toujours la sauvegarde locale en premier, puis compare les dates locale/cloud apres connexion. Si les deux sauvegardes different, l'utilisateur peut choisir cloud, local ou fusion. Hors ligne, les changements restent en local et sont renvoyes au cloud quand la connexion revient.
 
-Les photos personnelles restent locales si leur document Firestore depasse la limite pratique d'environ 900 Ko.
+Les photos personnelles sont indexees dans `data/userPhotos` et stockees par produit dans `userPhotos/{productId}` afin d'eviter la limite d'un document Firestore unique.
 
 ## Images produits
 
-BladeBase ne charge plus de photos depuis Internet. Ajouter les images officielles dans `images/`, en priorite sous la forme `CODE.jpg` par exemple `G1536.jpg`.
+BladeBase ne charge plus de photos depuis Internet. Ajouter les images officielles dans `images/`, en priorite sous la forme `CODE.jpg`, `CODE.png` ou `CODE.webp`, par exemple `G1536.jpg`.
+
+Le workflow GitHub Pages regenere automatiquement `images/manifest.json` a chaque deploiement. Ce manifeste permet a l'application de ne demander que les fichiers qui existent et evite les rafales de requetes 404 sur GitHub Pages. Si le site est publie sans GitHub Actions, mettre aussi a jour `images/manifest.json`.

@@ -1,4 +1,4 @@
-const APP_VERSION = "2026.06.15.05";
+const APP_VERSION = "2026.06.15.06";
 const APP_CACHE = `bladebase-app-${APP_VERSION}`;
 const STATIC_CACHE = `bladebase-static-${APP_VERSION}`;
 
@@ -73,7 +73,7 @@ async function networkFirst(request) {
   const cache = await caches.open(APP_CACHE);
   try {
     const fresh = await fetch(new Request(request, { cache: "no-store" }));
-    cache.put(request, fresh.clone());
+    if (fresh && fresh.ok) cache.put(request, fresh.clone());
     return fresh;
   } catch (error) {
     const cached = await cache.match(request);
