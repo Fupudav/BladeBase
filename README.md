@@ -8,7 +8,7 @@ Publier les fichiers a la racine de la branche GitHub Pages. A chaque livraison,
 
 ## Firebase Authentication
 
-La configuration Firebase reelle ne doit pas etre committee. Pour le developpement local, copier `firebase-config.example.js` vers `firebase-config.js` puis renseigner les valeurs Firebase.
+La configuration Firebase peut etre fournie par `firebase-config.js`, genere par GitHub Actions ou cree localement depuis `firebase-config.example.js`. Si ce fichier est absent sur GitHub Pages, BladeBase utilise une configuration publique de secours integree afin que Firebase Authentication reste disponible.
 
 Pour GitHub Pages, utiliser le workflow GitHub Actions fourni et configurer :
 
@@ -20,7 +20,7 @@ Pour GitHub Pages, utiliser le workflow GitHub Actions fourni et configurer :
 - Variable `FIREBASE_APP_ID`
 - Variable `FIREBASE_MEASUREMENT_ID`
 
-Dans Firebase Console, ajouter le domaine GitHub Pages dans Authentication > Settings > Authorized domains.
+Dans Firebase Console, ajouter le domaine GitHub Pages et le domaine personnalise dans Authentication > Settings > Authorized domains. Restreindre la cle web aux domaines autorises dans Google Cloud Console, puis remplacer/rotater la cle si GitHub signale une ancienne exposition.
 
 ## Synchronisation Firestore
 
