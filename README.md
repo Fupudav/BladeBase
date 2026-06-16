@@ -22,9 +22,29 @@ Pour GitHub Pages, utiliser le workflow GitHub Actions fourni et configurer :
 
 Dans Firebase Console, ajouter le domaine GitHub Pages et le domaine personnalise dans Authentication > Settings > Authorized domains. Restreindre la cle web aux domaines autorises dans Google Cloud Console, puis remplacer/rotater la cle si GitHub signale une ancienne exposition.
 
-## Synchronisation Firestore
+## Produits Firestore
 
-Les produits integres restent locaux dans `index.html`. Firestore ne stocke que les donnees utilisateur, sous l'utilisateur connecte :
+Les produits sont charges depuis Firestore quand la collection publique `products` contient des documents. Chaque document doit garder le meme identifiant que l'ancien produit local (`code` quand il existe, sinon le nom nettoye) afin de conserver les collections utilisateur existantes.
+
+Structure conseillee pour `products/{productId}` :
+
+- `id`
+- `code`
+- `name`
+- `cat`
+- `wave`
+- `date`
+- `price`
+- `color`
+- `type`
+- `imagePath`
+- `note`
+
+Si Firestore est vide ou indisponible, BladeBase charge immediatement `data/products-fallback.json`.
+
+## Synchronisation Firestore utilisateur
+
+Les donnees utilisateur restent stockees sous l'utilisateur connecte :
 
 - `users/{uid}/profile/main`
 - `users/{uid}/data/collection`
@@ -40,6 +60,6 @@ Les photos personnelles sont indexees dans `data/userPhotos` et stockees par pro
 
 ## Images produits
 
-BladeBase ne charge plus de photos depuis Internet. Ajouter les images officielles dans `images/`, en priorite sous la forme `CODE.jpg`, `CODE.png` ou `CODE.webp`, par exemple `G1536.jpg`.
+BladeBase ne charge plus de photos depuis Internet. L'ordre utilise est `imagePath` depuis Firestore, puis `images/CODE.webp`, `images/CODE.jpg`, `images/CODE.jpeg`, `images/CODE.png`, puis le placeholder. Ajouter les images officielles dans `images/`, par exemple `G1536.webp` ou `G1536.jpg`.
 
 Le workflow GitHub Pages regenere automatiquement `images/manifest.json` a chaque deploiement. Ce manifeste permet a l'application de ne demander que les fichiers qui existent et evite les rafales de requetes 404 sur GitHub Pages. Si le site est publie sans GitHub Actions, mettre aussi a jour `images/manifest.json`.
