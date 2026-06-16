@@ -42,6 +42,25 @@ Structure conseillee pour `products/{productId}` :
 
 Si Firestore est vide ou indisponible, BladeBase charge immediatement `data/products-fallback.json`.
 
+### Importer les produits dans Firestore
+
+Ne pas creer les 119 produits a la main dans la console Firebase. Utiliser le script local :
+
+```powershell
+npm install
+npm run import:products -- --credentials "C:\Users\rlope\Documents\bladebase-service-account.json"
+```
+
+La premiere commande installe l'outil Firebase Admin. La deuxieme commande fait une simulation et n'ecrit rien.
+
+Pour importer vraiment les documents :
+
+```powershell
+npm run import:products -- --credentials "C:\Users\rlope\Documents\bladebase-service-account.json" --apply
+```
+
+Le fichier de cle privee Firebase ne doit jamais etre ajoute a GitHub. Les noms `*service-account*.json` et `*firebase-adminsdk*.json` sont ignores par `.gitignore`.
+
 ## Synchronisation Firestore utilisateur
 
 Les donnees utilisateur restent stockees sous l'utilisateur connecte :

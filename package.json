@@ -1,0 +1,11 @@
+{
+  "name": "bladebase",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "import:products": "node scripts/import-products-firestore.mjs"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.0.0"
+  }
+}
