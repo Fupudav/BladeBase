@@ -1,10 +1,11 @@
-const APP_VERSION = "2026.06.17.04";
+const APP_VERSION = "2026.06.17.05";
 const APP_CACHE = `bladebase-app-${APP_VERSION}`;
 const STATIC_CACHE = `bladebase-static-${APP_VERSION}`;
 
 const CORE_ASSETS = [
   "./",
   "./index.html",
+  "./firebase-config.js",
   "./manifest.json",
   "./version.json",
   "./data/products-fallback.json",
