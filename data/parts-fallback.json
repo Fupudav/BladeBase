@@ -1,0 +1,3270 @@
+[
+  {
+    "id": "bit-a",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "A",
+    "imagePath": "",
+    "productIds": [
+      "G1536"
+    ],
+    "productCodes": [
+      "G1536"
+    ],
+    "productNames": [
+      "Buster Dran 1-60A"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-b",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "B",
+    "imagePath": "",
+    "productIds": [
+      "F9582",
+      "G0195",
+      "G0285"
+    ],
+    "productCodes": [
+      "F9582",
+      "G0195",
+      "G0285"
+    ],
+    "productNames": [
+      "Arrow Wizard 4-80B",
+      "Talon Ptera 3-80B",
+      "Scythe Incendio 3-80B"
+    ],
+    "usageCount": 3,
+    "source": "products"
+  },
+  {
+    "id": "bit-d",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "D",
+    "imagePath": "",
+    "productIds": [
+      "G2746",
+      "G1533",
+      "G2218"
+    ],
+    "productCodes": [
+      "G2746",
+      "G1533",
+      "G2218"
+    ],
+    "productNames": [
+      "Reaper Rhino C 4-55D",
+      "Obsidian Shell 4-60D",
+      "Draciel Shield 7-60D"
+    ],
+    "usageCount": 3,
+    "source": "products"
+  },
+  {
+    "id": "bit-db",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "DB",
+    "imagePath": "",
+    "productIds": [
+      "G1537",
+      "G1751",
+      "G3611"
+    ],
+    "productCodes": [
+      "G1537",
+      "G1751",
+      "G3611"
+    ],
+    "productNames": [
+      "Wand Wizard 5-70DB",
+      "Buster Dran 5-70DB"
+    ],
+    "usageCount": 3,
+    "source": "products"
+  },
+  {
+    "id": "bit-ds",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "DS",
+    "imagePath": "",
+    "productIds": [
+      "G4571"
+    ],
+    "productCodes": [
+      "G4571"
+    ],
+    "productNames": [
+      "Ring Aether 0-80DS"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-e",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "E",
+    "imagePath": "",
+    "productIds": [
+      "G1669"
+    ],
+    "productCodes": [
+      "G1669"
+    ],
+    "productNames": [
+      "Tide Whale 5-80E"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-f",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "F",
+    "imagePath": "",
+    "productIds": [
+      "F9580",
+      "G2735"
+    ],
+    "productCodes": [
+      "F9580",
+      "G2735"
+    ],
+    "productNames": [
+      "Sword Dran 3-60F",
+      "Savage Bear 5-60F"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "bit-fb",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "FB",
+    "imagePath": "",
+    "productIds": [
+      "G1674"
+    ],
+    "productCodes": [
+      "G1674"
+    ],
+    "productNames": [
+      "Sterling Wolf 3-80FB"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-ff",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "FF",
+    "imagePath": "",
+    "productIds": [
+      "G2742"
+    ],
+    "productCodes": [
+      "G2742"
+    ],
+    "productNames": [
+      "Strike Dran 4-50FF"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-gb",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "GB",
+    "imagePath": "",
+    "productIds": [
+      "G2738",
+      "G4567",
+      "G1531",
+      "G1754"
+    ],
+    "productCodes": [
+      "G2738",
+      "G4567",
+      "G1531",
+      "G1754"
+    ],
+    "productNames": [
+      "Stun Medusa 9-60GB",
+      "Shatter Horus 9-65GB",
+      "Arrow Wizard 4-80GB",
+      "Yell Kong 3-60GB"
+    ],
+    "usageCount": 4,
+    "source": "products"
+  },
+  {
+    "id": "bit-gf",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "GF",
+    "imagePath": "",
+    "productIds": [
+      "G0284"
+    ],
+    "productCodes": [
+      "G0284"
+    ],
+    "productNames": [
+      "Roar Tyranno 9-60GF"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-gn",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "GN",
+    "imagePath": "",
+    "productIds": [
+      "G1530",
+      "G3392"
+    ],
+    "productCodes": [
+      "G1530",
+      "G3392"
+    ],
+    "productNames": [
+      "Cowl Sphinx 9-80GN",
+      "Ridge Triceratops 9-80GN"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "bit-gp",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "GP",
+    "imagePath": "",
+    "productIds": [
+      "G1675",
+      "G0283",
+      "G2733"
+    ],
+    "productCodes": [
+      "G1675",
+      "G0283",
+      "G2733"
+    ],
+    "productNames": [
+      "Shelter Drake 7-80GP",
+      "Sting Unicorn 5-60GP",
+      "Gust Bat 3-85GP"
+    ],
+    "usageCount": 3,
+    "source": "products"
+  },
+  {
+    "id": "bit-gr",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "GR",
+    "imagePath": "",
+    "productIds": [
+      "G1681"
+    ],
+    "productCodes": [
+      "G1681"
+    ],
+    "productNames": [
+      "Brush Fox J 9-70GR"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-h",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "H",
+    "imagePath": "",
+    "productIds": [
+      "G1752",
+      "G1756"
+    ],
+    "productCodes": [
+      "G1752",
+      "G1756"
+    ],
+    "productNames": [
+      "Hammer Incendio 3-70H",
+      "Soar Phoenix 5-80H"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "bit-hn",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "HN",
+    "imagePath": "",
+    "productIds": [
+      "G0184",
+      "G1684"
+    ],
+    "productCodes": [
+      "G0184",
+      "G1684"
+    ],
+    "productNames": [
+      "Lance Knight 4-80HN",
+      "Antler Stag B 2-60HN"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "bit-i",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "I",
+    "imagePath": "",
+    "productIds": [
+      "G4572"
+    ],
+    "productCodes": [
+      "G4572"
+    ],
+    "productNames": [
+      "Blitz Bahamut BK 1-50I"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-k",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "K",
+    "imagePath": "",
+    "productIds": [
+      "G1678"
+    ],
+    "productCodes": [
+      "G1678"
+    ],
+    "productNames": [
+      "Reaper Incendio T 4-70K"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-lf",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "LF",
+    "imagePath": "",
+    "productIds": [
+      "G2739",
+      "G0194",
+      "G1671"
+    ],
+    "productCodes": [
+      "G2739",
+      "G0194",
+      "G1671"
+    ],
+    "productNames": [
+      "Rudder Phoenix 4-70LF",
+      "Keel Shark 3-60LF",
+      "Lance Knight 3-60LF"
+    ],
+    "usageCount": 3,
+    "source": "products"
+  },
+  {
+    "id": "bit-lo",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "LO",
+    "imagePath": "",
+    "productIds": [
+      "G1679"
+    ],
+    "productCodes": [
+      "G1679"
+    ],
+    "productNames": [
+      "Arc Wizard R 4-55LO"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-mn",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "MN",
+    "imagePath": "",
+    "productIds": [
+      "G1539"
+    ],
+    "productCodes": [
+      "G1539"
+    ],
+    "productNames": [
+      "Shadow Shinobi 1-80MN"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-n",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "N",
+    "imagePath": "",
+    "productIds": [
+      "F9581",
+      "G2740"
+    ],
+    "productCodes": [
+      "F9581",
+      "G2740"
+    ],
+    "productNames": [
+      "Helm Knight 3-80N",
+      "Feather Phoenix 2-60N"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "bit-o",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "O",
+    "imagePath": "",
+    "productIds": [
+      "G1683",
+      "G1755",
+      "G2732"
+    ],
+    "productCodes": [
+      "G1683",
+      "G1755",
+      "G2732"
+    ],
+    "productNames": [
+      "Wriggle Kraken S 3-85O",
+      "Arrow Wizard 4-80O",
+      "Shelter Drake 5-70O"
+    ],
+    "usageCount": 3,
+    "source": "products"
+  },
+  {
+    "id": "bit-p",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "P",
+    "imagePath": "",
+    "productIds": [
+      "G0193",
+      "G1843"
+    ],
+    "productCodes": [
+      "G0193",
+      "G1843"
+    ],
+    "productNames": [
+      "Claw Leon 5-60P",
+      "Driger Slash 4-80P"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "bit-q",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "Q",
+    "imagePath": "",
+    "productIds": [
+      "G1534",
+      "G1670"
+    ],
+    "productCodes": [
+      "G1534",
+      "G1670"
+    ],
+    "productNames": [
+      "Keel Shark 1-60Q",
+      "Dagger Dran 4-70Q"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "bit-r",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "R",
+    "imagePath": "",
+    "productIds": [
+      "G1538"
+    ],
+    "productCodes": [
+      "G1538"
+    ],
+    "productNames": [
+      "Wand Wizard 1-60R"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-s",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "S",
+    "imagePath": "",
+    "productIds": [
+      "G0192",
+      "G0286"
+    ],
+    "productCodes": [
+      "G0192",
+      "G0286"
+    ],
+    "productNames": [
+      "Horn Rhino 3-80S",
+      "Savage Bear 3-60S"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "bit-t",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "T",
+    "imagePath": "",
+    "productIds": [
+      "F9583",
+      "G1682",
+      "G2750",
+      "G0188",
+      "F9584",
+      "F9585",
+      "G1842"
+    ],
+    "productCodes": [
+      "F9583",
+      "G1682",
+      "G2750",
+      "G0188",
+      "F9584",
+      "F9585",
+      "G1842"
+    ],
+    "productNames": [
+      "Scythe Incendio 4-60T",
+      "Fort Hornet R 7-60T",
+      "Hurricane Enlil IS 7-55T",
+      "Steel Samurai 4-80T",
+      "Dranzer Spiral 3-80T (Red)",
+      "Dranzer Spiral 3-80T (Green)",
+      "Dranzer Spiral 3-80T"
+    ],
+    "usageCount": 7,
+    "source": "products"
+  },
+  {
+    "id": "bit-tp",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "TP",
+    "imagePath": "",
+    "productIds": [
+      "G1673"
+    ],
+    "productCodes": [
+      "G1673"
+    ],
+    "productNames": [
+      "Scarlet Garuda 4-70TP"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-u",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "U",
+    "imagePath": "",
+    "productIds": [
+      "G2748"
+    ],
+    "productCodes": [
+      "G2748"
+    ],
+    "productNames": [
+      "Fang Leon T 4-60U"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-uf",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "UF",
+    "imagePath": "",
+    "productIds": [
+      "G2731"
+    ],
+    "productCodes": [
+      "G2731"
+    ],
+    "productNames": [
+      "Scale Shark 4-50UF"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-un",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "UN",
+    "imagePath": "",
+    "productIds": [
+      "G1676",
+      "G4563"
+    ],
+    "productCodes": [
+      "G1676",
+      "G4563"
+    ],
+    "productNames": [
+      "Rock Golem 1-60UN",
+      "Armor Knight GV 8-70UN"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "bit-v",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "V",
+    "imagePath": "",
+    "productIds": [
+      "G1677"
+    ],
+    "productCodes": [
+      "G1677"
+    ],
+    "productNames": [
+      "Courage Dran S 6-60V"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-w",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "W",
+    "imagePath": "",
+    "productIds": [
+      "G1680",
+      "G2734"
+    ],
+    "productCodes": [
+      "G1680",
+      "G2734"
+    ],
+    "productNames": [
+      "Dark Perseus B 6-80W",
+      "Curse Mummy 7-55W"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "bit-wb",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "WB",
+    "imagePath": "",
+    "productIds": [
+      "G2747"
+    ],
+    "productCodes": [
+      "G2747"
+    ],
+    "productNames": [
+      "Flame Cerberus W 5-80WB"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "bit-y",
+    "type": "bit",
+    "typeLabel": "Bit",
+    "name": "Y",
+    "imagePath": "",
+    "productIds": [
+      "G4562"
+    ],
+    "productCodes": [
+      "G4562"
+    ],
+    "productNames": [
+      "Rage Ragna FE 4-55Y"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-antler-stag-b",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Antler Stag B",
+    "imagePath": "",
+    "productIds": [
+      "G1684"
+    ],
+    "productCodes": [
+      "G1684"
+    ],
+    "productNames": [
+      "Antler Stag B 2-60HN"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-arc-wizard-r",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Arc Wizard R",
+    "imagePath": "",
+    "productIds": [
+      "G1679"
+    ],
+    "productCodes": [
+      "G1679"
+    ],
+    "productNames": [
+      "Arc Wizard R 4-55LO"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-armor-knight-gv",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Armor Knight GV",
+    "imagePath": "",
+    "productIds": [
+      "G4563"
+    ],
+    "productCodes": [
+      "G4563"
+    ],
+    "productNames": [
+      "Armor Knight GV 8-70UN"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-arrow-wizard",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Arrow Wizard",
+    "imagePath": "",
+    "productIds": [
+      "F9582",
+      "G1531",
+      "G1755",
+      "G0196"
+    ],
+    "productCodes": [
+      "F9582",
+      "G1531",
+      "G1755",
+      "G0196"
+    ],
+    "productNames": [
+      "Arrow Wizard 4-80B",
+      "Arrow Wizard 4-80GB",
+      "Arrow Wizard 4-80O",
+      "Chain Incendio and Arrow Wizard Dual Pack"
+    ],
+    "usageCount": 4,
+    "source": "products"
+  },
+  {
+    "id": "blade-beat-tyranno",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Beat Tyranno",
+    "imagePath": "",
+    "productIds": [
+      "G1542"
+    ],
+    "productCodes": [
+      "G1542"
+    ],
+    "productNames": [
+      "Beat Tyranno and Knife Shinobi Dual Pack"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-bite-croc",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Bite Croc",
+    "imagePath": "",
+    "productIds": [
+      "G0199",
+      "G3083"
+    ],
+    "productCodes": [
+      "G0199",
+      "G3083"
+    ],
+    "productNames": [
+      "Bite Croc and Sting Unicorn Dual Pack",
+      "Bite Croc Deluxe String Launcher & Custom Grip Set"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "blade-blitz-bahamut-bk",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Blitz Bahamut BK",
+    "imagePath": "",
+    "productIds": [
+      "G4572"
+    ],
+    "productCodes": [
+      "G4572"
+    ],
+    "productNames": [
+      "Blitz Bahamut BK 1-50I"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-brush-fox-j",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Brush Fox J",
+    "imagePath": "",
+    "productIds": [
+      "G1681"
+    ],
+    "productCodes": [
+      "G1681"
+    ],
+    "productNames": [
+      "Brush Fox J 9-70GR"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-bumblebee",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Bumblebee",
+    "imagePath": "",
+    "productIds": [
+      "G1692"
+    ],
+    "productCodes": [
+      "G1692"
+    ],
+    "productNames": [
+      "Bumblebee and Shockwave Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-buster-dran",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Buster Dran",
+    "imagePath": "",
+    "productIds": [
+      "G1536",
+      "G1751",
+      "G3611"
+    ],
+    "productCodes": [
+      "G1536",
+      "G1751",
+      "G3611"
+    ],
+    "productNames": [
+      "Buster Dran 1-60A",
+      "Buster Dran 5-70DB"
+    ],
+    "usageCount": 3,
+    "source": "products"
+  },
+  {
+    "id": "blade-calibur-samurai",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Calibur Samurai",
+    "imagePath": "",
+    "productIds": [
+      "G2754"
+    ],
+    "productCodes": [
+      "G2754"
+    ],
+    "productNames": [
+      "Calibur Samurai and Obsidian Shell Dual Pack"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-captain-america",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Captain America",
+    "imagePath": "",
+    "productIds": [
+      "G1690"
+    ],
+    "productCodes": [
+      "G1690"
+    ],
+    "productNames": [
+      "Captain America and Red Hulk Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-chain-incendio",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Chain Incendio",
+    "imagePath": "",
+    "productIds": [
+      "G0196",
+      "G1687"
+    ],
+    "productCodes": [
+      "G0196",
+      "G1687"
+    ],
+    "productNames": [
+      "Chain Incendio and Arrow Wizard Dual Pack",
+      "Circle Ghost and Chain Incendio Dual Pack"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "blade-chewbacca",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Chewbacca",
+    "imagePath": "",
+    "productIds": [
+      "G1695"
+    ],
+    "productCodes": [
+      "G1695"
+    ],
+    "productNames": [
+      "Chewbacca and Stormtrooper Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-circle-ghost",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Circle Ghost",
+    "imagePath": "",
+    "productIds": [
+      "G1687",
+      "G2755"
+    ],
+    "productCodes": [
+      "G1687",
+      "G2755"
+    ],
+    "productNames": [
+      "Circle Ghost and Chain Incendio Dual Pack",
+      "Circle Ghost and Hack Viking Dual Pack"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "blade-claw-leon",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Claw Leon",
+    "imagePath": "",
+    "productIds": [
+      "G0193"
+    ],
+    "productCodes": [
+      "G0193"
+    ],
+    "productNames": [
+      "Claw Leon 5-60P"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-cobalt-dragoon",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Cobalt Dragoon",
+    "imagePath": "",
+    "productIds": [
+      "G1491"
+    ],
+    "productCodes": [
+      "G1491"
+    ],
+    "productNames": [
+      "Cobalt Dragoon Deluxe Left-Spin String Launcher Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-courage-dran-s",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Courage Dran S",
+    "imagePath": "",
+    "productIds": [
+      "G1677"
+    ],
+    "productCodes": [
+      "G1677"
+    ],
+    "productNames": [
+      "Courage Dran S 6-60V"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-cowl-sphinx",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Cowl Sphinx",
+    "imagePath": "",
+    "productIds": [
+      "G1530",
+      "G1685"
+    ],
+    "productCodes": [
+      "G1530",
+      "G1685"
+    ],
+    "productNames": [
+      "Cowl Sphinx 9-80GN",
+      "Cowl Sphinx and Crest Leon Dual Pack"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "blade-crest-leon",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Crest Leon",
+    "imagePath": "",
+    "productIds": [
+      "G1685"
+    ],
+    "productCodes": [
+      "G1685"
+    ],
+    "productNames": [
+      "Cowl Sphinx and Crest Leon Dual Pack"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-curse-mummy",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Curse Mummy",
+    "imagePath": "",
+    "productIds": [
+      "G2734"
+    ],
+    "productCodes": [
+      "G2734"
+    ],
+    "productNames": [
+      "Curse Mummy 7-55W"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-dagger-dran",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Dagger Dran",
+    "imagePath": "",
+    "productIds": [
+      "G1670"
+    ],
+    "productCodes": [
+      "G1670"
+    ],
+    "productNames": [
+      "Dagger Dran 4-70Q"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-dark-perseus-b",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Dark Perseus B",
+    "imagePath": "",
+    "productIds": [
+      "G1680"
+    ],
+    "productCodes": [
+      "G1680"
+    ],
+    "productNames": [
+      "Dark Perseus B 6-80W"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-darth-vader",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Darth Vader",
+    "imagePath": "",
+    "productIds": [
+      "G0290"
+    ],
+    "productCodes": [
+      "G0290"
+    ],
+    "productNames": [
+      "Luke Skywalker and Darth Vader Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-draciel-shield",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Draciel Shield",
+    "imagePath": "",
+    "productIds": [
+      "G2218"
+    ],
+    "productCodes": [
+      "G2218"
+    ],
+    "productNames": [
+      "Draciel Shield 7-60D"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-dranzer-spiral",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Dranzer Spiral",
+    "imagePath": "",
+    "productIds": [
+      "F9584",
+      "F9585",
+      "G1842"
+    ],
+    "productCodes": [
+      "F9584",
+      "F9585",
+      "G1842"
+    ],
+    "productNames": [
+      "Dranzer Spiral 3-80T (Red)",
+      "Dranzer Spiral 3-80T (Green)",
+      "Dranzer Spiral 3-80T"
+    ],
+    "usageCount": 3,
+    "source": "products"
+  },
+  {
+    "id": "blade-driger-slash",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Driger Slash",
+    "imagePath": "",
+    "productIds": [
+      "G1843"
+    ],
+    "productCodes": [
+      "G1843"
+    ],
+    "productNames": [
+      "Driger Slash 4-80P"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-fang-leon-t",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Fang Leon T",
+    "imagePath": "",
+    "productIds": [
+      "G2748"
+    ],
+    "productCodes": [
+      "G2748"
+    ],
+    "productNames": [
+      "Fang Leon T 4-60U"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-feather-phoenix",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Feather Phoenix",
+    "imagePath": "",
+    "productIds": [
+      "G2740"
+    ],
+    "productCodes": [
+      "G2740"
+    ],
+    "productNames": [
+      "Feather Phoenix 2-60N"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-flame-cerberus-w",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Flame Cerberus W",
+    "imagePath": "",
+    "productIds": [
+      "G2747"
+    ],
+    "productCodes": [
+      "G2747"
+    ],
+    "productNames": [
+      "Flame Cerberus W 5-80WB"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-fort-hornet-r",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Fort Hornet R",
+    "imagePath": "",
+    "productIds": [
+      "G1682"
+    ],
+    "productCodes": [
+      "G1682"
+    ],
+    "productNames": [
+      "Fort Hornet R 7-60T"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-gale-wyvern",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Gale Wyvern",
+    "imagePath": "",
+    "productIds": [
+      "G0282",
+      "G1543"
+    ],
+    "productCodes": [
+      "G0282",
+      "G1543"
+    ],
+    "productNames": [
+      "Gale Wyvern and Tail Viper Dual Pack",
+      "Gale Wyvern and Sword Dran Dual Pack"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "blade-general-grievous",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "General Grievous",
+    "imagePath": "",
+    "productIds": [
+      "G1694"
+    ],
+    "productCodes": [
+      "G1694"
+    ],
+    "productNames": [
+      "Obi-Wan Kenobi and General Grievous Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-gill-shark",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Gill Shark",
+    "imagePath": "",
+    "productIds": [
+      "G1686"
+    ],
+    "productCodes": [
+      "G1686"
+    ],
+    "productNames": [
+      "Pearl Tiger and Gill Shark Dual Pack"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-glory-valkerion-lf",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Glory Valkerion LF",
+    "imagePath": "",
+    "productIds": [
+      "Glory_Valkerion_LF"
+    ],
+    "productCodes": [],
+    "productNames": [
+      "Glory Valkerion LF"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-green-goblin",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Green Goblin",
+    "imagePath": "",
+    "productIds": [
+      "G1691"
+    ],
+    "productCodes": [
+      "G1691"
+    ],
+    "productNames": [
+      "Miles Morales and Green Goblin Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-grogu",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Grogu",
+    "imagePath": "",
+    "productIds": [
+      "G3061"
+    ],
+    "productCodes": [
+      "G3061"
+    ],
+    "productNames": [
+      "Grogu and Snowtrooper Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-gust-bat",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Gust Bat",
+    "imagePath": "",
+    "productIds": [
+      "G2733"
+    ],
+    "productCodes": [
+      "G2733"
+    ],
+    "productNames": [
+      "Gust Bat 3-85GP"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-hack-viking",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Hack Viking",
+    "imagePath": "",
+    "productIds": [
+      "G2755"
+    ],
+    "productCodes": [
+      "G2755"
+    ],
+    "productNames": [
+      "Circle Ghost and Hack Viking Dual Pack"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-hammer-incendio",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Hammer Incendio",
+    "imagePath": "",
+    "productIds": [
+      "G1752"
+    ],
+    "productCodes": [
+      "G1752"
+    ],
+    "productNames": [
+      "Hammer Incendio 3-70H"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-helm-knight",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Helm Knight",
+    "imagePath": "",
+    "productIds": [
+      "F9581",
+      "G0198"
+    ],
+    "productCodes": [
+      "F9581",
+      "G0198"
+    ],
+    "productNames": [
+      "Helm Knight 3-80N",
+      "Yell Kong and Helm Knight Dual Pack"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "blade-horn-rhino",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Horn Rhino",
+    "imagePath": "",
+    "productIds": [
+      "G0192"
+    ],
+    "productCodes": [
+      "G0192"
+    ],
+    "productNames": [
+      "Horn Rhino 3-80S"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-hurricane-enlil-is",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Hurricane Enlil IS",
+    "imagePath": "",
+    "productIds": [
+      "G2750"
+    ],
+    "productCodes": [
+      "G2750"
+    ],
+    "productNames": [
+      "Hurricane Enlil IS 7-55T"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-iron-man",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Iron Man",
+    "imagePath": "",
+    "productIds": [
+      "G0287"
+    ],
+    "productCodes": [
+      "G0287"
+    ],
+    "productNames": [
+      "Iron Man and Thanos Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-keel-shark",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Keel Shark",
+    "imagePath": "",
+    "productIds": [
+      "G0194",
+      "G1534",
+      "G0190"
+    ],
+    "productCodes": [
+      "G0194",
+      "G1534",
+      "G0190"
+    ],
+    "productNames": [
+      "Keel Shark 3-60LF",
+      "Keel Shark 1-60Q",
+      "Knife Shinobi and Keel Shark Dual Pack"
+    ],
+    "usageCount": 3,
+    "source": "products"
+  },
+  {
+    "id": "blade-knife-shinobi",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Knife Shinobi",
+    "imagePath": "",
+    "productIds": [
+      "G0190",
+      "G1542"
+    ],
+    "productCodes": [
+      "G0190",
+      "G1542"
+    ],
+    "productNames": [
+      "Knife Shinobi and Keel Shark Dual Pack",
+      "Beat Tyranno and Knife Shinobi Dual Pack"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "blade-lance-knight",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Lance Knight",
+    "imagePath": "",
+    "productIds": [
+      "G0184",
+      "G1671"
+    ],
+    "productCodes": [
+      "G0184",
+      "G1671"
+    ],
+    "productNames": [
+      "Lance Knight 4-80HN",
+      "Lance Knight 3-60LF"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "blade-luke-skywalker",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Luke Skywalker",
+    "imagePath": "",
+    "productIds": [
+      "G0290"
+    ],
+    "productCodes": [
+      "G0290"
+    ],
+    "productNames": [
+      "Luke Skywalker and Darth Vader Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-megatron",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Megatron",
+    "imagePath": "",
+    "productIds": [
+      "G0353"
+    ],
+    "productCodes": [
+      "G0353"
+    ],
+    "productNames": [
+      "Optimus Prime and Megatron Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-meteoroid-dragoon",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Meteoroid Dragoon",
+    "imagePath": "",
+    "productIds": [
+      "G3491"
+    ],
+    "productCodes": [
+      "G3491"
+    ],
+    "productNames": [
+      "Meteoroid Dragoon Deluxe Left-Spin String Launcher Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-miles-morales",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Miles Morales",
+    "imagePath": "",
+    "productIds": [
+      "G1691"
+    ],
+    "productCodes": [
+      "G1691"
+    ],
+    "productNames": [
+      "Miles Morales and Green Goblin Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-moff-gideon",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Moff Gideon",
+    "imagePath": "",
+    "productIds": [
+      "F9589"
+    ],
+    "productCodes": [
+      "F9589"
+    ],
+    "productNames": [
+      "The Mandalorian and Moff Gideon Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-mosasaurus",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Mosasaurus",
+    "imagePath": "",
+    "productIds": [
+      "G1898"
+    ],
+    "productCodes": [
+      "G1898"
+    ],
+    "productNames": [
+      "T. Rex and Mosasaurus Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-obi-wan-kenobi",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Obi-Wan Kenobi",
+    "imagePath": "",
+    "productIds": [
+      "G1694"
+    ],
+    "productCodes": [
+      "G1694"
+    ],
+    "productNames": [
+      "Obi-Wan Kenobi and General Grievous Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-obsidian-shell",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Obsidian Shell",
+    "imagePath": "",
+    "productIds": [
+      "G1533",
+      "G2754"
+    ],
+    "productCodes": [
+      "G1533",
+      "G2754"
+    ],
+    "productNames": [
+      "Obsidian Shell 4-60D",
+      "Calibur Samurai and Obsidian Shell Dual Pack"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "blade-optimus-primal",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Optimus Primal",
+    "imagePath": "",
+    "productIds": [
+      "G0352"
+    ],
+    "productCodes": [
+      "G0352"
+    ],
+    "productNames": [
+      "Optimus Primal and Starscream Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-optimus-prime",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Optimus Prime",
+    "imagePath": "",
+    "productIds": [
+      "G0353"
+    ],
+    "productCodes": [
+      "G0353"
+    ],
+    "productNames": [
+      "Optimus Prime and Megatron Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-pearl-tiger",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Pearl Tiger",
+    "imagePath": "",
+    "productIds": [
+      "G1686"
+    ],
+    "productCodes": [
+      "G1686"
+    ],
+    "productNames": [
+      "Pearl Tiger and Gill Shark Dual Pack"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-quetzalcoatlus",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Quetzalcoatlus",
+    "imagePath": "",
+    "productIds": [
+      "G1899"
+    ],
+    "productCodes": [
+      "G1899"
+    ],
+    "productNames": [
+      "Spinosaurus and Quetzalcoatlus Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-rage-ragna-fe",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Rage Ragna FE",
+    "imagePath": "",
+    "productIds": [
+      "G4562"
+    ],
+    "productCodes": [
+      "G4562"
+    ],
+    "productNames": [
+      "Rage Ragna FE 4-55Y"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-reaper-incendio-t",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Reaper Incendio T",
+    "imagePath": "",
+    "productIds": [
+      "G1678"
+    ],
+    "productCodes": [
+      "G1678"
+    ],
+    "productNames": [
+      "Reaper Incendio T 4-70K"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-reaper-rhino-c",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Reaper Rhino C",
+    "imagePath": "",
+    "productIds": [
+      "G2746"
+    ],
+    "productCodes": [
+      "G2746"
+    ],
+    "productNames": [
+      "Reaper Rhino C 4-55D"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-red-hulk",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Red Hulk",
+    "imagePath": "",
+    "productIds": [
+      "G1690"
+    ],
+    "productCodes": [
+      "G1690"
+    ],
+    "productNames": [
+      "Captain America and Red Hulk Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-ridge-triceratops",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Ridge Triceratops",
+    "imagePath": "",
+    "productIds": [
+      "G3392"
+    ],
+    "productCodes": [
+      "G3392"
+    ],
+    "productNames": [
+      "Ridge Triceratops 9-80GN"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-ring-aether",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Ring Aether",
+    "imagePath": "",
+    "productIds": [
+      "G4571"
+    ],
+    "productCodes": [
+      "G4571"
+    ],
+    "productNames": [
+      "Ring Aether 0-80DS"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-roar-tyranno",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Roar Tyranno",
+    "imagePath": "",
+    "productIds": [
+      "G0284"
+    ],
+    "productCodes": [
+      "G0284"
+    ],
+    "productNames": [
+      "Roar Tyranno 9-60GF"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-rock-golem",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Rock Golem",
+    "imagePath": "",
+    "productIds": [
+      "G1676"
+    ],
+    "productCodes": [
+      "G1676"
+    ],
+    "productNames": [
+      "Rock Golem 1-60UN"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-rocket-griffon-h",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Rocket Griffon H",
+    "imagePath": "",
+    "productIds": [
+      "G4561"
+    ],
+    "productCodes": [
+      "G4561"
+    ],
+    "productNames": [
+      "Rocket Griffon H"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-rudder-phoenix",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Rudder Phoenix",
+    "imagePath": "",
+    "productIds": [
+      "G2739"
+    ],
+    "productCodes": [
+      "G2739"
+    ],
+    "productNames": [
+      "Rudder Phoenix 4-70LF"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-savage-bear",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Savage Bear",
+    "imagePath": "",
+    "productIds": [
+      "G0286",
+      "G2735"
+    ],
+    "productCodes": [
+      "G0286",
+      "G2735"
+    ],
+    "productNames": [
+      "Savage Bear 3-60S",
+      "Savage Bear 5-60F"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "blade-scale-shark",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Scale Shark",
+    "imagePath": "",
+    "productIds": [
+      "G2731"
+    ],
+    "productCodes": [
+      "G2731"
+    ],
+    "productNames": [
+      "Scale Shark 4-50UF"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-scarlet-garuda",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Scarlet Garuda",
+    "imagePath": "",
+    "productIds": [
+      "G1673"
+    ],
+    "productCodes": [
+      "G1673"
+    ],
+    "productNames": [
+      "Scarlet Garuda 4-70TP"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-scythe-incendio",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Scythe Incendio",
+    "imagePath": "",
+    "productIds": [
+      "F9583",
+      "G0285"
+    ],
+    "productCodes": [
+      "F9583",
+      "G0285"
+    ],
+    "productNames": [
+      "Scythe Incendio 4-60T",
+      "Scythe Incendio 3-80B"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "blade-shadow-shinobi",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Shadow Shinobi",
+    "imagePath": "",
+    "productIds": [
+      "G1539"
+    ],
+    "productCodes": [
+      "G1539"
+    ],
+    "productNames": [
+      "Shadow Shinobi 1-80MN"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-shatter-horus",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Shatter Horus",
+    "imagePath": "",
+    "productIds": [
+      "G4567"
+    ],
+    "productCodes": [
+      "G4567"
+    ],
+    "productNames": [
+      "Shatter Horus 9-65GB"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-shelter-drake",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Shelter Drake",
+    "imagePath": "",
+    "productIds": [
+      "G1675",
+      "G2732"
+    ],
+    "productCodes": [
+      "G1675",
+      "G2732"
+    ],
+    "productNames": [
+      "Shelter Drake 7-80GP",
+      "Shelter Drake 5-70O"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "blade-shockwave",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Shockwave",
+    "imagePath": "",
+    "productIds": [
+      "G1692"
+    ],
+    "productCodes": [
+      "G1692"
+    ],
+    "productNames": [
+      "Bumblebee and Shockwave Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-snowtrooper",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Snowtrooper",
+    "imagePath": "",
+    "productIds": [
+      "G3061"
+    ],
+    "productCodes": [
+      "G3061"
+    ],
+    "productNames": [
+      "Grogu and Snowtrooper Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-soar-phoenix",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Soar Phoenix",
+    "imagePath": "",
+    "productIds": [
+      "G1756",
+      "F9324"
+    ],
+    "productCodes": [
+      "G1756",
+      "F9324"
+    ],
+    "productNames": [
+      "Soar Phoenix 5-80H",
+      "Soar Phoenix Deluxe String Launcher Set"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "blade-spear-scorpio",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Spear Scorpio",
+    "imagePath": "",
+    "productIds": [
+      "G2758"
+    ],
+    "productCodes": [
+      "G2758"
+    ],
+    "productNames": [
+      "Spear Scorpio and Tail Viper Dual Pack"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-spider-man",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Spider-Man",
+    "imagePath": "",
+    "productIds": [
+      "G0288"
+    ],
+    "productCodes": [
+      "G0288"
+    ],
+    "productNames": [
+      "Spider-Man and Venom Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-spinosaurus",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Spinosaurus",
+    "imagePath": "",
+    "productIds": [
+      "G1899"
+    ],
+    "productCodes": [
+      "G1899"
+    ],
+    "productNames": [
+      "Spinosaurus and Quetzalcoatlus Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-starscream",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Starscream",
+    "imagePath": "",
+    "productIds": [
+      "G0352"
+    ],
+    "productCodes": [
+      "G0352"
+    ],
+    "productNames": [
+      "Optimus Primal and Starscream Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-steel-samurai",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Steel Samurai",
+    "imagePath": "",
+    "productIds": [
+      "G0188"
+    ],
+    "productCodes": [
+      "G0188"
+    ],
+    "productNames": [
+      "Steel Samurai 4-80T"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-sterling-wolf",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Sterling Wolf",
+    "imagePath": "",
+    "productIds": [
+      "G1674"
+    ],
+    "productCodes": [
+      "G1674"
+    ],
+    "productNames": [
+      "Sterling Wolf 3-80FB"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-sting-unicorn",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Sting Unicorn",
+    "imagePath": "",
+    "productIds": [
+      "G0283",
+      "G0199"
+    ],
+    "productCodes": [
+      "G0283",
+      "G0199"
+    ],
+    "productNames": [
+      "Sting Unicorn 5-60GP",
+      "Bite Croc and Sting Unicorn Dual Pack"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "blade-stormtrooper",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Stormtrooper",
+    "imagePath": "",
+    "productIds": [
+      "G1695"
+    ],
+    "productCodes": [
+      "G1695"
+    ],
+    "productNames": [
+      "Chewbacca and Stormtrooper Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-strike-dran",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Strike Dran",
+    "imagePath": "",
+    "productIds": [
+      "G2742"
+    ],
+    "productCodes": [
+      "G2742"
+    ],
+    "productNames": [
+      "Strike Dran 4-50FF"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-stun-medusa",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Stun Medusa",
+    "imagePath": "",
+    "productIds": [
+      "G2738"
+    ],
+    "productCodes": [
+      "G2738"
+    ],
+    "productNames": [
+      "Stun Medusa 9-60GB"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-sword-dran",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Sword Dran",
+    "imagePath": "",
+    "productIds": [
+      "F9580",
+      "G0197",
+      "G1543",
+      "G1688"
+    ],
+    "productCodes": [
+      "F9580",
+      "G0197",
+      "G1543",
+      "G1688"
+    ],
+    "productNames": [
+      "Sword Dran 3-60F",
+      "Tail Viper and Sword Dran Dual Pack",
+      "Gale Wyvern and Sword Dran Dual Pack",
+      "Tackle Goat and Sword Dran Dual Pack"
+    ],
+    "usageCount": 4,
+    "source": "products"
+  },
+  {
+    "id": "blade-t-rex",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "T. Rex",
+    "imagePath": "",
+    "productIds": [
+      "G1898"
+    ],
+    "productCodes": [
+      "G1898"
+    ],
+    "productNames": [
+      "T. Rex and Mosasaurus Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-tackle-goat",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Tackle Goat",
+    "imagePath": "",
+    "productIds": [
+      "G1688"
+    ],
+    "productCodes": [
+      "G1688"
+    ],
+    "productNames": [
+      "Tackle Goat and Sword Dran Dual Pack"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-tail-viper",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Tail Viper",
+    "imagePath": "",
+    "productIds": [
+      "G0197",
+      "G0282",
+      "G2758"
+    ],
+    "productCodes": [
+      "G0197",
+      "G0282",
+      "G2758"
+    ],
+    "productNames": [
+      "Tail Viper and Sword Dran Dual Pack",
+      "Gale Wyvern and Tail Viper Dual Pack",
+      "Spear Scorpio and Tail Viper Dual Pack"
+    ],
+    "usageCount": 3,
+    "source": "products"
+  },
+  {
+    "id": "blade-talon-ptera",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Talon Ptera",
+    "imagePath": "",
+    "productIds": [
+      "G0195"
+    ],
+    "productCodes": [
+      "G0195"
+    ],
+    "productNames": [
+      "Talon Ptera 3-80B"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-thanos",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Thanos",
+    "imagePath": "",
+    "productIds": [
+      "G0287"
+    ],
+    "productCodes": [
+      "G0287"
+    ],
+    "productNames": [
+      "Iron Man and Thanos Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-the-mandalorian",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "The Mandalorian",
+    "imagePath": "",
+    "productIds": [
+      "F9589"
+    ],
+    "productCodes": [
+      "F9589"
+    ],
+    "productNames": [
+      "The Mandalorian and Moff Gideon Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-tide-whale",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Tide Whale",
+    "imagePath": "",
+    "productIds": [
+      "G1669"
+    ],
+    "productCodes": [
+      "G1669"
+    ],
+    "productNames": [
+      "Tide Whale 5-80E"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-valor-bison-fb",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Valor Bison FB",
+    "imagePath": "",
+    "productIds": [
+      "G3497"
+    ],
+    "productCodes": [
+      "G3497"
+    ],
+    "productNames": [
+      "Valor Bison FB"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-venom",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Venom",
+    "imagePath": "",
+    "productIds": [
+      "G0288"
+    ],
+    "productCodes": [
+      "G0288"
+    ],
+    "productNames": [
+      "Spider-Man and Venom Multipack Set"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-wand-wizard",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Wand Wizard",
+    "imagePath": "",
+    "productIds": [
+      "G1537",
+      "G1538"
+    ],
+    "productCodes": [
+      "G1537",
+      "G1538"
+    ],
+    "productNames": [
+      "Wand Wizard 5-70DB",
+      "Wand Wizard 1-60R"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "blade-wriggle-kraken-s",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Wriggle Kraken S",
+    "imagePath": "",
+    "productIds": [
+      "G1683"
+    ],
+    "productCodes": [
+      "G1683"
+    ],
+    "productNames": [
+      "Wriggle Kraken S 3-85O"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "blade-yell-kong",
+    "type": "blade",
+    "typeLabel": "Blade",
+    "name": "Yell Kong",
+    "imagePath": "",
+    "productIds": [
+      "G1754",
+      "G0198"
+    ],
+    "productCodes": [
+      "G1754",
+      "G0198"
+    ],
+    "productNames": [
+      "Yell Kong 3-60GB",
+      "Yell Kong and Helm Knight Dual Pack"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-0-80",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "0-80",
+    "imagePath": "",
+    "productIds": [
+      "G4571"
+    ],
+    "productCodes": [
+      "G4571"
+    ],
+    "productNames": [
+      "Ring Aether 0-80DS"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-1-50",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "1-50",
+    "imagePath": "",
+    "productIds": [
+      "G4572"
+    ],
+    "productCodes": [
+      "G4572"
+    ],
+    "productNames": [
+      "Blitz Bahamut BK 1-50I"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-1-60",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "1-60",
+    "imagePath": "",
+    "productIds": [
+      "G1536",
+      "G1538",
+      "G1676",
+      "G1534"
+    ],
+    "productCodes": [
+      "G1536",
+      "G1538",
+      "G1676",
+      "G1534"
+    ],
+    "productNames": [
+      "Buster Dran 1-60A",
+      "Wand Wizard 1-60R",
+      "Rock Golem 1-60UN",
+      "Keel Shark 1-60Q"
+    ],
+    "usageCount": 4,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-1-80",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "1-80",
+    "imagePath": "",
+    "productIds": [
+      "G1539"
+    ],
+    "productCodes": [
+      "G1539"
+    ],
+    "productNames": [
+      "Shadow Shinobi 1-80MN"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-2-60",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "2-60",
+    "imagePath": "",
+    "productIds": [
+      "G2740",
+      "G1684"
+    ],
+    "productCodes": [
+      "G2740",
+      "G1684"
+    ],
+    "productNames": [
+      "Feather Phoenix 2-60N",
+      "Antler Stag B 2-60HN"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-3-60",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "3-60",
+    "imagePath": "",
+    "productIds": [
+      "F9580",
+      "G0194",
+      "G0286",
+      "G1671",
+      "G1754"
+    ],
+    "productCodes": [
+      "F9580",
+      "G0194",
+      "G0286",
+      "G1671",
+      "G1754"
+    ],
+    "productNames": [
+      "Sword Dran 3-60F",
+      "Keel Shark 3-60LF",
+      "Savage Bear 3-60S",
+      "Lance Knight 3-60LF",
+      "Yell Kong 3-60GB"
+    ],
+    "usageCount": 5,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-3-70",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "3-70",
+    "imagePath": "",
+    "productIds": [
+      "G1752"
+    ],
+    "productCodes": [
+      "G1752"
+    ],
+    "productNames": [
+      "Hammer Incendio 3-70H"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-3-80",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "3-80",
+    "imagePath": "",
+    "productIds": [
+      "F9581",
+      "G1674",
+      "G0192",
+      "G0195",
+      "G0285",
+      "F9584",
+      "F9585",
+      "G1842"
+    ],
+    "productCodes": [
+      "F9581",
+      "G1674",
+      "G0192",
+      "G0195",
+      "G0285",
+      "F9584",
+      "F9585",
+      "G1842"
+    ],
+    "productNames": [
+      "Helm Knight 3-80N",
+      "Sterling Wolf 3-80FB",
+      "Horn Rhino 3-80S",
+      "Talon Ptera 3-80B",
+      "Scythe Incendio 3-80B",
+      "Dranzer Spiral 3-80T (Red)",
+      "Dranzer Spiral 3-80T (Green)",
+      "Dranzer Spiral 3-80T"
+    ],
+    "usageCount": 8,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-3-85",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "3-85",
+    "imagePath": "",
+    "productIds": [
+      "G1683",
+      "G2733"
+    ],
+    "productCodes": [
+      "G1683",
+      "G2733"
+    ],
+    "productNames": [
+      "Wriggle Kraken S 3-85O",
+      "Gust Bat 3-85GP"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-4-50",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "4-50",
+    "imagePath": "",
+    "productIds": [
+      "G2742",
+      "G2731"
+    ],
+    "productCodes": [
+      "G2742",
+      "G2731"
+    ],
+    "productNames": [
+      "Strike Dran 4-50FF",
+      "Scale Shark 4-50UF"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-4-55",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "4-55",
+    "imagePath": "",
+    "productIds": [
+      "G1679",
+      "G2746",
+      "G4562"
+    ],
+    "productCodes": [
+      "G1679",
+      "G2746",
+      "G4562"
+    ],
+    "productNames": [
+      "Arc Wizard R 4-55LO",
+      "Reaper Rhino C 4-55D",
+      "Rage Ragna FE 4-55Y"
+    ],
+    "usageCount": 3,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-4-60",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "4-60",
+    "imagePath": "",
+    "productIds": [
+      "F9583",
+      "G2748",
+      "G1533"
+    ],
+    "productCodes": [
+      "F9583",
+      "G2748",
+      "G1533"
+    ],
+    "productNames": [
+      "Scythe Incendio 4-60T",
+      "Fang Leon T 4-60U",
+      "Obsidian Shell 4-60D"
+    ],
+    "usageCount": 3,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-4-70",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "4-70",
+    "imagePath": "",
+    "productIds": [
+      "G1673",
+      "G2739",
+      "G1678",
+      "G1670"
+    ],
+    "productCodes": [
+      "G1673",
+      "G2739",
+      "G1678",
+      "G1670"
+    ],
+    "productNames": [
+      "Scarlet Garuda 4-70TP",
+      "Rudder Phoenix 4-70LF",
+      "Reaper Incendio T 4-70K",
+      "Dagger Dran 4-70Q"
+    ],
+    "usageCount": 4,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-4-80",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "4-80",
+    "imagePath": "",
+    "productIds": [
+      "F9582",
+      "G0184",
+      "G0188",
+      "G1531",
+      "G1755",
+      "G1843"
+    ],
+    "productCodes": [
+      "F9582",
+      "G0184",
+      "G0188",
+      "G1531",
+      "G1755",
+      "G1843"
+    ],
+    "productNames": [
+      "Arrow Wizard 4-80B",
+      "Lance Knight 4-80HN",
+      "Steel Samurai 4-80T",
+      "Arrow Wizard 4-80GB",
+      "Arrow Wizard 4-80O",
+      "Driger Slash 4-80P"
+    ],
+    "usageCount": 6,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-5-60",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "5-60",
+    "imagePath": "",
+    "productIds": [
+      "G0193",
+      "G0283",
+      "G2735"
+    ],
+    "productCodes": [
+      "G0193",
+      "G0283",
+      "G2735"
+    ],
+    "productNames": [
+      "Claw Leon 5-60P",
+      "Sting Unicorn 5-60GP",
+      "Savage Bear 5-60F"
+    ],
+    "usageCount": 3,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-5-70",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "5-70",
+    "imagePath": "",
+    "productIds": [
+      "G1537",
+      "G1751",
+      "G2732",
+      "G3611"
+    ],
+    "productCodes": [
+      "G1537",
+      "G1751",
+      "G2732",
+      "G3611"
+    ],
+    "productNames": [
+      "Wand Wizard 5-70DB",
+      "Buster Dran 5-70DB",
+      "Shelter Drake 5-70O"
+    ],
+    "usageCount": 4,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-5-80",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "5-80",
+    "imagePath": "",
+    "productIds": [
+      "G2747",
+      "G1669",
+      "G1756"
+    ],
+    "productCodes": [
+      "G2747",
+      "G1669",
+      "G1756"
+    ],
+    "productNames": [
+      "Flame Cerberus W 5-80WB",
+      "Tide Whale 5-80E",
+      "Soar Phoenix 5-80H"
+    ],
+    "usageCount": 3,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-6-60",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "6-60",
+    "imagePath": "",
+    "productIds": [
+      "G1677"
+    ],
+    "productCodes": [
+      "G1677"
+    ],
+    "productNames": [
+      "Courage Dran S 6-60V"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-6-80",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "6-80",
+    "imagePath": "",
+    "productIds": [
+      "G1680"
+    ],
+    "productCodes": [
+      "G1680"
+    ],
+    "productNames": [
+      "Dark Perseus B 6-80W"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-7-55",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "7-55",
+    "imagePath": "",
+    "productIds": [
+      "G2750",
+      "G2734"
+    ],
+    "productCodes": [
+      "G2750",
+      "G2734"
+    ],
+    "productNames": [
+      "Hurricane Enlil IS 7-55T",
+      "Curse Mummy 7-55W"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-7-60",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "7-60",
+    "imagePath": "",
+    "productIds": [
+      "G1682",
+      "G2218"
+    ],
+    "productCodes": [
+      "G1682",
+      "G2218"
+    ],
+    "productNames": [
+      "Fort Hornet R 7-60T",
+      "Draciel Shield 7-60D"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-7-80",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "7-80",
+    "imagePath": "",
+    "productIds": [
+      "G1675"
+    ],
+    "productCodes": [
+      "G1675"
+    ],
+    "productNames": [
+      "Shelter Drake 7-80GP"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-8-70",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "8-70",
+    "imagePath": "",
+    "productIds": [
+      "G4563"
+    ],
+    "productCodes": [
+      "G4563"
+    ],
+    "productNames": [
+      "Armor Knight GV 8-70UN"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-9-60",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "9-60",
+    "imagePath": "",
+    "productIds": [
+      "G2738",
+      "G0284"
+    ],
+    "productCodes": [
+      "G2738",
+      "G0284"
+    ],
+    "productNames": [
+      "Stun Medusa 9-60GB",
+      "Roar Tyranno 9-60GF"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-9-65",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "9-65",
+    "imagePath": "",
+    "productIds": [
+      "G4567"
+    ],
+    "productCodes": [
+      "G4567"
+    ],
+    "productNames": [
+      "Shatter Horus 9-65GB"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-9-70",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "9-70",
+    "imagePath": "",
+    "productIds": [
+      "G1681"
+    ],
+    "productCodes": [
+      "G1681"
+    ],
+    "productNames": [
+      "Brush Fox J 9-70GR"
+    ],
+    "usageCount": 1,
+    "source": "products"
+  },
+  {
+    "id": "ratchet-9-80",
+    "type": "ratchet",
+    "typeLabel": "Ratchet",
+    "name": "9-80",
+    "imagePath": "",
+    "productIds": [
+      "G1530",
+      "G3392"
+    ],
+    "productCodes": [
+      "G1530",
+      "G3392"
+    ],
+    "productNames": [
+      "Cowl Sphinx 9-80GN",
+      "Ridge Triceratops 9-80GN"
+    ],
+    "usageCount": 2,
+    "source": "products"
+  }
+]

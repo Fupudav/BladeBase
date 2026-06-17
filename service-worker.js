@@ -1,4 +1,4 @@
-const APP_VERSION = "2026.06.17.01";
+const APP_VERSION = "2026.06.17.02";
 const APP_CACHE = `bladebase-app-${APP_VERSION}`;
 const STATIC_CACHE = `bladebase-static-${APP_VERSION}`;
 
@@ -8,6 +8,7 @@ const CORE_ASSETS = [
   "./manifest.json",
   "./version.json",
   "./data/products-fallback.json",
+  "./data/parts-fallback.json",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
   "./icons/maskable-512.png"
@@ -59,6 +60,7 @@ function isNetworkFirst(url) {
   return path === "index.html" ||
     path === "version.json" ||
     path === "products-fallback.json" ||
+    path === "parts-fallback.json" ||
     path === "manifest.json" ||
     path.endsWith(".js") ||
     path.endsWith(".css");

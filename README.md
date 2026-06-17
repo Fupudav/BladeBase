@@ -56,6 +56,25 @@ Les packs peuvent contenir plusieurs valeurs dans `blades`. Quand un produit Fir
 
 Si Firestore est vide ou indisponible, BladeBase charge immediatement `data/products-fallback.json`.
 
+Les pieces ont aussi leur propre collection publique :
+
+- `parts/{partId}`
+
+Structure conseillee pour `parts/{partId}` :
+
+- `id`
+- `type` (`blade`, `ratchet`, `bit`)
+- `typeLabel`
+- `name`
+- `imagePath`
+- `productIds`
+- `productCodes`
+- `productNames`
+- `usageCount`
+- `source`
+
+Si Firestore `parts` est vide ou indisponible, BladeBase charge `data/parts-fallback.json`.
+
 ### Importer les produits dans Firestore
 
 Ne pas creer les 119 produits a la main dans la console Firebase. Utiliser le script local :
@@ -73,7 +92,23 @@ Pour importer vraiment les documents :
 npm run import:products -- --credentials "C:\Users\rlope\Documents\bladebase-service-account.json" --apply
 ```
 
+Importer les pieces dans Firestore :
+
+```powershell
+npm run import:parts -- --credentials "C:\Users\rlope\Documents\bladebase-service-account.json"
+npm run import:parts -- --credentials "C:\Users\rlope\Documents\bladebase-service-account.json" --apply
+```
+
 Le fichier de cle privee Firebase ne doit jamais etre ajoute a GitHub. Les noms `*service-account*.json` et `*firebase-adminsdk*.json` sont ignores par `.gitignore`.
+
+Les regles Firestore doivent autoriser la lecture publique de `parts`, comme pour `products` :
+
+```js
+match /parts/{partId} {
+  allow read: if true;
+  allow write: if false;
+}
+```
 
 ## Synchronisation Firestore utilisateur
 
@@ -93,6 +128,18 @@ Les photos personnelles sont indexees dans `data/userPhotos` et stockees par pro
 
 ## Images produits
 
-BladeBase ne charge plus de photos depuis Internet. L'ordre utilise est `imagePath` depuis Firestore, puis `images/CODE.webp`, `images/CODE.jpg`, `images/CODE.jpeg`, `images/CODE.png`, puis le placeholder. Ajouter les images officielles dans `images/`, par exemple `G1536.webp` ou `G1536.jpg`.
+BladeBase ne charge plus de photos depuis Internet. Pour les produits, l'ordre utilise est `imagePath` depuis Firestore, puis `images/CODE.webp`, `images/CODE.jpg`, `images/CODE.jpeg`, `images/CODE.png`, puis le placeholder. Ajouter les images officielles dans `images/`, par exemple `G1536.webp` ou `G1536.jpg`.
 
-Le workflow GitHub Pages regenere automatiquement `images/manifest.json` a chaque deploiement. Ce manifeste permet a l'application de ne demander que les fichiers qui existent et evite les rafales de requetes 404 sur GitHub Pages. Si le site est publie sans GitHub Actions, mettre aussi a jour `images/manifest.json`.
+Pour les pieces, placer les images dans :
+
+- `images/parts/blades/`
+- `images/parts/ratchets/`
+- `images/parts/bits/`
+
+Le nom recommande est l'ID de la piece, par exemple :
+
+- `images/parts/blades/blade-sword-dran.jpg`
+- `images/parts/ratchets/ratchet-3-60.jpg`
+- `images/parts/bits/bit-f.jpg`
+
+Le workflow GitHub Pages regenere automatiquement `images/manifest.json` a chaque deploiement, y compris pour les sous-dossiers. Ce manifeste permet a l'application de ne demander que les fichiers qui existent et evite les rafales de requetes 404 sur GitHub Pages. Si le site est publie sans GitHub Actions, mettre aussi a jour `images/manifest.json`.
