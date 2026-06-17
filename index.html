@@ -412,9 +412,19 @@ const syncEls = {
 let cloudSync={
   user:null,db:null,firestore:null,busy:false,ready:false,cloudUpdatedAt:'',timer:null,lastError:'',lastCloudPayload:null,resolving:false
 };
+let authMessageHoldUntil=0;
 
 function authToast(message){ if(window.toast) window.toast(message); }
 function setAuthMessage(message){ if(authEls.message) authEls.message.textContent=message; }
+function setAuthErrorMessage(message){authMessageHoldUntil=Date.now()+15000;setAuthMessage(message);}
+function hasHeldAuthMessage(){return authEls.message?.textContent&&Date.now()<authMessageHoldUntil;}
+function authDebugEnabled(){
+  try{
+    const params=new URLSearchParams(location.search);
+    return params.get('authDebug')==='1'||localStorage.getItem('bladebase_auth_debug')==='1';
+  }catch(e){return false;}
+}
+function authDebug(...args){if(authDebugEnabled())console.debug('[BladeBase Auth]',...args);}
 function syncToast(message){ if(window.toast) window.toast(message); }
 function setSyncStatus(message){ if(syncEls.status) syncEls.status.textContent=message; }
 function formatSyncDate(value){if(!value)return '—';const d=new Date(value);return Number.isNaN(d.getTime())?String(value):d.toLocaleString('fr-FR');}
@@ -472,6 +482,14 @@ function authCredentials(){
 }
 function authErrorMessage(error){
   const code=error?.code||"";
+  if(code.includes("auth-domain-config-required")) return "Configuration Firebase incomplete : authDomain est requis.";
+  if(code.includes("operation-not-allowed")) return "La connexion Google doit etre activee dans Firebase Authentication.";
+  if(code.includes("account-exists-with-different-credential")) return "Un compte existe deja avec cette adresse via une autre methode de connexion.";
+  if(code.includes("popup-blocked")) return "La fenetre Google a ete bloquee. BladeBase va essayer par redirection.";
+  if(code.includes("operation-not-supported-in-this-environment")) return "Ce navigateur ne permet pas la fenetre Google. BladeBase va essayer par redirection.";
+  if(code.includes("network-request-failed")) return "Connexion reseau impossible. Reessaie quand Internet est disponible.";
+  if(code.includes("unauthorized-domain")) return "Ce domaine doit etre autorise dans Firebase Authentication : bladebase.fr, www.bladebase.fr et fupudav.github.io.";
+  if(code.includes("web-storage-unsupported")) return "Le navigateur bloque le stockage necessaire a Firebase Auth.";
   if(code.includes("invalid-email")) return "Adresse email invalide.";
   if(code.includes("missing-password")) return "Renseigne un mot de passe.";
   if(code.includes("weak-password")) return "Le mot de passe doit contenir au moins 6 caractères.";
@@ -480,6 +498,20 @@ function authErrorMessage(error){
   if(code.includes("popup-closed-by-user")) return "Connexion Google annulée.";
   if(code.includes("unauthorized-domain")) return "Ce domaine doit être autorisé dans Firebase Authentication.";
   return error?.message||"Action impossible pour le moment.";
+}
+function isStandalonePwa(){return window.matchMedia?.('(display-mode: standalone)')?.matches||navigator.standalone===true;}
+function isMobileLike(){return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent||'')||navigator.maxTouchPoints>1;}
+function shouldUseGoogleRedirectFallback(error){
+  const code=error?.code||"";
+  return code.includes("popup-blocked")||
+    code.includes("operation-not-supported-in-this-environment")||
+    code.includes("cancelled-popup-request")||
+    (code.includes("popup-closed-by-user")&&(isMobileLike()||isStandalonePwa()));
+}
+function validateFirebaseConfig(config){
+  const missing=['apiKey','authDomain','projectId','appId'].filter(key=>!config?.[key]);
+  if(missing.length)throw new Error(`firebase-config-missing-${missing.join('-')}`);
+  if(config.authDomain!=="bladebase-prod.firebaseapp.com")authDebug("authDomain inattendu",config.authDomain);
 }
 
 async function loadFirebaseConfig(){
@@ -495,12 +527,13 @@ async function loadFirebaseConfig(){
 try{
   const firebaseConfig=await loadFirebaseConfig();
   if(!firebaseConfig)throw new Error("firebase-config-missing");
+  validateFirebaseConfig(firebaseConfig);
   const [{initializeApp},firebaseAuth,firestoreSdk]=await Promise.all([
     import("https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js"),
     import("https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js"),
     import("https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js")
   ]);
-  const {browserLocalPersistence,createUserWithEmailAndPassword,getAuth,getRedirectResult,GoogleAuthProvider,onAuthStateChanged,sendPasswordResetEmail,setPersistence,signInWithEmailAndPassword,signInWithPopup,signInWithRedirect,signOut}=firebaseAuth;
+  const {browserLocalPersistence,createUserWithEmailAndPassword,getAuth,getRedirectResult,GoogleAuthProvider,onAuthStateChanged,sendPasswordResetEmail,setPersistence,signInWithEmailAndPassword,signInWithPopup,signInWithRedirect,signOut,useDeviceLanguage}=firebaseAuth;
   const {collection,doc,getDoc,getDocs,setDoc,getFirestore,initializeFirestore,persistentLocalCache,persistentSingleTabManager}=firestoreSdk;
   const app=initializeApp(firebaseConfig);
   const auth=getAuth(app);
@@ -512,8 +545,31 @@ try{
   window.bladeLoadFirestoreProducts?.(db,{collection,getDocs});
   window.bladeLoadFirestoreParts?.(db,{collection,getDocs});
   const googleProvider=new GoogleAuthProvider();
+  googleProvider.setCustomParameters({prompt:"select_account"});
+  useDeviceLanguage?.(auth);
   await setPersistence(auth,browserLocalPersistence);
-  await getRedirectResult(auth).catch(error=>setAuthMessage(authErrorMessage(error)));
+  async function startGoogleRedirect(reason){
+    authDebug("Google redirect fallback",reason);
+    setAuthMessage("Ouverture de la connexion Google...");
+    try{sessionStorage.setItem("bladebase_google_redirect_pending","1");}catch(e){}
+    await signInWithRedirect(auth,googleProvider);
+  }
+  const redirectWasPending=(()=>{try{return sessionStorage.getItem("bladebase_google_redirect_pending")==="1";}catch(e){return false;}})();
+  try{
+    const redirectResult=await getRedirectResult(auth);
+    try{sessionStorage.removeItem("bladebase_google_redirect_pending");}catch(e){}
+    if(redirectResult?.user){
+      authDebug("Google redirect success",redirectResult.user.uid);
+      authToast("Connecte avec Google");
+      setAuthMessage("Connexion Google reussie. La session est conservee automatiquement.");
+    }else if(redirectWasPending){
+      authDebug("Google redirect returned without user");
+    }
+  }catch(error){
+    try{sessionStorage.removeItem("bladebase_google_redirect_pending");}catch(e){}
+    authDebug("Google redirect error",error);
+    setAuthErrorMessage(authErrorMessage(error));
+  }
 
   const refFor=(uid,path)=>doc(db,`users/${uid}/${path}`);
   const collectionFor=(uid,path)=>collection(db,`users/${uid}/${path}`);
@@ -628,6 +684,7 @@ try{
 
   onAuthStateChanged(auth,user=>{
     if(user){
+      authMessageHoldUntil=0;
       if(authEls.status)authEls.status.textContent="Connecté";
       if(authEls.email)authEls.email.textContent=user.email||"—";
       if(authEls.name)authEls.name.textContent=user.displayName||"—";
@@ -639,7 +696,7 @@ try{
       if(authEls.status)authEls.status.textContent="Non connecté";
       if(authEls.email)authEls.email.textContent="—";
       if(authEls.name)authEls.name.textContent="—";
-      setAuthMessage("Non connecté. Tu peux utiliser BladeBase localement sans compte.");
+      if(!hasHeldAuthMessage())setAuthMessage("Non connecté. Tu peux utiliser BladeBase localement sans compte.");
       authEls.logout?.setAttribute("disabled","disabled");
     }
   });
@@ -653,8 +710,22 @@ try{
     catch(error){setAuthMessage(authErrorMessage(error));}
   });
   authEls.google?.addEventListener("click",async()=>{
-    try{await signInWithPopup(auth,googleProvider);authToast("Connecté avec Google");}
-    catch(error){if(error?.code==="auth/popup-blocked"){await signInWithRedirect(auth,googleProvider);}else{setAuthMessage(authErrorMessage(error));}}
+    setAuthMessage("Connexion Google en cours...");
+    authDebug("Google popup attempt",{standalone:isStandalonePwa(),mobile:isMobileLike(),host:location.host});
+    try{
+      await signInWithPopup(auth,googleProvider);
+      authToast("Connecté avec Google");
+      setAuthMessage("Connexion Google réussie. La session est conservée automatiquement.");
+    }catch(error){
+      authDebug("Google popup error",error);
+      if(shouldUseGoogleRedirectFallback(error)){
+        setAuthMessage(authErrorMessage(error));
+        try{await startGoogleRedirect(error?.code||"popup-fallback");}
+        catch(redirectError){authDebug("Google redirect start error",redirectError);setAuthErrorMessage(authErrorMessage(redirectError));}
+      }else{
+        setAuthErrorMessage(authErrorMessage(error));
+      }
+    }
   });
   authEls.reset?.addEventListener("click",async()=>{
     try{const email=(authEls.inputEmail?.value||"").trim();if(!email)throw new Error("Renseigne une adresse email.");await sendPasswordResetEmail(auth,email);authToast("Email de réinitialisation envoyé");setAuthMessage("Email de réinitialisation envoyé si le compte existe.");}

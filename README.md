@@ -22,6 +22,14 @@ Pour GitHub Pages, utiliser le workflow GitHub Actions fourni et configurer :
 
 Dans Firebase Console, ajouter le domaine GitHub Pages et le domaine personnalise dans Authentication > Settings > Authorized domains. Restreindre la cle web aux domaines autorises dans Google Cloud Console, puis remplacer/rotater la cle si GitHub signale une ancienne exposition. Ne pas integrer la cle Firebase directement dans `index.html`.
 
+Pour la connexion Google, verifier aussi que le fournisseur Google est active dans Firebase Authentication et que ces domaines sont autorises :
+
+- `bladebase.fr`
+- `www.bladebase.fr`
+- `fupudav.github.io`
+
+Le flux Google tente d'abord une fenetre popup, puis bascule vers une redirection quand le navigateur ou la PWA bloque la popup. Les logs de diagnostic sont desactives par defaut et peuvent etre actives avec `?authDebug=1` ou `localStorage.setItem('bladebase_auth_debug','1')`.
+
 ## Produits Firestore
 
 Les produits sont charges depuis Firestore quand la collection publique `products` contient des documents. Chaque document doit garder le meme identifiant que l'ancien produit local (`code` quand il existe, sinon le nom nettoye) afin de conserver les collections utilisateur existantes.
