@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "import:products": "node scripts/import-products-firestore.mjs"
+    "import:products": "node scripts/import-products-firestore.mjs",
+    "import:parts": "node scripts/import-parts-firestore.mjs"
   },
   "dependencies": {
     "firebase-admin": "^13.0.0"
