@@ -28,6 +28,51 @@ function requiredString(product, field) {
   return typeof product[field] === "string" && product[field].trim().length > 0;
 }
 
+function plainText(value, max = 500) {
+  return String(value || "").replace(/[<>`]/g, "").replace(/\s+/g, " ").trim().slice(0, max);
+}
+
+function normalizePartList(value, max = 90) {
+  const raw = Array.isArray(value) ? value : value ? [value] : [];
+  return [...new Set(raw.map((item) => plainText(item, max)).filter(Boolean))];
+}
+
+function makeProductParts(blades = [], ratchets = [], bits = [], source = "manual") {
+  return {
+    blades: normalizePartList(blades),
+    ratchets: normalizePartList(ratchets, 40),
+    bits: normalizePartList(bits, 40),
+    source: plainText(source || "manual", 30)
+  };
+}
+
+function inferProductPartsFromName(name = "") {
+  const base = plainText(name, 220)
+    .replace(/\s*\([^)]*\)\s*$/, "")
+    .replace(/\s+(Starter|Booster|Dual|Multipack|Battle|Deluxe|String|Launcher|Custom|Grip|Left-Spin|Set|Pack).*$/i, "")
+    .trim();
+  const combo = base.match(/^(.+?)\s+(\d+-\d+)\s*([A-Z]{1,3})$/);
+  if (combo) return makeProductParts([combo[1]], [combo[2]], [combo[3]], "auto");
+  if (/\s+and\s+/i.test(base)) return makeProductParts(base.split(/\s+and\s+/i), [], [], "auto");
+  if (base && !/Beystadium|Launcher|Grip|Battle|Pack|Set|Beyblade|X-treme|Yggdrasil Team|Winder|Victory|Clip & Rip|Drop Attack|Sneak Attack|Xtreme/i.test(base)) {
+    return makeProductParts([base], [], [], "auto");
+  }
+  return makeProductParts([], [], [], "auto");
+}
+
+function normalizeProductParts(parts = {}, name = "") {
+  const normalized = makeProductParts(
+    parts.blades ?? parts.blade,
+    parts.ratchets ?? parts.ratchet,
+    parts.bits ?? parts.bit,
+    parts.source || "manual"
+  );
+  if (!normalized.blades.length && !normalized.ratchets.length && !normalized.bits.length && name) {
+    return inferProductPartsFromName(name);
+  }
+  return normalized;
+}
+
 function normalizeProduct(product) {
   return {
     id: String(product.id || product.code || product.name || "").trim(),
@@ -40,7 +85,8 @@ function normalizeProduct(product) {
     color: String(product.color || "").trim(),
     type: String(product.type || "").trim(),
     imagePath: String(product.imagePath || "").trim(),
-    note: String(product.note || "").trim()
+    note: String(product.note || "").trim(),
+    parts: normalizeProductParts(product.parts, product.name)
   };
 }
 
@@ -63,6 +109,9 @@ products.forEach((product, index) => {
   if (product.id && ids.has(product.id)) errors.push(`ID duplique: ${product.id}`);
   if (product.id) ids.add(product.id);
   if (!validTypes.has(product.type)) errors.push(`${product.id || `Produit #${index + 1}`}: type invalide "${product.type}".`);
+  if (!product.parts || !Array.isArray(product.parts.blades) || !Array.isArray(product.parts.ratchets) || !Array.isArray(product.parts.bits)) {
+    errors.push(`${product.id || `Produit #${index + 1}`}: parts invalide.`);
+  }
 });
 
 if (errors.length) {

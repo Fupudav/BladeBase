@@ -56,14 +56,35 @@ let state=loadState();
 function ensureStateMeta(){if(!state._meta||typeof state._meta!=='object')state._meta={};return state._meta}
 function safePlainText(value,max=500){return String(value||'').replace(/[<>`]/g,'').replace(/\s+/g,' ').trim().slice(0,max)}
 function typeOf(p){return safePlainText(p.type||'',40)}
+function normalizePartList(value,max=90){
+  const raw=Array.isArray(value)?value:(value?[value]:[]);
+  return [...new Set(raw.map(x=>safePlainText(x,max)).filter(x=>x&&x!=='—'))];
+}
+function makeProductParts(blades=[],ratchets=[],bits=[],source='manual'){
+  return {blades:normalizePartList(blades),ratchets:normalizePartList(ratchets,40),bits:normalizePartList(bits,40),source:safePlainText(source||'manual',30)};
+}
+function inferProductPartsFromName(name=''){
+  const sourceName=safePlainText(name,220);
+  const base=sourceName.replace(/\s*\([^)]*\)\s*$/,'').replace(/\s+(Starter|Booster|Dual|Multipack|Battle|Deluxe|String|Launcher|Custom|Grip|Left-Spin|Set|Pack).*$/i,'').trim();
+  const combo=base.match(/^(.+?)\s+(\d+-\d+)\s*([A-Z]{1,3})$/);
+  if(combo)return makeProductParts([combo[1]],[combo[2]],[combo[3]],'auto');
+  if(/\s+and\s+/i.test(base))return makeProductParts(base.split(/\s+and\s+/i),'','','auto');
+  if(base&&!/Beystadium|Launcher|Grip|Battle|Pack|Set|Beyblade|X-treme|Yggdrasil Team|Winder|Victory|Clip & Rip|Drop Attack|Sneak Attack|Xtreme/i.test(base))return makeProductParts([base],[],[],'auto');
+  return makeProductParts([],[],[],'auto');
+}
+function normalizeProductParts(parts={},name=''){
+  const normalized=makeProductParts(parts.blades??parts.blade,parts.ratchets??parts.ratchet,parts.bits??parts.bit,parts.source||'manual');
+  if(!normalized.blades.length&&!normalized.ratchets.length&&!normalized.bits.length&&name)return inferProductPartsFromName(name);
+  return normalized;
+}
 function normalizeProduct(p={},fallbackId=''){
-  const clean={id:safePlainText(p.id||fallbackId||p.code||p.name,180),cat:safePlainText(p.cat,160),code:safePlainText(p.code,80),name:safePlainText(p.name,220),date:safePlainText(p.date,160),price:safePlainText(p.price,160),color:safePlainText(p.color,180),wave:safePlainText(p.wave,80),note:safePlainText(p.note,1200),type:safePlainText(p.type,40),imagePath:safePlainText(p.imagePath,260)};
+  const clean={id:safePlainText(p.id||fallbackId||p.code||p.name,180),cat:safePlainText(p.cat,160),code:safePlainText(p.code,80),name:safePlainText(p.name,220),date:safePlainText(p.date,160),price:safePlainText(p.price,160),color:safePlainText(p.color,180),wave:safePlainText(p.wave,80),note:safePlainText(p.note,1200),type:safePlainText(p.type,40),imagePath:safePlainText(p.imagePath,260),parts:normalizeProductParts(p.parts,p.name)};
   clean.id=clean.id||idOf(clean);
   clean.wave=clean.wave||waveOf(clean);
   return clean;
 }
 function normalizeCustomProduct(p={}){
-  const clean={cat:safePlainText(p.cat||'Autre',120),code:safePlainText(p.code||'',80),name:safePlainText(p.name||'',180),date:safePlainText(p.date||'',120),price:safePlainText(p.price||'',120),color:safePlainText(p.color||'',160),wave:safePlainText(p.wave||'',80),custom:true,note:safePlainText(p.note||'',1200)};
+  const clean={cat:safePlainText(p.cat||'Autre',120),code:safePlainText(p.code||'',80),name:safePlainText(p.name||'',180),date:safePlainText(p.date||'',120),price:safePlainText(p.price||'',120),color:safePlainText(p.color||'',160),wave:safePlainText(p.wave||'',80),custom:true,note:safePlainText(p.note||'',1200),parts:normalizeProductParts(p.parts,p.name)};
   if(!clean.code)clean.code='CUSTOM-'+Date.now();
   clean.wave=clean.wave||waveOf(clean);
   return clean;
@@ -198,10 +219,12 @@ function simpleDateKey(p){const y=(p.date||'').match(/20\d{2}/);const months={Ja
 function renderHunter(){const arr=products.filter(p=>!owned(p)||statusOf(p)==='wanted').sort((a,b)=>priorityRank(rec(b).priority)-priorityRank(rec(a).priority)||simpleDateKey(a).localeCompare(simpleDateKey(b)));$('#hunterList').innerHTML=arr.map(p=>`<div class="galleryCard"><img src="${imgOf(p)}" loading="lazy" decoding="async" data-action="openImage" data-id="${idOf(p)}" data-try="0" onerror="nextImg(this)"><div class="galleryName clickName" data-action="details" data-id="${idOf(p)}">${esc(p.name)}</div><div class="galleryMeta"><span class="code">${p.code||'—'}</span> · ${esc(p.wave)} · ${esc(p.cat)}</div><div class="small">Priorité : <b>${rec(p).priority||'Non définie'}</b><br>Date : ${esc(p.date||'—')}<br>Prix : ${esc(p.price||'—')}<br>Couleur : ${esc(colorOf(p))}</div></div>`).join('')||'<div class="empty">Rien à chasser.</div>';bindRows()}
 function priorityRank(v){return v==='Haute'?3:v==='Moyenne'?2:v==='Basse'?1:0}
 function renderTimeline(){const map={};products.forEach(p=>{yearsOf(p).forEach(y=>{if(!map[y])map[y]=[];map[y].push(p)})});$('#timelineContent').innerHTML=Object.keys(map).sort().map(y=>`<div class="timelineItem"><div class="timelineDate">${y} — ${map[y].length} produits</div><div class="timelineList">${map[y].sort((a,b)=>simpleDateKey(a).localeCompare(simpleDateKey(b))).map(p=>`<span class="pill ${owned(p)?'good':''}">${owned(p)?'✅':'⬜'} ${esc(p.code||'—')} ${esc(p.name)}</span>`).join('')}</div></div>`).join('')}
-function splitParts(p){const name=p.name.replace(/\s+(Starter|Booster|Dual|Multipack|Set|Pack).*$/i,''); const m=name.match(/(.+?)\s+(\d+-\d+|\d+-\d+[A-Z]?|[A-Z]+\s*\d+-\d+)?([A-Z]{1,3})?$/); let rat='',bit='',blade=name; const rb=name.match(/(.+)\s+(\d+-\d+)\s*([A-Z]{1,3})$/); if(rb){blade=rb[1];rat=rb[2];bit=rb[3]} return {blade:blade.trim(),ratchet:rat||'—',bit:bit||'—'} }
-function renderParts(){const groups={blade:{},ratchet:{},bit:{}};products.forEach(p=>{const parts=splitParts(p);Object.entries(parts).forEach(([k,v])=>{if(!v||v==='—')return;if(!groups[k][v])groups[k][v]=[];groups[k][v].push(p)})});const draw=(el,obj,kind)=>{$(el).innerHTML=Object.entries(obj).sort((a,b)=>b[1].length-a[1].length).map(([k,arr])=>`<div class="partRow"><span><b class="partLink" data-action="partSearch" data-kind="${kind}" data-term="${esc(k)}">${esc(k)}</b><div class="small">${arr.slice(0,4).map(p=>p.code||p.name).join(', ')}${arr.length>4?'…':''}</div></span><span class="chip">${arr.length}</span></div>`).join('')};draw('#bladeParts',groups.blade,'blade');draw('#ratchetParts',groups.ratchet,'ratchet');draw('#bitParts',groups.bit,'bit');bindRows()}
+function productPartValues(p,kind){const parts=normalizeProductParts(p.parts,p.name);const key=kind==='blade'?'blades':kind==='ratchet'?'ratchets':'bits';return parts[key]||[]}
+function allProductPartValues(p){return ['blade','ratchet','bit'].flatMap(k=>productPartValues(p,k))}
+function splitParts(p){const parts=normalizeProductParts(p.parts,p.name);return {blade:parts.blades[0]||'—',ratchet:parts.ratchets[0]||'—',bit:parts.bits[0]||'—'} }
+function renderParts(){const groups={blade:{},ratchet:{},bit:{}};products.forEach(p=>{['blade','ratchet','bit'].forEach(kind=>{productPartValues(p,kind).forEach(v=>{if(!groups[kind][v])groups[kind][v]=[];groups[kind][v].push(p)})})});const draw=(el,obj,kind)=>{$(el).innerHTML=Object.entries(obj).sort((a,b)=>b[1].length-a[1].length).map(([k,arr])=>`<div class="partRow"><span><b class="partLink" data-action="partSearch" data-kind="${kind}" data-term="${esc(k)}">${esc(k)}</b><div class="small">${arr.slice(0,4).map(p=>p.code||p.name).join(', ')}${arr.length>4?'…':''}</div></span><span class="chip">${arr.length}</span></div>`).join('')||'<div class="empty">Aucune pièce renseignée.</div>'};draw('#bladeParts',groups.blade,'blade');draw('#ratchetParts',groups.ratchet,'ratchet');draw('#bitParts',groups.bit,'bit');bindRows()}
 function renderTrades(){const dups=products.filter(p=>(parseInt(rec(p).qty||'1',10)||0)>1||statusOf(p)==='duplicate');$('#duplicateList').innerHTML=dups.map(p=>`<div class="achievement done"><b>${esc(p.name)}</b><span>${rec(p).qty||'2'} ex.</span></div>`).join('')||'<div class="empty">Aucun doublon déclaré.</div>';const wants=products.filter(p=>statusOf(p)==='wanted'||rec(p).priority==='Haute'&&!owned(p));$('#wantedTradeList').innerHTML=wants.map(p=>`<div class="achievement"><b>${esc(p.name)}</b><span>${esc(rec(p).priority||'Wishlist')}</span></div>`).join('')||'<div class="empty">Aucune recherche.</div>'}
-function askAssistant(){const q=$('#assistantQuestion').value.toLowerCase();let ans='';const missing=products.filter(p=>!owned(p)), own=products.filter(owned), wants=products.filter(p=>statusOf(p)==='wanted'), dups=products.filter(p=>(parseInt(rec(p).qty||'1',10)||0)>1||statusOf(p)==='duplicate');if(q.includes('valeur')||q.includes('budget')){const spent=products.reduce((s,p)=>s+moneyNum(rec(p).paid),0), val=products.reduce((s,p)=>s+moneyNum(rec(p).estimated),0);ans=`Budget saisi : ${spent.toFixed(2)} €\nValeur estimée : ${val.toFixed(2)} €\nDifférence : ${(val-spent).toFixed(2)} €`;}else if(q.includes('doublon')){ans=dups.length?dups.map(p=>`- ${p.code||'—'} ${p.name} x${rec(p).qty||2}`).join('\n'):'Aucun doublon déclaré.';}else if(q.includes('wishlist')||q.includes('veux')){ans=wants.length?wants.map(p=>`- ${p.code||'—'} ${p.name} (${p.wave})`).join('\n'):'Ta wishlist est vide.';}else if(q.includes('pièce')||q.includes('piece')||q.includes('ratchet')||q.includes('bit')||q.includes('blade')){const term=q.match(/[0-9]-[0-9]{2}|[a-z]{1,3}$/i)?.[0]; const arr=products.filter(p=>p.name.toLowerCase().includes(term||'')); ans=term&&arr.length?arr.map(p=>`- ${p.code||'—'} ${p.name}`).join('\n'):'Va dans l’onglet Pièces pour voir les Blades, Ratchets et Bits détectés.';}else if(q.includes('bx')||q.includes('ux')||q.includes('cx')||q.includes('infinity')){const wave=q.includes('infinity')?'Infinity':q.includes('cx')?'CX':q.includes('ux')?'UX':'BX';const arr=missing.filter(p=>p.wave===wave);ans=arr.length?`Il te manque ${arr.length} produit(s) ${wave} :\n`+arr.map(p=>`- ${p.code||'—'} ${p.name}`).join('\n'):`Tu as tout ce qui est classé ${wave}.`;}else{ans=`Résumé : ${own.length}/${products.length} possédés (${Math.round(own.length/products.length*100)}%).\nManquants : ${missing.length}. Wishlist : ${wants.length}. Doublons : ${dups.length}.\nEssaie : “Quels BX me manquent ?”, “mes doublons”, “valeur totale”, “wishlist 2026”.`;}$('#assistantAnswer').textContent=ans}
+function askAssistant(){const q=$('#assistantQuestion').value.toLowerCase();let ans='';const missing=products.filter(p=>!owned(p)), own=products.filter(owned), wants=products.filter(p=>statusOf(p)==='wanted'), dups=products.filter(p=>(parseInt(rec(p).qty||'1',10)||0)>1||statusOf(p)==='duplicate');if(q.includes('valeur')||q.includes('budget')){const spent=products.reduce((s,p)=>s+moneyNum(rec(p).paid),0), val=products.reduce((s,p)=>s+moneyNum(rec(p).estimated),0);ans=`Budget saisi : ${spent.toFixed(2)} €\nValeur estimée : ${val.toFixed(2)} €\nDifférence : ${(val-spent).toFixed(2)} €`;}else if(q.includes('doublon')){ans=dups.length?dups.map(p=>`- ${p.code||'—'} ${p.name} x${rec(p).qty||2}`).join('\n'):'Aucun doublon déclaré.';}else if(q.includes('wishlist')||q.includes('veux')){ans=wants.length?wants.map(p=>`- ${p.code||'—'} ${p.name} (${p.wave})`).join('\n'):'Ta wishlist est vide.';}else if(q.includes('pièce')||q.includes('piece')||q.includes('ratchet')||q.includes('bit')||q.includes('blade')){const term=q.match(/[0-9]-[0-9]{2}|[a-z]{1,3}$/i)?.[0]; const needle=(term||'').toLowerCase(); const arr=products.filter(p=>p.name.toLowerCase().includes(needle)||allProductPartValues(p).some(v=>v.toLowerCase()===needle||v.toLowerCase().includes(needle))); ans=term&&arr.length?arr.map(p=>`- ${p.code||'—'} ${p.name}`).join('\n'):'Va dans l’onglet Pièces pour voir les Blades, Ratchets et Bits détectés.';}else if(q.includes('bx')||q.includes('ux')||q.includes('cx')||q.includes('infinity')){const wave=q.includes('infinity')?'Infinity':q.includes('cx')?'CX':q.includes('ux')?'UX':'BX';const arr=missing.filter(p=>p.wave===wave);ans=arr.length?`Il te manque ${arr.length} produit(s) ${wave} :\n`+arr.map(p=>`- ${p.code||'—'} ${p.name}`).join('\n'):`Tu as tout ce qui est classé ${wave}.`;}else{ans=`Résumé : ${own.length}/${products.length} possédés (${Math.round(own.length/products.length*100)}%).\nManquants : ${missing.length}. Wishlist : ${wants.length}. Doublons : ${dups.length}.\nEssaie : “Quels BX me manquent ?”, “mes doublons”, “valeur totale”, “wishlist 2026”.`;}$('#assistantAnswer').textContent=ans}
 
 function packContents(p){
   const base=(p.name||'').replace(/\s+(Dual Pack|Multipack Set|Multipack|Battle Set|Starter Pack|Booster Pack|Set)$/i,'');
@@ -211,13 +234,13 @@ function packContents(p){
   return [p.name];
 }
 function similarProducts(p){
-  const parts=splitParts(p);
+  const parts=new Set(allProductPartValues(p));
   const yr=yearsOf(p)[0];
-  return products.filter(x=>x!==p && (x.wave===p.wave || x.cat===p.cat || yearsOf(x).includes(yr) || Object.values(splitParts(x)).some(v=>v&&v!=='—'&&Object.values(parts).includes(v)))).slice(0,12);
+  return products.filter(x=>x!==p && (x.wave===p.wave || x.cat===p.cat || yearsOf(x).includes(yr) || allProductPartValues(x).some(v=>parts.has(v)))).slice(0,12);
 }
 function productsUsingPart(kind,value,current){
   if(!value||value==='—')return [];
-  return products.filter(p=>p!==current && splitParts(p)[kind]===value);
+  return products.filter(p=>p!==current && productPartValues(p,kind).includes(value));
 }
 function galleryForProduct(p){
   const arr=imageCandidates(p).filter(x=>x && !x.startsWith('data:image/svg+xml'));
@@ -235,10 +258,10 @@ function partLabel(kind){return kind==='blade'?'Blade / lame':kind==='ratchet'?'
 function showPartPage(kind,term){
   if(!term)return;
   if(!kind){
-    const hits=['blade','ratchet','bit'].map(k=>[k,products.filter(p=>splitParts(p)[k]===term)]).filter(x=>x[1].length);
+    const hits=['blade','ratchet','bit'].map(k=>[k,products.filter(p=>productPartValues(p,k).includes(term))]).filter(x=>x[1].length);
     kind=hits[0]?.[0]||'blade';
   }
-  const uses=products.filter(p=>splitParts(p)[kind]===term);
+  const uses=products.filter(p=>productPartValues(p,kind).includes(term));
   const ownedUses=uses.filter(owned);
   const variants=[...new Set(uses.map(p=>p.wave).filter(Boolean))].join(' / ')||'—';
   const cats=[...new Set(uses.map(p=>p.cat).filter(Boolean))].join(' / ')||'—';
@@ -252,10 +275,10 @@ function showPartPage(kind,term){
   forcedView='part'; showMainView('part'); bindRows(); window.scrollTo({top:0,behavior:'smooth'});
 }
 function showProductPage(p){
-  const r=rec(p), parts=splitParts(p), id=idOf(p);
+  const r=rec(p), parts=normalizeProductParts(p.parts,p.name), id=idOf(p);
   const content=packContents(p);
   const rel=similarProducts(p);
-  const partBlock=(label,kind,val)=>`<div class="kv"><b>${label}</b><span>${val&&val!=='—'?`<span class="partLink" data-action="partSearch" data-kind="${kind}" data-term="${esc(val)}">${esc(val)}</span> <span class="small">(${productsUsingPart(kind,val,p).length} autre(s) produit(s))</span>`:'—'}</span></div>`;
+  const partBlock=(label,kind,vals)=>`<div class="kv"><b>${label}</b><span>${vals.length?vals.map(val=>`<span class="partLink" data-action="partSearch" data-kind="${kind}" data-term="${esc(val)}">${esc(val)}</span> <span class="small">(${productsUsingPart(kind,val,p).length} autre(s) produit(s))</span>`).join('<br>'):'—'}</span></div>`;
   $('#productDetailContent').innerHTML=`
   <div class="detailHero">
     <div><img class="detailPhoto" src="${imgOf(p)}" loading="eager" decoding="async" data-action="openImage" data-id="${id}" data-try="0" onerror="nextImg(this)"><div class="detailActions"><label class="photoBtn primary"><input type="file" accept="image/*" data-action="imagefile" data-id="${id}" style="display:none">Ajouter photo perso</label></div></div>
@@ -264,7 +287,7 @@ function showProductPage(p){
     <div class="infoBox"><h3>Mes informations</h3><div class="kv"><b>Prix payé</b><input data-action="paid" data-id="${id}" value="${esc(r.paid)}" placeholder="Ex : 12,99 €"></div><div class="kv"><b>Valeur actuelle</b><input data-action="estimated" data-id="${id}" value="${esc(r.estimated)}" placeholder="Ex : 18 €"></div><div class="kv"><b>Date achat</b><input data-action="buyDate" data-id="${id}" type="date" value="${esc(r.buyDate)}"></div><div class="kv"><b>État</b><select data-action="condition" data-id="${id}"><option value="">État</option><option ${r.condition==='Neuf scellé'?'selected':''}>Neuf scellé</option><option ${r.condition==='Complet ouvert'?'selected':''}>Complet ouvert</option><option ${r.condition==='Incomplet'?'selected':''}>Incomplet</option><option ${r.condition==='Abîmé'?'selected':''}>Abîmé</option></select></div></div></div></div>
   </div>
   <div class="detailGrid">
-    <div class="infoBox"><h3>Composition détectée</h3>${partBlock('Blade / base','blade',parts.blade)}${partBlock('Ratchet','ratchet',parts.ratchet)}${partBlock('Bit','bit',parts.bit)}<div class="small">Détection automatique depuis le nom. Pour certains packs/collabs, vérifie manuellement.</div></div>
+    <div class="infoBox"><h3>Composition des pièces</h3>${partBlock('Blade / base','blade',parts.blades)}${partBlock('Ratchet','ratchet',parts.ratchets)}${partBlock('Bit','bit',parts.bits)}<div class="small">Utilise le champ parts du produit quand il existe, puis une détection depuis le nom en secours.</div></div>
     <div class="infoBox"><h3>Contenu du pack</h3>${content.map(x=>`<div class="kv"><b>Élément</b><span>${esc(x)}</span></div>`).join('')}</div>
     <div class="infoBox"><h3>Notes personnelles</h3><textarea data-action="note" data-id="${id}" placeholder="Où acheté, variante, boîte, défaut, recherche…">${esc(r.note)}</textarea></div>
     <div class="infoBox"><h3>Galerie</h3><div class="galleryLine">${galleryForProduct(p)}</div></div>
