@@ -8,7 +8,7 @@ Publier les fichiers a la racine de la branche GitHub Pages. A chaque livraison,
 
 ## Firebase Authentication
 
-La configuration Firebase est fournie par `firebase-config.js`, genere par GitHub Actions ou cree localement depuis `firebase-config.example.js`. Si ce fichier est absent, BladeBase reste utilisable en local, mais Firebase Authentication, Firestore utilisateur et Firestore produits/pieces sont desactives pour cette session.
+La configuration Firebase est fournie par `firebase-config.js`, publie avec l'application afin que Firebase Authentication, Firestore utilisateur et Firestore produits/pieces restent disponibles sur GitHub Pages meme quand le site est deploye depuis la branche racine. `firebase-config.example.js` reste disponible comme modele pour un autre projet Firebase.
 
 Pour GitHub Pages, utiliser le workflow GitHub Actions fourni et configurer :
 
