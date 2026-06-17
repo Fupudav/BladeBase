@@ -10,7 +10,19 @@
         "wave":  "BX",
         "note":  "",
         "type":  "Attack",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Sword Dran"
+            ],
+            "ratchets":  [
+                "3-60"
+            ],
+            "bits":  [
+                "F"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "F9581",
@@ -23,7 +35,19 @@
         "wave":  "BX",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Helm Knight"
+            ],
+            "ratchets":  [
+                "3-80"
+            ],
+            "bits":  [
+                "N"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "F9582",
@@ -36,7 +60,19 @@
         "wave":  "BX",
         "note":  "",
         "type":  "Stamina",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Arrow Wizard"
+            ],
+            "ratchets":  [
+                "4-80"
+            ],
+            "bits":  [
+                "B"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "F9583",
@@ -49,7 +85,19 @@
         "wave":  "BX",
         "note":  "",
         "type":  "Balance",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Scythe Incendio"
+            ],
+            "ratchets":  [
+                "4-60"
+            ],
+            "bits":  [
+                "T"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0184",
@@ -62,7 +110,19 @@
         "wave":  "BX",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Lance Knight"
+            ],
+            "ratchets":  [
+                "4-80"
+            ],
+            "bits":  [
+                "HN"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0193",
@@ -75,7 +135,19 @@
         "wave":  "BX",
         "note":  "",
         "type":  "Balance",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Claw Leon"
+            ],
+            "ratchets":  [
+                "5-60"
+            ],
+            "bits":  [
+                "P"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1536",
@@ -88,7 +160,19 @@
         "wave":  "UX",
         "note":  "",
         "type":  "Attack",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Buster Dran"
+            ],
+            "ratchets":  [
+                "1-60"
+            ],
+            "bits":  [
+                "A"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1537",
@@ -101,7 +185,19 @@
         "wave":  "UX",
         "note":  "",
         "type":  "Stamina",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Wand Wizard"
+            ],
+            "ratchets":  [
+                "5-70"
+            ],
+            "bits":  [
+                "DB"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1538",
@@ -114,7 +210,19 @@
         "wave":  "UX",
         "note":  "",
         "type":  "Attack",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Wand Wizard"
+            ],
+            "ratchets":  [
+                "1-60"
+            ],
+            "bits":  [
+                "R"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1539",
@@ -127,7 +235,19 @@
         "wave":  "UX",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Shadow Shinobi"
+            ],
+            "ratchets":  [
+                "1-80"
+            ],
+            "bits":  [
+                "MN"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1673",
@@ -140,7 +260,19 @@
         "wave":  "UX",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Scarlet Garuda"
+            ],
+            "ratchets":  [
+                "4-70"
+            ],
+            "bits":  [
+                "TP"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1674",
@@ -153,7 +285,19 @@
         "wave":  "UX",
         "note":  "",
         "type":  "Stamina",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Sterling Wolf"
+            ],
+            "ratchets":  [
+                "3-80"
+            ],
+            "bits":  [
+                "FB"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1675",
@@ -166,7 +310,19 @@
         "wave":  "UX",
         "note":  "",
         "type":  "Balance",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Shelter Drake"
+            ],
+            "ratchets":  [
+                "7-80"
+            ],
+            "bits":  [
+                "GP"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1676",
@@ -179,7 +335,19 @@
         "wave":  "UX",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Rock Golem"
+            ],
+            "ratchets":  [
+                "1-60"
+            ],
+            "bits":  [
+                "UN"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1751",
@@ -192,7 +360,19 @@
         "wave":  "UX",
         "note":  "",
         "type":  "Stamina",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Buster Dran"
+            ],
+            "ratchets":  [
+                "5-70"
+            ],
+            "bits":  [
+                "DB"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1752",
@@ -205,7 +385,19 @@
         "wave":  "UX",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Hammer Incendio"
+            ],
+            "ratchets":  [
+                "3-70"
+            ],
+            "bits":  [
+                "H"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2738",
@@ -218,7 +410,19 @@
         "wave":  "UX",
         "note":  "",
         "type":  "Stamina",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Stun Medusa"
+            ],
+            "ratchets":  [
+                "9-60"
+            ],
+            "bits":  [
+                "GB"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2739",
@@ -231,7 +435,19 @@
         "wave":  "UX",
         "note":  "",
         "type":  "Attack",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Rudder Phoenix"
+            ],
+            "ratchets":  [
+                "4-70"
+            ],
+            "bits":  [
+                "LF"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2740",
@@ -244,7 +460,19 @@
         "wave":  "UX",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Feather Phoenix"
+            ],
+            "ratchets":  [
+                "2-60"
+            ],
+            "bits":  [
+                "N"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1677",
@@ -257,7 +485,19 @@
         "wave":  "CX",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Courage Dran S"
+            ],
+            "ratchets":  [
+                "6-60"
+            ],
+            "bits":  [
+                "V"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1678",
@@ -270,7 +510,19 @@
         "wave":  "CX",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Reaper Incendio T"
+            ],
+            "ratchets":  [
+                "4-70"
+            ],
+            "bits":  [
+                "K"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1679",
@@ -283,7 +535,19 @@
         "wave":  "CX",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Arc Wizard R"
+            ],
+            "ratchets":  [
+                "4-55"
+            ],
+            "bits":  [
+                "LO"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1680",
@@ -296,7 +560,19 @@
         "wave":  "CX",
         "note":  "",
         "type":  "Stamina",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Dark Perseus B"
+            ],
+            "ratchets":  [
+                "6-80"
+            ],
+            "bits":  [
+                "W"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1681",
@@ -309,7 +585,19 @@
         "wave":  "CX",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Brush Fox J"
+            ],
+            "ratchets":  [
+                "9-70"
+            ],
+            "bits":  [
+                "GR"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1682",
@@ -322,7 +610,19 @@
         "wave":  "CX",
         "note":  "",
         "type":  "Balance",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Fort Hornet R"
+            ],
+            "ratchets":  [
+                "7-60"
+            ],
+            "bits":  [
+                "T"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1683",
@@ -335,7 +635,19 @@
         "wave":  "CX",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Wriggle Kraken S"
+            ],
+            "ratchets":  [
+                "3-85"
+            ],
+            "bits":  [
+                "O"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1684",
@@ -348,7 +660,19 @@
         "wave":  "CX",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Antler Stag B"
+            ],
+            "ratchets":  [
+                "2-60"
+            ],
+            "bits":  [
+                "HN"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2746",
@@ -361,7 +685,19 @@
         "wave":  "CX",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Reaper Rhino C"
+            ],
+            "ratchets":  [
+                "4-55"
+            ],
+            "bits":  [
+                "D"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2747",
@@ -374,7 +710,19 @@
         "wave":  "CX",
         "note":  "",
         "type":  "Stamina",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Flame Cerberus W"
+            ],
+            "ratchets":  [
+                "5-80"
+            ],
+            "bits":  [
+                "WB"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2748",
@@ -387,7 +735,19 @@
         "wave":  "CX",
         "note":  "",
         "type":  "Balance",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Fang Leon T"
+            ],
+            "ratchets":  [
+                "4-60"
+            ],
+            "bits":  [
+                "U"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2742",
@@ -400,7 +760,19 @@
         "wave":  "Infinity",
         "note":  "",
         "type":  "Attack",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Strike Dran"
+            ],
+            "ratchets":  [
+                "4-50"
+            ],
+            "bits":  [
+                "FF"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2750",
@@ -413,7 +785,19 @@
         "wave":  "Infinity",
         "note":  "",
         "type":  "Balance",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Hurricane Enlil IS"
+            ],
+            "ratchets":  [
+                "7-55"
+            ],
+            "bits":  [
+                "T"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G3497",
@@ -426,7 +810,15 @@
         "wave":  "Infinity",
         "note":  "",
         "type":  "Stamina",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Valor Bison FB"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G4561",
@@ -439,7 +831,15 @@
         "wave":  "Infinity",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Rocket Griffon H"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G4562",
@@ -452,7 +852,19 @@
         "wave":  "Infinity",
         "note":  "",
         "type":  "Stamina",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Rage Ragna FE"
+            ],
+            "ratchets":  [
+                "4-55"
+            ],
+            "bits":  [
+                "Y"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G4563",
@@ -465,7 +877,19 @@
         "wave":  "Infinity",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Armor Knight GV"
+            ],
+            "ratchets":  [
+                "8-70"
+            ],
+            "bits":  [
+                "UN"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G4567",
@@ -478,7 +902,19 @@
         "wave":  "Infinity",
         "note":  "",
         "type":  "Stamina",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Shatter Horus"
+            ],
+            "ratchets":  [
+                "9-65"
+            ],
+            "bits":  [
+                "GB"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G4571",
@@ -491,7 +927,19 @@
         "wave":  "Infinity",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Ring Aether"
+            ],
+            "ratchets":  [
+                "0-80"
+            ],
+            "bits":  [
+                "DS"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G4572",
@@ -504,7 +952,19 @@
         "wave":  "Infinity",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Blitz Bahamut BK"
+            ],
+            "ratchets":  [
+                "1-50"
+            ],
+            "bits":  [
+                "I"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "Glory_Valkerion_LF",
@@ -517,7 +977,15 @@
         "wave":  "Infinity",
         "note":  "Code non visible dans le PDF",
         "type":  "Attack",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Glory Valkerion LF"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0188",
@@ -530,7 +998,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Balance",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Steel Samurai"
+            ],
+            "ratchets":  [
+                "4-80"
+            ],
+            "bits":  [
+                "T"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0192",
@@ -543,7 +1023,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Horn Rhino"
+            ],
+            "ratchets":  [
+                "3-80"
+            ],
+            "bits":  [
+                "S"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0194",
@@ -556,7 +1048,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Attack",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Keel Shark"
+            ],
+            "ratchets":  [
+                "3-60"
+            ],
+            "bits":  [
+                "LF"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0195",
@@ -569,7 +1073,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Stamina",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Talon Ptera"
+            ],
+            "ratchets":  [
+                "3-80"
+            ],
+            "bits":  [
+                "B"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0283",
@@ -582,7 +1098,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Balance",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Sting Unicorn"
+            ],
+            "ratchets":  [
+                "5-60"
+            ],
+            "bits":  [
+                "GP"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0284",
@@ -595,7 +1123,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Attack",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Roar Tyranno"
+            ],
+            "ratchets":  [
+                "9-60"
+            ],
+            "bits":  [
+                "GF"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0285",
@@ -608,7 +1148,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Stamina",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Scythe Incendio"
+            ],
+            "ratchets":  [
+                "3-80"
+            ],
+            "bits":  [
+                "B"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0286",
@@ -621,7 +1173,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Savage Bear"
+            ],
+            "ratchets":  [
+                "3-60"
+            ],
+            "bits":  [
+                "S"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1530",
@@ -634,7 +1198,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Cowl Sphinx"
+            ],
+            "ratchets":  [
+                "9-80"
+            ],
+            "bits":  [
+                "GN"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1531",
@@ -647,7 +1223,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Stamina",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Arrow Wizard"
+            ],
+            "ratchets":  [
+                "4-80"
+            ],
+            "bits":  [
+                "GB"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1533",
@@ -660,7 +1248,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Obsidian Shell"
+            ],
+            "ratchets":  [
+                "4-60"
+            ],
+            "bits":  [
+                "D"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1534",
@@ -673,7 +1273,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Attack",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Keel Shark"
+            ],
+            "ratchets":  [
+                "1-60"
+            ],
+            "bits":  [
+                "Q"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1669",
@@ -686,7 +1298,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Tide Whale"
+            ],
+            "ratchets":  [
+                "5-80"
+            ],
+            "bits":  [
+                "E"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1670",
@@ -699,7 +1323,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Attack",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Dagger Dran"
+            ],
+            "ratchets":  [
+                "4-70"
+            ],
+            "bits":  [
+                "Q"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1671",
@@ -712,7 +1348,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Attack",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Lance Knight"
+            ],
+            "ratchets":  [
+                "3-60"
+            ],
+            "bits":  [
+                "LF"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1754",
@@ -725,7 +1373,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Stamina",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Yell Kong"
+            ],
+            "ratchets":  [
+                "3-60"
+            ],
+            "bits":  [
+                "GB"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1755",
@@ -738,7 +1398,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Arrow Wizard"
+            ],
+            "ratchets":  [
+                "4-80"
+            ],
+            "bits":  [
+                "O"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1756",
@@ -751,7 +1423,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Soar Phoenix"
+            ],
+            "ratchets":  [
+                "5-80"
+            ],
+            "bits":  [
+                "H"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2731",
@@ -764,7 +1448,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Attack",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Scale Shark"
+            ],
+            "ratchets":  [
+                "4-50"
+            ],
+            "bits":  [
+                "UF"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2732",
@@ -777,7 +1473,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Shelter Drake"
+            ],
+            "ratchets":  [
+                "5-70"
+            ],
+            "bits":  [
+                "O"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2733",
@@ -790,7 +1498,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Balance",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Gust Bat"
+            ],
+            "ratchets":  [
+                "3-85"
+            ],
+            "bits":  [
+                "GP"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2734",
@@ -803,7 +1523,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Stamina",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Curse Mummy"
+            ],
+            "ratchets":  [
+                "7-55"
+            ],
+            "bits":  [
+                "W"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G3392",
@@ -816,7 +1548,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Ridge Triceratops"
+            ],
+            "ratchets":  [
+                "9-80"
+            ],
+            "bits":  [
+                "GN"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G3611",
@@ -829,7 +1573,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Stamina",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Buster Dran"
+            ],
+            "ratchets":  [
+                "5-70"
+            ],
+            "bits":  [
+                "DB"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2735",
@@ -842,7 +1598,19 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Attack",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Savage Bear"
+            ],
+            "ratchets":  [
+                "5-60"
+            ],
+            "bits":  [
+                "F"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0190",
@@ -855,7 +1623,16 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Knife Shinobi",
+                "Keel Shark"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0196",
@@ -868,7 +1645,16 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Chain Incendio",
+                "Arrow Wizard"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0197",
@@ -881,7 +1667,16 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Tail Viper",
+                "Sword Dran"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0198",
@@ -894,7 +1689,16 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Yell Kong",
+                "Helm Knight"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0199",
@@ -907,7 +1711,16 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Bite Croc",
+                "Sting Unicorn"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0282",
@@ -920,7 +1733,16 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Gale Wyvern",
+                "Tail Viper"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1542",
@@ -933,7 +1755,16 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Beat Tyranno",
+                "Knife Shinobi"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1543",
@@ -946,7 +1777,16 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Gale Wyvern",
+                "Sword Dran"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1685",
@@ -959,7 +1799,16 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Cowl Sphinx",
+                "Crest Leon"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1686",
@@ -972,7 +1821,16 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Pearl Tiger",
+                "Gill Shark"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1687",
@@ -985,7 +1843,16 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Circle Ghost",
+                "Chain Incendio"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1688",
@@ -998,7 +1865,16 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Tackle Goat",
+                "Sword Dran"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2754",
@@ -1011,7 +1887,16 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Calibur Samurai",
+                "Obsidian Shell"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2755",
@@ -1024,7 +1909,16 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Circle Ghost",
+                "Hack Viking"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2758",
@@ -1037,7 +1931,16 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Spear Scorpio",
+                "Tail Viper"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1844",
@@ -1050,7 +1953,13 @@
         "wave":  "Pack/Set",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G3028",
@@ -1063,7 +1972,13 @@
         "wave":  "Pack/Set",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G3195",
@@ -1076,7 +1991,13 @@
         "wave":  "Pack/Set",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G3393",
@@ -1089,7 +2010,13 @@
         "wave":  "Pack/Set",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "F9589",
@@ -1102,7 +2029,16 @@
         "wave":  "Collab",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "The Mandalorian",
+                "Moff Gideon"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0287",
@@ -1115,7 +2051,16 @@
         "wave":  "Collab",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Iron Man",
+                "Thanos"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0288",
@@ -1128,7 +2073,16 @@
         "wave":  "Collab",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Spider-Man",
+                "Venom"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0290",
@@ -1141,7 +2095,16 @@
         "wave":  "Collab",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Luke Skywalker",
+                "Darth Vader"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0352",
@@ -1154,7 +2117,16 @@
         "wave":  "Collab",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Optimus Primal",
+                "Starscream"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0353",
@@ -1167,7 +2139,16 @@
         "wave":  "Collab",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Optimus Prime",
+                "Megatron"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1690",
@@ -1180,7 +2161,16 @@
         "wave":  "Collab",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Captain America",
+                "Red Hulk"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1691",
@@ -1193,7 +2183,16 @@
         "wave":  "Collab",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Miles Morales",
+                "Green Goblin"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1692",
@@ -1206,7 +2205,16 @@
         "wave":  "Collab",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Bumblebee",
+                "Shockwave"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1694",
@@ -1219,7 +2227,16 @@
         "wave":  "Collab",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Obi-Wan Kenobi",
+                "General Grievous"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1695",
@@ -1232,7 +2249,16 @@
         "wave":  "Collab",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Chewbacca",
+                "Stormtrooper"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1898",
@@ -1245,7 +2271,16 @@
         "wave":  "Collab",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "T. Rex",
+                "Mosasaurus"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1899",
@@ -1258,7 +2293,16 @@
         "wave":  "Collab",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Spinosaurus",
+                "Quetzalcoatlus"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G3061",
@@ -1271,7 +2315,16 @@
         "wave":  "Collab",
         "note":  "",
         "type":  "Mixed",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Grogu",
+                "Snowtrooper"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "F9584",
@@ -1284,7 +2337,19 @@
         "wave":  "X-Over",
         "note":  "",
         "type":  "Balance",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Dranzer Spiral"
+            ],
+            "ratchets":  [
+                "3-80"
+            ],
+            "bits":  [
+                "T"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "F9585",
@@ -1297,7 +2362,19 @@
         "wave":  "X-Over",
         "note":  "",
         "type":  "Balance",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Dranzer Spiral"
+            ],
+            "ratchets":  [
+                "3-80"
+            ],
+            "bits":  [
+                "T"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1842",
@@ -1310,7 +2387,19 @@
         "wave":  "X-Over",
         "note":  "",
         "type":  "Balance",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Dranzer Spiral"
+            ],
+            "ratchets":  [
+                "3-80"
+            ],
+            "bits":  [
+                "T"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1843",
@@ -1323,7 +2412,19 @@
         "wave":  "X-Over",
         "note":  "",
         "type":  "Balance",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Driger Slash"
+            ],
+            "ratchets":  [
+                "4-80"
+            ],
+            "bits":  [
+                "P"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2218",
@@ -1336,7 +2437,19 @@
         "wave":  "X-Over",
         "note":  "",
         "type":  "Defense",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Draciel Shield"
+            ],
+            "ratchets":  [
+                "7-60"
+            ],
+            "bits":  [
+                "D"
+            ],
+            "source":  "auto"
+        }
     },
     {
         "id":  "F9578",
@@ -1349,7 +2462,13 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0318",
@@ -1362,20 +2481,32 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0841",
         "cat":  "Beystadiums",
         "code":  "G0841",
-        "name":  "Clash \u0026 Carry Beystadium",
+        "name":  "Clash & Carry Beystadium",
         "date":  "January 20th, 2025 / January 28th, 2025",
         "price":  "$39.99 / $29.99",
         "color":  "Stadium noir / vert / gris",
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1546",
@@ -1388,7 +2519,13 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1863",
@@ -1401,7 +2538,13 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1864",
@@ -1414,7 +2557,13 @@
         "wave":  "BX/Hasbro",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "F9588",
@@ -1427,7 +2576,13 @@
         "wave":  "Battle Set",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0842",
@@ -1440,7 +2595,13 @@
         "wave":  "Battle Set",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1940",
@@ -1453,7 +2614,13 @@
         "wave":  "Battle Set",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "F9324",
@@ -1466,7 +2633,15 @@
         "wave":  "Accessoire",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Soar Phoenix"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G0440",
@@ -1479,7 +2654,13 @@
         "wave":  "Accessoire",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1491",
@@ -1492,7 +2673,15 @@
         "wave":  "Accessoire",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Cobalt Dragoon"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G1862",
@@ -1505,33 +2694,53 @@
         "wave":  "Accessoire",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G2350",
         "cat":  "Accessories",
         "code":  "G2350",
-        "name":  "Clip \u0026 Rip Launcher Set",
+        "name":  "Clip & Rip Launcher Set",
         "date":  "July 15th, 2026",
         "price":  "$29.99",
-        "color":  "Clip \u0026 Rip : rouge / noir",
+        "color":  "Clip & Rip : rouge / noir",
         "wave":  "Accessoire",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G3083",
         "cat":  "Accessories",
         "code":  "G3083",
-        "name":  "Bite Croc Deluxe String Launcher \u0026 Custom Grip Set",
+        "name":  "Bite Croc Deluxe String Launcher & Custom Grip Set",
         "date":  "March 2026 / March 2026 / March 2026",
         "price":  "$34.99 / $29.99 / $39.99",
         "color":  "Bite Croc : vert / marron ; lanceur noir",
         "wave":  "Accessoire",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Bite Croc"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     },
     {
         "id":  "G3491",
@@ -1544,6 +2753,14 @@
         "wave":  "Accessoire",
         "note":  "",
         "type":  "",
-        "imagePath":  ""
+        "imagePath":  "",
+        "parts":  {
+            "blades":  [
+                "Meteoroid Dragoon"
+            ],
+            "ratchets":  [],
+            "bits":  [],
+            "source":  "auto"
+        }
     }
 ]

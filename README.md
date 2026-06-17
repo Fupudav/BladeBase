@@ -39,6 +39,20 @@ Structure conseillee pour `products/{productId}` :
 - `type`
 - `imagePath`
 - `note`
+- `parts`
+
+Le champ `parts` garde les sous-produits detectables sans creer encore de collection Firestore separee :
+
+```json
+{
+  "blades": ["Sword Dran"],
+  "ratchets": ["3-60"],
+  "bits": ["F"],
+  "source": "auto"
+}
+```
+
+Les packs peuvent contenir plusieurs valeurs dans `blades`. Quand un produit Firestore n'a pas encore `parts`, BladeBase conserve une detection locale depuis le nom du produit.
 
 Si Firestore est vide ou indisponible, BladeBase charge immediatement `data/products-fallback.json`.
 
