@@ -1,4 +1,4 @@
-const APP_VERSION = "2026.06.17.02";
+const APP_VERSION = "2026.06.17.03";
 const APP_CACHE = `bladebase-app-${APP_VERSION}`;
 const STATIC_CACHE = `bladebase-static-${APP_VERSION}`;
 
@@ -75,16 +75,28 @@ function isCacheFirst(url, request) {
 
 async function networkFirst(request) {
   const cache = await caches.open(APP_CACHE);
+  const normalizedRequest = normalizedCacheRequest(request);
   try {
     const fresh = await fetch(new Request(request, { cache: "no-store" }));
-    if (fresh && fresh.ok) cache.put(request, fresh.clone());
+    if (fresh && fresh.ok) {
+      cache.put(request, fresh.clone());
+      if (normalizedRequest.url !== request.url) {
+        cache.put(normalizedRequest, fresh.clone());
+      }
+    }
     return fresh;
   } catch (error) {
-    const cached = await cache.match(request);
+    const cached = await cache.match(request) || await cache.match(normalizedRequest);
     if (cached) return cached;
     if (request.mode === "navigate") return cache.match("./index.html");
     throw error;
   }
+}
+
+function normalizedCacheRequest(request) {
+  const url = new URL(request.url);
+  url.search = "";
+  return new Request(url.toString(), { method: "GET" });
 }
 
 async function cacheFirst(request) {
