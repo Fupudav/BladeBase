@@ -15,15 +15,15 @@
 <title>Beyblade X Hasbro — Collection Tracker Pro</title>
 <style>
 :root{--bg:#070b17;--panel:#121a33;--panel2:#182242;--txt:#f3f6ff;--muted:#9fb0d0;--line:#2d3a66;--accent:#60a5fa;--good:#22c55e;--warn:#f59e0b;--bad:#ef4444;--chip:#26345f;--input:#0f1730}*{box-sizing:border-box}body{margin:0;background:linear-gradient(140deg,#070b17,#0b1020 45%,#101a35);color:var(--txt);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}header{position:static;background:rgba(11,16,32,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.wrap{max-width:1480px;margin:auto;padding:18px}h1{margin:0;font-size:24px}h2{margin:0 0 12px}.sub{color:var(--muted);font-size:13px;margin-top:4px;line-height:1.35}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.tab{border:1px solid var(--line);background:var(--panel);color:var(--txt);border-radius:12px;padding:10px 12px;font-weight:800;cursor:pointer}.tab.active{background:var(--accent);color:#061225;border-color:var(--accent)}main{max-width:1480px;margin:auto;padding:18px}.cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-bottom:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:16px}.num{font-size:30px;font-weight:900}.label{color:var(--muted);font-size:13px}.tools{display:grid;grid-template-columns:1fr 170px 120px 130px 160px 140px 130px 130px;gap:10px;margin:14px 0}input,select,button,textarea{padding:11px;border-radius:12px;border:1px solid var(--line);background:var(--input);color:var(--txt);font:inherit}textarea{width:100%;min-height:42px;resize:vertical}button{cursor:pointer;font-weight:800}.primary{background:var(--accent)!important;color:#061225!important}.good{background:#123522!important;color:#dcffe8!important}.warn{background:#3a2b10!important;color:#fff3cf!important}.danger{background:#361827!important;color:#ffdbe5!important}.tableBox{overflow:auto;border:1px solid var(--line);border-radius:18px;background:var(--panel)}table{width:100%;border-collapse:collapse;min-width:1480px}th,td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}th{position:static;background:var(--panel2);text-align:left;font-size:12px;color:#dbe7ff;z-index:2}td{font-size:14px}.code{font-family:ui-monospace,Consolas,monospace;color:#c7d2fe;font-weight:900}.chip{display:inline-flex;border-radius:999px;background:var(--chip);padding:5px 9px;font-size:12px;color:#dbe7ff;font-weight:800}.ownedRow{background:rgba(34,197,94,.08)}.future{color:#fcd34d;font-weight:800}.prices{white-space:pre-line}.colorInput{min-width:150px;width:100%;font-size:12px;padding:8px}.colorCell{min-width:170px}.colorChip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#0f1730;border-radius:999px;padding:6px 9px;font-size:12px}.empty{padding:30px;text-align:center;color:var(--muted)}.statsGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.bar{height:12px;background:#253156;border-radius:999px;overflow:hidden}.bar span{display:block;height:100%;background:var(--good)}.statLine{display:grid;grid-template-columns:260px 1fr 80px;gap:10px;align-items:center;margin:10px 0}.small{font-size:12px;color:var(--muted)}.note{background:#13213f;border:1px solid var(--line);border-radius:16px;padding:14px;color:#dbe7ff;line-height:1.45}input[type=checkbox]{width:22px;height:22px;accent-color:var(--good)}.rowControls{display:grid;grid-template-columns:95px 120px;gap:6px}.accountGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.accountForm{display:grid;grid-template-columns:1fr 1fr;gap:10px}.accountActions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.mini{font-size:12px;padding:8px}.toast{position:fixed;right:16px;bottom:16px;background:#102447;border:1px solid #355b9e;border-radius:14px;padding:12px 14px;box-shadow:0 10px 30px #0008;display:none;z-index:99}.achievement{display:flex;justify-content:space-between;gap:10px;border:1px solid var(--line);background:#0f1730;border-radius:14px;padding:12px;margin:8px 0}.achievement.done{border-color:#1d8b4a;background:rgba(34,197,94,.09)}.hiddenFile{display:none}
-.photoCell{width:135px;min-width:135px}.thumb{width:92px;height:92px;object-fit:contain;background:linear-gradient(135deg,#162247,#0b1020);border:1px solid var(--line);border-radius:16px;display:block;cursor:pointer}.photoBtns{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.photoBtn{font-size:11px;padding:6px 8px;border-radius:10px}.gridToggle{background:#1b2b56!important}.modal{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:1000;padding:18px}.modalInner{max-width:min(900px,94vw);max-height:92vh;background:#0b1020;border:1px solid var(--line);border-radius:20px;padding:14px}.modalHeader{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:10px}.modal img{max-width:100%;max-height:75vh;object-fit:contain;display:block;margin:auto}.closeBtn{background:#361827!important;color:#ffdbe5!important}.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}.galleryCard{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:12px}.galleryCard.owned{border-color:#1d8b4a;background:rgba(34,197,94,.08)}.galleryCard img{width:100%;height:150px;object-fit:contain;border-radius:14px;background:#0f1730;border:1px solid var(--line)}.galleryName{font-weight:900;margin-top:8px;min-height:38px}.galleryMeta{font-size:12px;color:var(--muted);margin-top:4px}.viewSwitch{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.viewSwitch button.activeMini{background:var(--accent)!important;color:#061225!important}.timeline{position:relative;margin-left:10px}.timelineItem{border-left:3px solid var(--accent);padding:0 0 16px 16px;margin:0}.timelineDate{font-weight:900;color:#bfdbfe}.timelineList{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.pill{display:inline-flex;border:1px solid var(--line);background:#0f1730;border-radius:999px;padding:6px 9px;font-size:12px}.partsGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.partsList{max-height:520px;overflow:auto}.partRow{display:grid;grid-template-columns:50px 1fr auto;align-items:center;gap:10px;border-bottom:1px solid var(--line);padding:8px 0}.partThumb{width:48px;height:48px;object-fit:contain;background:#0f1730;border:1px solid var(--line);border-radius:12px}.partDetailImage{width:100%;max-height:260px;object-fit:contain;background:#0f1730;border:1px solid var(--line);border-radius:16px;margin-top:12px}.swapBox{display:grid;grid-template-columns:1fr 1fr;gap:14px}.answerBox{white-space:pre-line;line-height:1.45}
+.photoCell{width:135px;min-width:135px}.thumb{width:92px;height:92px;object-fit:contain;background:linear-gradient(135deg,#162247,#0b1020);border:1px solid var(--line);border-radius:16px;display:block;cursor:pointer}.photoBtns{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.photoBtn{font-size:11px;padding:6px 8px;border-radius:10px}.gridToggle{background:#1b2b56!important}.modal{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:1000;padding:18px}.modalInner{max-width:min(900px,94vw);max-height:92vh;background:#0b1020;border:1px solid var(--line);border-radius:20px;padding:14px}.modalHeader{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:10px}.modal img{max-width:100%;max-height:75vh;object-fit:contain;display:block;margin:auto}.closeBtn{background:#361827!important;color:#ffdbe5!important}.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}.galleryCard{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:12px}.galleryCard.owned{border-color:#1d8b4a;background:rgba(34,197,94,.08)}.galleryCard img{width:100%;height:150px;object-fit:contain;border-radius:14px;background:#0f1730;border:1px solid var(--line)}.galleryName{font-weight:900;margin-top:8px;min-height:38px}.galleryMeta{font-size:12px;color:var(--muted);margin-top:4px}.viewSwitch{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.viewSwitch button.activeMini{background:var(--accent)!important;color:#061225!important}.timeline{position:relative;margin-left:10px}.timelineItem{border-left:3px solid var(--accent);padding:0 0 16px 16px;margin:0}.timelineDate{font-weight:900;color:#bfdbfe}.timelineList{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.pill{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:#0f1730;border-radius:999px;padding:6px 9px;font-size:12px}.partsGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.partsList{max-height:520px;overflow:auto}.partRow{display:grid;grid-template-columns:50px 1fr auto;align-items:center;gap:10px;border-bottom:1px solid var(--line);padding:8px 0}.partThumb{width:48px;height:48px;object-fit:contain;background:#0f1730;border:1px solid var(--line);border-radius:12px}.partDetailImage{width:100%;max-height:260px;object-fit:contain;background:#0f1730;border:1px solid var(--line);border-radius:16px;margin-top:12px}.swapBox{display:grid;grid-template-columns:1fr 1fr;gap:14px}.answerBox{white-space:pre-line;line-height:1.45}.adminForm{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.adminForm .pill{min-height:44px}.inactiveRow{opacity:.62}.adminActions{display:flex;gap:6px;flex-wrap:wrap}.adminPreviewCell{width:54px;height:54px;object-fit:contain;background:#0f1730;border:1px solid var(--line);border-radius:10px}
 .detailHero{display:grid;grid-template-columns:320px 1fr;gap:16px}.detailPhoto{width:100%;height:320px;object-fit:contain;background:#0f1730;border:1px solid var(--line);border-radius:20px}.detailTitle{font-size:28px;font-weight:950;margin:0 0 8px}.detailGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}.infoBox{background:#0f1730;border:1px solid var(--line);border-radius:16px;padding:12px}.infoBox h3{margin:0 0 10px;font-size:16px}.kv{display:grid;grid-template-columns:140px 1fr;gap:8px;border-bottom:1px solid rgba(255,255,255,.07);padding:7px 0}.kv:last-child{border-bottom:0}.clickName{color:#dbeafe;text-decoration:underline;text-underline-offset:3px;cursor:pointer}.detailActions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.relatedGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}.relatedCard{border:1px solid var(--line);background:#0f1730;border-radius:14px;padding:9px;cursor:pointer}.relatedCard img{width:100%;height:105px;object-fit:contain;background:#0b1020;border-radius:10px;border:1px solid var(--line)}.partLink{cursor:pointer;text-decoration:underline;text-underline-offset:3px}.galleryLine{display:flex;gap:8px;flex-wrap:wrap}.galleryLine img{width:120px;height:120px;object-fit:contain;background:#0f1730;border:1px solid var(--line);border-radius:14px;cursor:pointer}.partHero{display:grid;grid-template-columns:1fr 1fr;gap:14px}.partBig{font-size:34px;font-weight:950}.partType{font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.usesGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}.useCard{border:1px solid var(--line);background:#0f1730;border-radius:14px;padding:9px;cursor:pointer}.useCard img{width:100%;height:120px;object-fit:contain;background:#0b1020;border:1px solid var(--line);border-radius:10px}
 @media(max-width:850px){.detailHero,.detailGrid{grid-template-columns:1fr}.detailPhoto{height:250px}.kv{grid-template-columns:110px 1fr}}
-@media(max-width:900px){.partsGrid,.swapBox,.accountGrid,.accountForm{grid-template-columns:1fr}}
+@media(max-width:900px){.partsGrid,.swapBox,.accountGrid,.accountForm,.adminForm{grid-template-columns:1fr}}
 @media(max-width:1100px){.cards{grid-template-columns:repeat(2,1fr)}.tools{grid-template-columns:1fr 1fr}.statsGrid{grid-template-columns:1fr}}@media(max-width:560px){.cards,.tools{grid-template-columns:1fr}}@media print{body{background:white;color:#111}header,.tools,.viewSwitch,.photoBtns{display:none!important}.card,.tableBox{border:1px solid #aaa;background:white;color:#111}table{min-width:0}th,td{color:#111;background:white;border-color:#ccc}.chip{background:#eee;color:#111}}
 </style>
 </head>
 <body>
-<header><div class="wrap"><h1>Beyblade X Hasbro — suivi de collection Pro</h1><div class="sub">Données intégrées dans l'application. Sauvegarde locale + cloud, export/import JSON, photos locales ou personnelles, wishlist, doublons, valeur, timeline, pièces, échanges et assistant local.</div><div class="tabs"><button class="tab active" data-view="collection">Collection</button><button class="tab" data-view="stats">Statistiques</button><button class="tab" data-view="hunter">Chasseur</button><button class="tab" data-view="timeline">Timeline</button><button class="tab" data-view="parts">Pièces</button><button class="tab" data-view="trades">Échanges</button><button class="tab" data-view="assistant">Assistant</button><button class="tab" data-view="settings">Paramètres</button></div></div></header>
+<header><div class="wrap"><h1>Beyblade X Hasbro — suivi de collection Pro</h1><div class="sub">Données intégrées dans l'application. Sauvegarde locale + cloud, export/import JSON, photos locales ou personnelles, wishlist, doublons, valeur, timeline, pièces, échanges et assistant local.</div><div class="tabs"><button class="tab active" data-view="collection">Collection</button><button class="tab" data-view="stats">Statistiques</button><button class="tab" data-view="hunter">Chasseur</button><button class="tab" data-view="timeline">Timeline</button><button class="tab" data-view="parts">Pièces</button><button class="tab" data-view="trades">Échanges</button><button class="tab" data-view="assistant">Assistant</button><button class="tab" data-view="settings">Paramètres</button><button class="tab" id="adminTab" data-view="admin" style="display:none">Admin</button></div></div></header>
 <main>
 <section id="collectionView">
 <div class="cards"><div class="card"><div class="num" id="totalCount">0</div><div class="label">Produits listés</div></div><div class="card"><div class="num" id="ownedCount">0</div><div class="label">Dans ta collection</div></div><div class="card"><div class="num" id="missingCount">0</div><div class="label">Manquants</div></div><div class="card"><div class="num" id="wantedCount">0</div><div class="label">Wishlist</div></div><div class="card"><div class="num" id="percentCount">0%</div><div class="label">Collection complétée</div></div><div class="card"><div class="num" id="spentCount">0</div><div class="label">Budget saisi</div></div><div class="card"><div class="num" id="valueCount">0</div><div class="label">Valeur estimée</div></div></div>
@@ -39,6 +39,7 @@
 <section id="productView" style="display:none"><div class="card"><button class="primary" id="backToCollectionBtn">← Retour à la collection</button><div id="productDetailContent" style="margin-top:14px"></div></div></section>
 <section id="partView" style="display:none"><div class="card"><button class="primary" id="backFromPartBtn">← Retour à la collection</button><div id="partDetailContent" style="margin-top:14px"></div></div></section>
 <section id="settingsView" style="display:none"><div class="accountGrid"><div class="card"><h2>Paramètres → Compte</h2><div class="note">Le compte Firebase identifie l'utilisateur et active la synchronisation Firestore. La collection reste toujours sauvegardée localement en premier.</div><div class="kv"><b>État</b><span id="accountStatus">Non connecté</span></div><div class="kv"><b>Email</b><span id="accountEmail">—</span></div><div class="kv"><b>Nom</b><span id="accountName">—</span></div><div class="kv"><b>Synchro</b><span id="syncStatus">Hors compte</span></div><div class="kv"><b>Produits</b><span id="productSourceStatus">Chargement...</span></div><div class="kv"><b>Pièces</b><span id="partSourceStatus">Chargement...</span></div><div class="kv"><b>Locale</b><span id="syncLocalAt">—</span></div><div class="kv"><b>Cloud</b><span id="syncCloudAt">—</span></div><div class="accountActions"><button class="primary" id="syncSaveNowBtn">Sauvegarder maintenant</button><button class="good" id="syncPullBtn">Restaurer depuis le cloud</button><button class="warn" id="syncPushBtn">Envoyer la sauvegarde locale vers le cloud</button></div></div><div class="card"><h2>Connexion</h2><div class="accountForm"><input id="authEmail" type="email" autocomplete="email" placeholder="Adresse email"><input id="authPassword" type="password" autocomplete="current-password" placeholder="Mot de passe"></div><div class="accountActions"><button class="primary" id="authSignupBtn">Créer un compte</button><button class="good" id="authLoginBtn">Se connecter</button><button id="authGoogleBtn">Google</button><button class="warn" id="authResetBtn">Mot de passe oublié</button><button class="danger" id="authLogoutBtn">Déconnexion</button></div><div id="authMessage" class="small" style="margin-top:10px">Firebase Auth se charge…</div></div><div class="card"><h2>Sauvegarde locale</h2><div class="note">Les coches, statuts, doublons, notes, prix d'achat, valeurs estimées, dates d'achat, photos personnelles et priorités sont sauvegardés automatiquement dans ce navigateur. Les mises à jour de l'application ne suppriment pas ces données.</div><div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px"><button class="primary" id="exportBtn2">Exporter ma collection</button><button class="good" id="importBtn">Importer une sauvegarde</button><button class="warn" id="sampleBtn">Télécharger modèle vide</button><button class="danger" id="resetBtn">Archiver puis réinitialiser</button><input class="hiddenFile" type="file" id="importFile" accept="application/json"></div></div><div class="card"><h2>Mode application</h2><div class="note">Sur Android/Chrome : ouvre le site GitHub Pages, menu ⋮, puis <b>Ajouter à l'écran d'accueil</b>. BladeBase fonctionne hors ligne après la première ouverture et se met à jour automatiquement quand une nouvelle version est publiée. Pour éviter les blocages GitHub Pages, l'application ne récupère plus de photos sur Internet : ajoute les images officielles dans le dossier <b>images/</b>.</div></div></div></section>
+<section id="adminView" style="display:none"><div class="card"><h2>Admin produits Firestore</h2><div class="note">Administration visible uniquement pour les UID autorisés. Les actions écrivent dans la collection Firestore <b>products</b> si les règles Firestore l'autorisent.</div><div class="accountActions"><input id="adminSearch" placeholder="Rechercher code, nom, vague..." style="min-width:260px"><button class="primary" id="adminReloadBtn">Recharger</button><button class="good" id="adminExportBtn">Exporter JSON</button><button class="warn" id="adminImportBtn">Importer JSON</button><button id="adminFallbackBtn">Télécharger products-fallback.json</button><input class="hiddenFile" type="file" id="adminImportFile" accept="application/json"></div><div id="adminStatus" class="small" style="margin-top:10px">Admin non initialisé.</div></div><div class="accountGrid" style="margin-top:14px"><div class="card"><h2 id="adminFormTitle">Ajouter / modifier un produit</h2><div class="adminForm"><input id="adminId" placeholder="ID document (auto depuis code/nom)"><input id="adminCode" placeholder="Code"><input id="adminName" placeholder="Nom"><input id="adminCat" placeholder="Catégorie"><input id="adminWave" placeholder="Vague"><input id="adminLine" placeholder="Ligne"><select id="adminType"><option value="">Type inconnu</option><option>Attack</option><option>Defense</option><option>Stamina</option><option>Balance</option><option>Mixed</option></select><input id="adminColor" placeholder="Couleur / variante"><input id="adminDate" placeholder="Date de sortie"><input id="adminPrice" placeholder="Prix"><input id="adminImagePath" placeholder="imagePath personnalisé"><input id="adminBlade" placeholder="Blade(s), séparés par virgule"><input id="adminRatchet" placeholder="Ratchet(s), séparés par virgule"><input id="adminBit" placeholder="Bit(s), séparés par virgule"><input id="adminOrder" type="number" placeholder="Ordre d'affichage"><label class="pill"><input id="adminActive" type="checkbox" checked> Actif</label></div><div class="accountActions"><button class="primary" id="adminSaveBtn">Enregistrer dans Firestore</button><button id="adminNewBtn">Nouveau</button><button class="warn" id="adminDeactivateBtn">Désactiver</button><button class="good" id="adminReactivateBtn">Réactiver</button><button class="danger" id="adminDeleteBtn">Supprimer</button></div></div><div class="card"><h2>Image</h2><img id="adminPreview" class="detailPhoto" src="" alt="Prévisualisation"><div id="adminImageHint" class="small" style="margin-top:10px"></div><div class="note" style="margin-top:12px">Priorité : <b>imagePath</b>, puis <b>images/{code}.webp</b>, <b>.jpg</b>, <b>.jpeg</b>, <b>.png</b>, puis placeholder. Aucune recherche automatique Internet n'est réactivée.</div></div></div><div class="card" style="margin-top:14px"><h2>Produits</h2><div class="tableBox"><table><thead><tr><th>Code</th><th>Nom</th><th>Type</th><th>Catégorie</th><th>Vague</th><th>Actif</th><th>Image</th><th>Actions</th></tr></thead><tbody id="adminProductsBody"></tbody></table></div></div></section>
 </main><div id="toast" class="toast"></div><div id="imageModal" class="modal"><div class="modalInner"><div class="modalHeader"><b id="modalTitle"></b><button class="closeBtn" id="modalClose">Fermer</button></div><img id="modalImg" alt="Photo agrandie"></div></div>
 <script>
 const products=[];
@@ -51,6 +52,7 @@ function waveOf(p){const c=p.cat||'', n=p.name||''; if(c.includes('Custom Line')
 const STORE_KEY='beyblade_x_hasbro_collection_v2';
 const VERSION_KEY='bladebase_app_version';
 const SYNC_SCHEMA_VERSION=1;
+const ADMIN_UIDS=["REMPLACER_PAR_MON_UID_FIREBASE"];
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const idOf=p=>(p.id||p.code||p.name).replace(/\W+/g,'_');
 let forcedView='collection';
@@ -90,7 +92,10 @@ function normalizeProductParts(parts={},name=''){
   return normalized;
 }
 function normalizeProduct(p={},fallbackId=''){
-  const clean={id:safePlainText(p.id||fallbackId||p.code||p.name,180),cat:safePlainText(p.cat,160),code:safePlainText(p.code,80),name:safePlainText(p.name,220),date:safePlainText(p.date,160),price:safePlainText(p.price,160),color:safePlainText(p.color,180),wave:safePlainText(p.wave,80),note:safePlainText(p.note,1200),type:safePlainText(p.type,40),imagePath:safePlainText(p.imagePath,260),parts:normalizeProductParts(p.parts,p.name)};
+  const partsSource=p.parts||{blades:p.blade,ratchets:p.ratchet,bits:p.bit,source:'fields'};
+  const rawOrder=p.displayOrder??p.order;
+  const displayOrder=rawOrder===''||rawOrder===undefined?NaN:Number(rawOrder);
+  const clean={id:safePlainText(p.id||fallbackId||p.code||p.name,180),cat:safePlainText(p.cat,160),code:safePlainText(p.code,80),name:safePlainText(p.name,220),date:safePlainText(p.date,160),price:safePlainText(p.price,160),color:safePlainText(p.color,180),wave:safePlainText(p.wave,80),line:safePlainText(p.line,80),note:safePlainText(p.note,1200),type:safePlainText(p.type,40),imagePath:safePlainText(p.imagePath,260),active:p.active===false?false:true,displayOrder:Number.isFinite(displayOrder)?displayOrder:'',parts:normalizeProductParts(partsSource,p.name)};
   clean.id=clean.id||idOf(clean);
   clean.wave=clean.wave||waveOf(clean);
   return clean;
@@ -121,7 +126,7 @@ function applyParts(nextParts,source='fallback'){
   renderExtraViews();
 }
 function applyProducts(nextProducts,source='fallback'){
-  products.splice(0,products.length,...nextProducts.map((p,i)=>normalizeProduct(p,p.id||p.code||String(i))).filter(p=>p.name));
+  products.splice(0,products.length,...nextProducts.map((p,i)=>normalizeProduct(p,p.id||p.code||String(i))).filter(p=>p.name&&p.active!==false).sort((a,b)=>(Number(a.displayOrder)||999999)-(Number(b.displayOrder)||999999)||(a.code||'').localeCompare(b.code||'','fr')||a.name.localeCompare(b.name,'fr')));
   ensureCustomProducts();
   window.bladeProductsSource=source;
   updateProductSourceUi(source,products.length);
@@ -315,7 +320,7 @@ function galleryForProduct(p){
   return [...new Set(arr)].slice(0,3).map(src=>`<img src="${src}" loading="lazy" decoding="async" data-action="openImage" data-id="${idOf(p)}" onerror="this.style.display='none'">`).join('');
 }
 function showMainView(v='collection'){
-  ['stats','hunter','timeline','parts','trades','assistant','settings','product','part'].forEach(x=>{const el=$('#'+x+'View'); if(el)el.style.display='none'});
+  ['stats','hunter','timeline','parts','trades','assistant','settings','admin','product','part'].forEach(x=>{const el=$('#'+x+'View'); if(el)el.style.display='none'});
   $('#collectionView').style.display=v==='collection'?'block':'none';
   const el=$('#'+v+'View'); if(el)el.style.display=v==='collection'?'none':'block';
   $$('.tab').forEach(x=>x.classList.toggle('active',x.dataset.view===v));
@@ -365,10 +370,174 @@ function showProductPage(p){
   <div class="infoBox" style="margin-top:14px"><h3>Produits liés</h3><div class="relatedGrid">${rel.map(x=>`<div class="relatedCard" data-action="details" data-id="${idOf(x)}"><img src="${imgOf(x)}" loading="lazy" decoding="async" onerror="nextImg(this)" data-id="${idOf(x)}" data-try="0"><b>${esc(x.name)}</b><div class="small"><span class="code">${esc(x.code||'—')}</span> · ${esc(x.wave)} · ${esc(x.cat)}</div><div class="small">🎨 ${esc(colorOf(x))}</div></div>`).join('')||'<div class="empty">Aucun produit lié détecté.</div>'}</div></div>`;
   forcedView='product'; showMainView('product'); bindRows(); window.scrollTo({top:0,behavior:'smooth'});
 }
-function renderExtraViews(){if(forcedView==='hunter')renderHunter(); if(forcedView==='timeline')renderTimeline(); if(forcedView==='parts')renderParts(); if(forcedView==='trades')renderTrades();}
+function renderExtraViews(){if(forcedView==='hunter')renderHunter(); if(forcedView==='timeline')renderTimeline(); if(forcedView==='parts')renderParts(); if(forcedView==='trades')renderTrades(); if(forcedView==='admin')renderAdmin();}
 function reloadCustomProductsFromState(){for(let i=products.length-1;i>=0;i--){if(products[i].custom)products.splice(i,1)}ensureCustomProducts();}
 function replaceLocalState(nextState,options={}){backupCurrentState(options.reason||'before_cloud_replace');state=nextState&&typeof nextState==='object'?nextState:{};reloadCustomProductsFromState();saveRaw({touch:options.touch!==false});fillFilters();render();renderExtraViews();}
 window.bladeLocal={getState:()=>state,replaceState:replaceLocalState,saveRaw,reload:()=>{reloadCustomProductsFromState();fillFilters();render();renderExtraViews();},productIds:()=>products.map(idOf)};
+
+const adminState={user:null,db:null,api:null,isAdmin:false,products:[],selectedId:'',loading:false};
+function adminIsConfigured(){return ADMIN_UIDS.some(uid=>uid&&uid!=="REMPLACER_PAR_MON_UID_FIREBASE")}
+function adminIsAllowed(user){return !!user&&adminIsConfigured()&&ADMIN_UIDS.includes(user.uid)}
+function adminSetStatus(message){const el=$('#adminStatus');if(el)el.textContent=message}
+function adminGuard(){if(!adminState.isAdmin||!adminState.db||!adminState.api){adminSetStatus('Acces admin bloque. Connecte-toi avec un UID autorise.');toast('Acces admin refuse');return false}return true}
+function adminDoc(id){return adminState.api.doc(adminState.db,`products/${id}`)}
+function splitAdminList(value){return [...new Set(String(value||'').split(/[,;\n]/).map(x=>safePlainText(x,80)).filter(Boolean))]}
+function adminProductIdFrom(product){return safePlainText(product.id||product.code||slugText(product.name),180)}
+function productForFirestore(raw){
+  const id=adminProductIdFrom(raw);
+  const parts=makeProductParts(raw.parts?.blades||raw.blade,raw.parts?.ratchets||raw.ratchet,raw.parts?.bits||raw.bit,'admin');
+  const displayOrder=raw.displayOrder===''||raw.displayOrder===undefined?NaN:Number(raw.displayOrder);
+  const out={
+    id,
+    code:safePlainText(raw.code,80),
+    name:safePlainText(raw.name,220),
+    cat:safePlainText(raw.cat,160),
+    wave:safePlainText(raw.wave,80),
+    line:safePlainText(raw.line,80),
+    type:safePlainText(raw.type,40),
+    color:safePlainText(raw.color,180),
+    date:safePlainText(raw.date,160),
+    price:safePlainText(raw.price,160),
+    imagePath:safePlainText(raw.imagePath,260),
+    active:raw.active===false?false:true,
+    parts,
+    blade:parts.blades,
+    ratchet:parts.ratchets,
+    bit:parts.bits,
+    updatedAt:new Date().toISOString()
+  };
+  if(Number.isFinite(displayOrder))out.displayOrder=displayOrder;
+  return out;
+}
+function adminFormProduct(){
+  return productForFirestore({
+    id:$('#adminId')?.value,
+    code:$('#adminCode')?.value,
+    name:$('#adminName')?.value,
+    cat:$('#adminCat')?.value,
+    wave:$('#adminWave')?.value,
+    line:$('#adminLine')?.value,
+    type:$('#adminType')?.value,
+    color:$('#adminColor')?.value,
+    date:$('#adminDate')?.value,
+    price:$('#adminPrice')?.value,
+    imagePath:$('#adminImagePath')?.value,
+    blade:splitAdminList($('#adminBlade')?.value),
+    ratchet:splitAdminList($('#adminRatchet')?.value),
+    bit:splitAdminList($('#adminBit')?.value),
+    displayOrder:$('#adminOrder')?.value,
+    active:$('#adminActive')?.checked!==false
+  });
+}
+function setAdminForm(product={}){
+  const p=normalizeProduct(product,product.id||product.code||'');
+  adminState.selectedId=p.id||'';
+  const parts=normalizeProductParts(p.parts,p.name);
+  const set=(id,value)=>{const el=$('#'+id);if(el)el.value=value||''};
+  set('adminId',p.id);set('adminCode',p.code);set('adminName',p.name);set('adminCat',p.cat);set('adminWave',p.wave);set('adminLine',p.line);set('adminType',p.type);set('adminColor',p.color);set('adminDate',p.date);set('adminPrice',p.price);set('adminImagePath',p.imagePath);set('adminBlade',parts.blades.join(', '));set('adminRatchet',parts.ratchets.join(', '));set('adminBit',parts.bits.join(', '));set('adminOrder',p.displayOrder);
+  const active=$('#adminActive');if(active)active.checked=p.active!==false;
+  const title=$('#adminFormTitle');if(title)title.textContent=p.id?'Modifier un produit':'Ajouter un produit';
+  renderAdminPreview();
+}
+function clearAdminForm(){adminState.selectedId='';['adminId','adminCode','adminName','adminCat','adminWave','adminLine','adminType','adminColor','adminDate','adminPrice','adminImagePath','adminBlade','adminRatchet','adminBit','adminOrder'].forEach(id=>{const el=$('#'+id);if(el)el.value=''});const active=$('#adminActive');if(active)active.checked=true;const title=$('#adminFormTitle');if(title)title.textContent='Ajouter un produit';renderAdminPreview()}
+function adminPreviewCandidates(p){
+  const code=String(p.code||'').trim();
+  const imagePath=normalizeImageFileName(p.imagePath||'');
+  const files=code?imageExtensions.map(ext=>`${code}.${ext}`):[];
+  return [imagePath&&localImagePathFromFile(imagePath),...files.map(localImagePathFromFile),placeholderImg(p)].filter(Boolean);
+}
+function nextAdminPreview(el){const p=adminFormProduct();const arr=adminPreviewCandidates(p);let i=parseInt(el.dataset.try||'0',10)+1;if(i>=arr.length){el.onerror=null;el.src=placeholderImg(p);return}el.dataset.try=String(i);el.src=arr[i]}
+function renderAdminPreview(){
+  const p=adminFormProduct(), img=$('#adminPreview'), hint=$('#adminImageHint');
+  if(img){img.dataset.try='0';img.onerror=function(){nextAdminPreview(this)};img.src=adminPreviewCandidates(p)[0]||placeholderImg(p)}
+  if(hint){const code=p.code||'{code}';hint.innerHTML=`Chemins essayes : <span class="code">${esc(p.imagePath||'imagePath vide')}</span>, <span class="code">images/${esc(code)}.webp</span>, <span class="code">images/${esc(code)}.jpg</span>, <span class="code">images/${esc(code)}.jpeg</span>, <span class="code">images/${esc(code)}.png</span>`}
+}
+function adminSortProducts(list){return [...list].sort((a,b)=>(Number(a.displayOrder)||999999)-(Number(b.displayOrder)||999999)||(a.code||'').localeCompare(b.code||'','fr')||a.name.localeCompare(b.name,'fr'))}
+function renderAdmin(){
+  const body=$('#adminProductsBody');if(!body)return;
+  if(!adminState.isAdmin){body.innerHTML='<tr><td colspan="8" class="empty">Connecte-toi avec un UID admin pour administrer les produits.</td></tr>';return}
+  const q=($('#adminSearch')?.value||'').toLowerCase().trim();
+  const list=adminSortProducts(adminState.products).filter(p=>!q||[p.id,p.code,p.name,p.cat,p.wave,p.line,p.type].join(' ').toLowerCase().includes(q));
+  body.innerHTML=list.map(p=>`<tr class="${p.active===false?'inactiveRow':''}"><td class="code">${esc(p.code||p.id)}</td><td><b>${esc(p.name)}</b><div class="small">${esc(p.line||'')}</div></td><td>${p.type?`<span class="chip">${esc(p.type)}</span>`:'—'}</td><td>${esc(p.cat||'—')}</td><td>${esc(p.wave||'—')}</td><td>${p.active===false?'<span class="chip">Inactif</span>':'<span class="chip">Actif</span>'}</td><td><img class="adminPreviewCell" src="${adminPreviewCandidates(p)[0]||placeholderImg(p)}" onerror="this.style.display='none'" alt=""></td><td><div class="adminActions"><button class="mini primary" data-admin-action="edit" data-id="${esc(p.id)}">Modifier</button><button class="mini warn" data-admin-action="deactivate" data-id="${esc(p.id)}">Désactiver</button><button class="mini good" data-admin-action="reactivate" data-id="${esc(p.id)}">Réactiver</button><button class="mini danger" data-admin-action="delete" data-id="${esc(p.id)}">Supprimer</button></div></td></tr>`).join('')||'<tr><td colspan="8" class="empty">Aucun produit.</td></tr>';
+  $$('[data-admin-action]').forEach(btn=>btn.onclick=()=>handleAdminRowAction(btn.dataset.adminAction,btn.dataset.id));
+  adminSetStatus(`${adminState.products.length} produit(s) Firestore charges. ${list.length} affiche(s).`);
+}
+function syncVisibleProductsFromAdmin(){if(adminState.products.length)applyProducts(adminState.products,'firestore')}
+async function adminLoadProducts(){
+  if(!adminGuard())return;
+  adminState.loading=true;adminSetStatus('Chargement des produits Firestore...');
+  try{
+    const snap=await adminState.api.getDocs(adminState.api.collection(adminState.db,'products'));
+    const list=[];snap.forEach(docSnap=>list.push(normalizeProduct({...docSnap.data(),id:docSnap.id},docSnap.id)));
+    adminState.products=list;renderAdmin();syncVisibleProductsFromAdmin();
+  }catch(error){adminSetStatus(`Erreur lecture products : ${error?.message||error}`)}
+  finally{adminState.loading=false}
+}
+async function adminSaveProduct(){
+  if(!adminGuard())return;
+  const payload=adminFormProduct();
+  if(!payload.name){adminSetStatus('Nom requis.');return}
+  if(!payload.id){adminSetStatus('ID document requis.');return}
+  try{
+    await adminState.api.setDoc(adminDoc(payload.id),payload);
+    adminSetStatus('Produit enregistre dans Firestore.');
+    const i=adminState.products.findIndex(p=>p.id===payload.id);
+    if(i>=0)adminState.products[i]=normalizeProduct(payload,payload.id);else adminState.products.push(normalizeProduct(payload,payload.id));
+    renderAdmin();syncVisibleProductsFromAdmin();toast('Produit enregistre');
+  }catch(error){adminSetStatus(`Erreur ecriture products : ${error?.message||error}`)}
+}
+async function adminSetActive(id,active){
+  if(!adminGuard()||!id)return;
+  const existing=adminState.products.find(p=>p.id===id);
+  if(!existing)return;
+  const payload=productForFirestore({...existing,active});
+  try{await adminState.api.setDoc(adminDoc(id),payload,{merge:true});existing.active=active;renderAdmin();syncVisibleProductsFromAdmin();toast(active?'Produit reactive':'Produit desactive')}catch(error){adminSetStatus(`Erreur statut : ${error?.message||error}`)}
+}
+async function adminDeleteProduct(id){
+  if(!adminGuard()||!id)return;
+  const expected=`SUPPRIMER ${id}`;
+  if(prompt(`Suppression definitive du document products/${id}.\nTape exactement : ${expected}`)!==expected){adminSetStatus('Suppression annulee.');return}
+  try{await adminState.api.deleteDoc(adminDoc(id));adminState.products=adminState.products.filter(p=>p.id!==id);clearAdminForm();renderAdmin();syncVisibleProductsFromAdmin();toast('Produit supprime')}catch(error){adminSetStatus(`Erreur suppression : ${error?.message||error}`)}
+}
+function handleAdminRowAction(action,id){const p=adminState.products.find(x=>x.id===id);if(action==='edit'&&p){setAdminForm(p);window.scrollTo({top:0,behavior:'smooth'})}if(action==='deactivate')adminSetActive(id,false);if(action==='reactivate')adminSetActive(id,true);if(action==='delete')adminDeleteProduct(id)}
+function adminExportProducts(){if(!adminGuard())return;download('bladebase-products-firestore.json',JSON.stringify({exportedAt:new Date().toISOString(),products:adminSortProducts(adminState.products)},null,2),'application/json')}
+function adminDownloadFallback(){if(!adminGuard())return;download('products-fallback.json',JSON.stringify({products:adminSortProducts(adminState.products)},null,2),'application/json');adminSetStatus('Fichier genere. Depose-le dans data/products-fallback.json si tu veux mettre a jour le fallback du depot.')}
+async function adminImportProducts(file){
+  if(!adminGuard()||!file)return;
+  try{
+    const data=JSON.parse(await file.text());
+    const list=Array.isArray(data)?data:(Array.isArray(data.products)?data.products:[]);
+    if(!list.length)throw new Error('Aucun produit trouve dans le JSON.');
+    if(!confirm(`Importer ${list.length} produit(s) vers Firestore products ? Les documents avec le meme ID seront remplaces.`))return;
+    adminSetStatus(`Import de ${list.length} produit(s)...`);
+    for(const item of list){const payload=productForFirestore({...item,id:item.id||item.code});await adminState.api.setDoc(adminDoc(payload.id),payload)}
+    await adminLoadProducts();toast('Import produits termine');
+  }catch(error){adminSetStatus(`Import impossible : ${error?.message||error}`)}
+}
+function updateAdminAccess(user){
+  adminState.user=user||null;adminState.isAdmin=adminIsAllowed(user);
+  const tab=$('#adminTab');if(tab)tab.style.display=adminState.isAdmin?'inline-flex':'none';
+  if(!adminState.isAdmin&&forcedView==='admin'){forcedView='collection';showMainView('collection');}
+  if(adminState.isAdmin&&adminState.db&&!adminState.products.length)adminLoadProducts();
+  renderAdmin();
+}
+window.bladeInitAdmin=function(db,api){adminState.db=db;adminState.api=api;updateAdminAccess(adminState.user);};
+window.bladeSetAdminUser=updateAdminAccess;
+function bindAdminUi(){
+  $('#adminSearch')?.addEventListener('input',renderAdmin);
+  $('#adminReloadBtn')?.addEventListener('click',adminLoadProducts);
+  $('#adminExportBtn')?.addEventListener('click',adminExportProducts);
+  $('#adminFallbackBtn')?.addEventListener('click',adminDownloadFallback);
+  $('#adminImportBtn')?.addEventListener('click',()=>$('#adminImportFile')?.click());
+  $('#adminImportFile')?.addEventListener('change',e=>adminImportProducts(e.target.files?.[0]));
+  $('#adminSaveBtn')?.addEventListener('click',adminSaveProduct);
+  $('#adminNewBtn')?.addEventListener('click',clearAdminForm);
+  $('#adminDeactivateBtn')?.addEventListener('click',()=>adminSetActive(adminState.selectedId||adminFormProduct().id,false));
+  $('#adminReactivateBtn')?.addEventListener('click',()=>adminSetActive(adminState.selectedId||adminFormProduct().id,true));
+  $('#adminDeleteBtn')?.addEventListener('click',()=>adminDeleteProduct(adminState.selectedId||adminFormProduct().id));
+  ['adminCode','adminName','adminImagePath'].forEach(id=>$('#'+id)?.addEventListener('input',renderAdminPreview));
+  clearAdminForm();
+}
 
 function exportData(filename='collection_beyblade_x_hasbro_sauvegarde.json', includeProducts=true){const payload={app:'Beyblade X Hasbro Collection Tracker',version:5,exportedAt:new Date().toISOString(),state,products:includeProducts?products:undefined};download(filename,JSON.stringify(payload,null,2),'application/json');}
 function download(filename,content,type){const blob=new Blob([content],{type});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=filename;a.click();URL.revokeObjectURL(a.href);}
@@ -378,14 +547,14 @@ function canUseServiceWorker(){return 'serviceWorker' in navigator && ['http:','
 async function activateWaitingWorker(reg){if(reg&&reg.waiting)reg.waiting.postMessage({type:'SKIP_WAITING'});}
 async function registerPwa(){if(!canUseServiceWorker())return;const hadController=!!navigator.serviceWorker.controller;navigator.serviceWorker.addEventListener('controllerchange',()=>{if(!hadController||swRefreshing)return;swRefreshing=true;toast('Nouvelle version installée. Rechargement...');setTimeout(()=>location.reload(),650);});try{const reg=await navigator.serviceWorker.register('./service-worker.js',{scope:'./'});await reg.update();await activateWaitingWorker(reg);reg.addEventListener('updatefound',()=>{const worker=reg.installing;if(!worker)return;worker.addEventListener('statechange',()=>{if(worker.state==='installed'&&navigator.serviceWorker.controller){toast('Nouvelle version détectée. Mise à jour en cours...');worker.postMessage({type:'SKIP_WAITING'});}});});}catch(e){console.warn('Service worker indisponible',e);}}
 async function checkAppVersion(){try{const res=await fetch('./version.json?nocache='+Date.now(),{cache:'no-store'});if(!res.ok)return;const info=await res.json();if(!info.version)return;const previous=localStorage.getItem(VERSION_KEY);if(previous&&previous!==info.version){toast('Nouvelle version détectée. Mise à jour en cours...');localStorage.setItem(VERSION_KEY,info.version);if(canUseServiceWorker()){const reg=await navigator.serviceWorker.getRegistration('./');if(reg){await reg.update();await activateWaitingWorker(reg);}}setTimeout(()=>{if(!swRefreshing)location.reload();},1200);}else{localStorage.setItem(VERSION_KEY,info.version);}}catch(e){console.warn('Version check impossible',e);}}
-$$('.tab').forEach(b=>b.onclick=()=>{$$('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');forcedView=b.dataset.view;const appViews=['stats','hunter','timeline','parts','trades','assistant','settings','product','part'];appViews.forEach(v=>{const el=$('#'+v+'View');if(el)el.style.display=forcedView===v?'block':'none'});$('#collectionView').style.display=appViews.includes(forcedView)?'none':'block';render();renderExtraViews();});
+$$('.tab').forEach(b=>b.onclick=()=>{$$('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');forcedView=b.dataset.view;if(forcedView==='admin'&&!adminState.isAdmin){forcedView='collection';toast('Acces admin refuse');}const appViews=['stats','hunter','timeline','parts','trades','assistant','settings','admin','product','part'];appViews.forEach(v=>{const el=$('#'+v+'View');if(el)el.style.display=forcedView===v?'block':'none'});$('#collectionView').style.display=appViews.includes(forcedView)?'none':'block';render();renderExtraViews();});
 ['search','category','wave','year','status','priority'].forEach(id=>$('#'+id).oninput=render);
 $('#exportBtn').onclick=()=>exportData();$('#exportBtn2').onclick=()=>exportData();$('#printBtn').onclick=()=>window.print();
 $('#sampleBtn').onclick=()=>download('modele_collection_beyblade_x_hasbro.json',JSON.stringify({app:'Beyblade X Hasbro Collection Tracker',version:5,state:{}},null,2),'application/json');
 $('#importBtn').onclick=()=>$('#importFile').click();
 $('#importFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const data=JSON.parse(await f.text());backupCurrentState('before_import');state=data.state||data||{};saveState();location.reload();toast('Sauvegarde importée')}catch(err){alert('Fichier JSON invalide.')}};
 $('#resetBtn').onclick=()=>{if(confirm('Archiver la collection actuelle puis repartir sur une base vide ? Une copie restera conservée dans le stockage local du navigateur.')){backupCurrentState('before_reset');state={};saveRaw();render();toast('Collection archivée puis réinitialisée')}};
-$('#modalClose').onclick=()=>$('#imageModal').style.display='none';$('#imageModal').onclick=e=>{if(e.target.id==='imageModal')$('#imageModal').style.display='none'};$('#listMode').onclick=()=>{displayMode='list';updateDisplayModeButtons();render();};$('#gridMode').onclick=()=>{displayMode='grid';updateDisplayModeButtons();render();};$('#assistantAskBtn').onclick=askAssistant;$('#backToCollectionBtn').onclick=()=>{forcedView='collection';showMainView('collection');render();};$('#backFromPartBtn').onclick=()=>{forcedView='collection';showMainView('collection');render();};loadFallbackProducts();loadFallbackParts();loadImageManifest();registerPwa();checkAppVersion();
+$('#modalClose').onclick=()=>$('#imageModal').style.display='none';$('#imageModal').onclick=e=>{if(e.target.id==='imageModal')$('#imageModal').style.display='none'};$('#listMode').onclick=()=>{displayMode='list';updateDisplayModeButtons();render();};$('#gridMode').onclick=()=>{displayMode='grid';updateDisplayModeButtons();render();};$('#assistantAskBtn').onclick=askAssistant;$('#backToCollectionBtn').onclick=()=>{forcedView='collection';showMainView('collection');render();};$('#backFromPartBtn').onclick=()=>{forcedView='collection';showMainView('collection');render();};bindAdminUi();loadFallbackProducts();loadFallbackParts();loadImageManifest();registerPwa();checkAppVersion();
 </script>
 <script type="module">
 const authEls = {
@@ -534,7 +703,7 @@ try{
     import("https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js")
   ]);
   const {browserLocalPersistence,createUserWithEmailAndPassword,getAuth,getRedirectResult,GoogleAuthProvider,onAuthStateChanged,sendPasswordResetEmail,setPersistence,signInWithEmailAndPassword,signInWithPopup,signInWithRedirect,signOut,useDeviceLanguage}=firebaseAuth;
-  const {collection,doc,getDoc,getDocs,setDoc,getFirestore,initializeFirestore,persistentLocalCache,persistentSingleTabManager}=firestoreSdk;
+  const {collection,deleteDoc,doc,getDoc,getDocs,setDoc,getFirestore,initializeFirestore,persistentLocalCache,persistentSingleTabManager}=firestoreSdk;
   const app=initializeApp(firebaseConfig);
   const auth=getAuth(app);
   let db;
@@ -544,6 +713,7 @@ try{
   cloudSync.firestore={collection,doc,getDoc,getDocs,setDoc};
   window.bladeLoadFirestoreProducts?.(db,{collection,getDocs});
   window.bladeLoadFirestoreParts?.(db,{collection,getDocs});
+  window.bladeInitAdmin?.(db,{collection,deleteDoc,doc,getDocs,setDoc});
   const googleProvider=new GoogleAuthProvider();
   googleProvider.addScope("email");
   googleProvider.addScope("profile");
@@ -685,6 +855,7 @@ try{
   syncEls.pull?.addEventListener('click',()=>{if(confirm('Restaurer la sauvegarde cloud sur cet appareil ? Une archive locale sera créée avant remplacement.'))restoreCloudToLocal();});
 
   onAuthStateChanged(auth,user=>{
+    window.bladeSetAdminUser?.(user||null);
     if(user){
       authMessageHoldUntil=0;
       if(authEls.status)authEls.status.textContent="Connecté";
