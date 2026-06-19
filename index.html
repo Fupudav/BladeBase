@@ -359,7 +359,7 @@ function galleryForProduct(p){
 function showMainView(v='collection'){
   ['home','stats','missing','more','hunter','timeline','parts','trades','assistant','settings','admin','product','part'].forEach(x=>{const el=$('#'+x+'View'); if(el)el.style.display='none'});
   $('#collectionView').style.display=v==='collection'?'block':'none';
-  const el=$('#'+v+'View'); if(el)el.style.display=v==='collection'?'none':'block';
+  const el=$('#'+v+'View'); if(el&&v!=='collection')el.style.display='block';
   $$('.tab').forEach(x=>x.classList.toggle('active',x.dataset.view===v));
 }
 
