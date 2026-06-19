@@ -118,6 +118,37 @@ match /parts/{partId} {
 }
 ```
 
+## Admin produits
+
+L'onglet Admin est masque par defaut. Pour l'activer dans l'interface, remplacer dans `index.html` :
+
+```js
+const ADMIN_UIDS = ["REMPLACER_PAR_MON_UID_FIREBASE"];
+```
+
+par l'UID Firebase du compte autorise. Cette protection cote interface evite les actions accidentelles, mais la vraie securite doit aussi etre appliquee dans Firestore.
+
+Regles conseillees pour autoriser l'ecriture de `products` uniquement aux UID admin :
+
+```js
+function isAdmin() {
+  return request.auth != null
+         && request.auth.uid in ["REMPLACER_PAR_MON_UID_FIREBASE"];
+}
+
+match /products/{productId} {
+  allow read: if true;
+  allow create, update, delete: if isAdmin();
+}
+
+match /parts/{partId} {
+  allow read: if true;
+  allow create, update, delete: if isAdmin();
+}
+```
+
+Solution plus robuste a terme : utiliser des custom claims Firebase (`admin: true`) au lieu d'une liste d'UID dupliquee cote interface et cote regles.
+
 ## Synchronisation Firestore utilisateur
 
 Les donnees utilisateur restent stockees sous l'utilisateur connecte :
