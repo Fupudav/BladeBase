@@ -1,4 +1,4 @@
-const APP_VERSION = "2026.06.17.05";
+const APP_VERSION = "2026.06.19.01";
 const APP_CACHE = `bladebase-app-${APP_VERSION}`;
 const STATIC_CACHE = `bladebase-static-${APP_VERSION}`;
 
@@ -45,6 +45,7 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
+  if (url.pathname.startsWith("/__/auth/")) return;
 
   if (request.mode === "navigate" || isNetworkFirst(url)) {
     event.respondWith(networkFirst(request));

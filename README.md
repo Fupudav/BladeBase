@@ -28,7 +28,7 @@ Pour la connexion Google, verifier aussi que le fournisseur Google est active da
 - `www.bladebase.fr`
 - `fupudav.github.io`
 
-Le flux Google tente d'abord une fenetre popup, puis bascule vers une redirection quand le navigateur ou la PWA bloque la popup. Les logs de diagnostic sont desactives par defaut et peuvent etre actives avec `?authDebug=1` ou `localStorage.setItem('bladebase_auth_debug','1')`.
+Le flux Google utilise directement une redirection sur mobile/PWA installee afin d'eviter les pages blanches liees aux popups. Sur ordinateur, il tente d'abord une fenetre popup, puis bascule vers une redirection quand le navigateur bloque la popup. Les logs de diagnostic sont desactives par defaut et peuvent etre actives avec `?authDebug=1` ou `localStorage.setItem('bladebase_auth_debug','1')`.
 
 ## Produits Firestore
 

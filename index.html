@@ -545,6 +545,8 @@ try{
   window.bladeLoadFirestoreProducts?.(db,{collection,getDocs});
   window.bladeLoadFirestoreParts?.(db,{collection,getDocs});
   const googleProvider=new GoogleAuthProvider();
+  googleProvider.addScope("email");
+  googleProvider.addScope("profile");
   googleProvider.setCustomParameters({prompt:"select_account"});
   useDeviceLanguage?.(auth);
   await setPersistence(auth,browserLocalPersistence);
@@ -711,8 +713,12 @@ try{
   });
   authEls.google?.addEventListener("click",async()=>{
     setAuthMessage("Connexion Google en cours...");
-    authDebug("Google popup attempt",{standalone:isStandalonePwa(),mobile:isMobileLike(),host:location.host});
+    authDebug("Google sign-in attempt",{standalone:isStandalonePwa(),mobile:isMobileLike(),host:location.host});
     try{
+      if(isMobileLike()||isStandalonePwa()){
+        await startGoogleRedirect("mobile-or-pwa");
+        return;
+      }
       await signInWithPopup(auth,googleProvider);
       authToast("Connecté avec Google");
       setAuthMessage("Connexion Google réussie. La session est conservée automatiquement.");
