@@ -123,7 +123,7 @@ match /parts/{partId} {
 L'onglet Admin est masque par defaut. Pour l'activer dans l'interface, remplacer dans `index.html` :
 
 ```js
-const ADMIN_UIDS = ["REMPLACER_PAR_MON_UID_FIREBASE"];
+const ADMIN_UIDS = ["gVIZu796bSVTNEbb0lMFJD3i8tw1"];
 ```
 
 par l'UID Firebase du compte autorise. Cette protection cote interface evite les actions accidentelles, mais la vraie securite doit aussi etre appliquee dans Firestore.
@@ -133,7 +133,7 @@ Regles conseillees pour autoriser l'ecriture de `products` uniquement aux UID ad
 ```js
 function isAdmin() {
   return request.auth != null
-         && request.auth.uid in ["REMPLACER_PAR_MON_UID_FIREBASE"];
+         && request.auth.uid in ["gVIZu796bSVTNEbb0lMFJD3i8tw1"];
 }
 
 match /products/{productId} {
