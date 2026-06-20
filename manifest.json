@@ -2,8 +2,8 @@
   "name": "BladeBase - Beyblade X Hasbro Collection",
   "short_name": "BladeBase",
   "description": "Suivi de collection Beyblade X Hasbro avec wishlist, doublons, notes, photos, statistiques et mode hors ligne.",
-  "id": "./index.html",
-  "start_url": "./index.html",
+  "id": "./",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "display_override": ["standalone", "minimal-ui"],
@@ -13,16 +13,29 @@
   "categories": ["lifestyle", "utilities"],
   "lang": "fr",
   "dir": "ltr",
+  "prefer_related_applications": false,
   "icons": [
     {
-      "src": "./images/Icone-1024.png",
-      "sizes": "1024x1024",
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "./images/Icone-1024.png",
-      "sizes": "1024x1024",
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icons/maskable-512.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     }

@@ -1,4 +1,4 @@
-const APP_VERSION = "2026.06.20.05";
+const APP_VERSION = "2026.06.20.06";
 const APP_CACHE = `bladebase-app-${APP_VERSION}`;
 const STATIC_CACHE = `bladebase-static-${APP_VERSION}`;
 
@@ -11,7 +11,11 @@ const CORE_ASSETS = [
   "./data/products-fallback.json",
   "./data/parts-fallback.json",
   "./images/Logo-banniere.png",
-  "./images/Icone-1024.png"
+  "./images/Icone-1024.png",
+  "./icons/icon-192.png",
+  "./icons/icon-512.png",
+  "./icons/maskable-192.png",
+  "./icons/maskable-512.png"
 ];
 
 self.addEventListener("install", (event) => {
