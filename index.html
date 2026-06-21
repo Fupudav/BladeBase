@@ -643,6 +643,7 @@ const syncEls = {
 let cloudSync={
   user:null,db:null,firestore:null,busy:false,ready:false,cloudUpdatedAt:'',timer:null,lastError:'',lastCloudPayload:null,resolving:false
 };
+const SYNC_CLOCK_SKEW_MS=1500;
 let authMessageHoldUntil=0;
 
 function authToast(message){ if(window.toast) window.toast(message); }
@@ -659,6 +660,8 @@ function authDebug(...args){if(authDebugEnabled())console.debug('[BladeBase Auth
 function syncToast(message){ if(window.toast) window.toast(message); }
 function setSyncStatus(message){ if(syncEls.status) syncEls.status.textContent=message; }
 function formatSyncDate(value){if(!value)return '—';const d=new Date(value);return Number.isNaN(d.getTime())?String(value):d.toLocaleString('fr-FR');}
+function syncTime(value){const time=Date.parse(value||'');return Number.isFinite(time)?time:0}
+function newestSyncSource(localTime,cloudTime){if(cloudTime>localTime+SYNC_CLOCK_SKEW_MS)return 'cloud';if(localTime>cloudTime+SYNC_CLOCK_SKEW_MS)return 'local';return 'same'}
 function localState(){return window.bladeLocal?.getState?.()||{}}
 function stateMeta(){const s=localState();if(!s._meta||typeof s._meta!=='object')s._meta={};return s._meta}
 function localUpdatedAt(){return stateMeta().localUpdatedAt||''}
@@ -685,24 +688,8 @@ function cloudToState(payload){
   Object.entries(payload.userPhotos||{}).forEach(([id,photo])=>{if(photo?.img){if(!next[id])next[id]={};next[id].img=photo.img;}});
   return next;
 }
-function mergeCustomProducts(a=[],b=[]){const map=new Map();[...a,...b].forEach(p=>{if(p&&typeof p==='object')map.set((p.code||p.name||JSON.stringify(p)),p)});return [...map.values()]}
-function cleanRecordForMerge(r){const out=cleanRecordForCloud(r||{});if(r?.img)out.img=r.img;return out}
-function mergeStates(local,cloud){
-  const merged={_meta:{schemaVersion:1,localUpdatedAt:new Date().toISOString()},settings:{...(cloud.settings||{}),...(local.settings||{})},customProducts:mergeCustomProducts(cloud.customProducts,local.customProducts)};
-  const keys=new Set([...Object.keys(cloud||{}),...Object.keys(local||{})]);
-  keys.forEach(key=>{
-    if(['_meta','customProducts','settings'].includes(key))return;
-    const c=cloud?.[key], l=local?.[key];
-    const cMeaning=c&&typeof c==='object'&&!Array.isArray(c)&&isMeaningfulRecord(c);
-    const lMeaning=l&&typeof l==='object'&&!Array.isArray(l)&&isMeaningfulRecord(l);
-    if(cMeaning||lMeaning)merged[key]={...(cMeaning?cleanRecordForMerge(c):{}),...(lMeaning?cleanRecordForMerge(l):{})};
-  });
-  return merged;
-}
 function chooseSyncResolution(localTime,cloudTime){
-  const message=`Une sauvegarde locale (${formatSyncDate(localTime)}) et une sauvegarde cloud (${formatSyncDate(cloudTime)}) existent.\n\nOK : fusionner prudemment.\nAnnuler : choisir ensuite entre cloud et local.`;
-  if(confirm(message))return 'fusionner';
-  return confirm('Restaurer la sauvegarde cloud sur cet appareil ?\n\nOK : utiliser le cloud.\nAnnuler : garder la sauvegarde locale et l’envoyer au cloud.')?'cloud':'local';
+  return newestSyncSource(localTime,cloudTime);
 }
 function setSyncButtonsDisabled(disabled){[syncEls.saveNow,syncEls.pull,syncEls.push].forEach(btn=>{if(btn)btn.disabled=disabled})}
 function authCredentials(){
@@ -812,14 +799,13 @@ try{
   }
   async function resolveRemoteChange(payload,reason){
     if(cloudSync.resolving)return false;
-    const remoteTime=Date.parse(cloudUpdatedAtFrom(payload)||'')||0;
-    const lastSeen=Date.parse(cloudSync.cloudUpdatedAt||'')||0;
+    const remoteTime=syncTime(cloudUpdatedAtFrom(payload));
+    const lastSeen=syncTime(cloudSync.cloudUpdatedAt);
     if(payload.empty||remoteTime<=lastSeen+1000)return true;
     cloudSync.resolving=true;
-    const localTime=Date.parse(localUpdatedAt()||'')||0;
+    const localTime=syncTime(localUpdatedAt());
     const choice=chooseSyncResolution(localTime,remoteTime);
     if(choice==='cloud'){applyCloudPayload(payload,'Cloud plus récent restauré');cloudSync.resolving=false;return false;}
-    if(choice.startsWith('fusion')){const merged=mergeStates(localState(),cloudToState(payload));window.bladeLocal.replaceState(merged,{touch:true,reason:'before_cloud_merge'});cloudSync.cloudUpdatedAt=cloudUpdatedAtFrom(payload);cloudSync.resolving=false;await pushLocalToCloud(reason+'_merged',{skipRemoteCheck:true});return false;}
     cloudSync.cloudUpdatedAt=cloudUpdatedAtFrom(payload);
     cloudSync.resolving=false;
     return true;
@@ -864,11 +850,11 @@ try{
       const payload=await readCloudPayload(user.uid);
       cloudSync.cloudUpdatedAt=cloudUpdatedAtFrom(payload);
       updateLocalSyncUi();
-      const localTime=Date.parse(localUpdatedAt()||'')||0, cloudTime=Date.parse(cloudSync.cloudUpdatedAt||'')||0;
+      const localTime=syncTime(localUpdatedAt()), cloudTime=syncTime(cloudSync.cloudUpdatedAt);
       if(payload.empty&&hasLocalUserData()){await pushLocalToCloud('first_upload',{skipRemoteCheck:true});return;}
       if(payload.empty){setSyncStatus('Connecté, aucune sauvegarde cloud');return;}
-      if(cloudTime>localTime+1000){const choice=chooseSyncResolution(localTime,cloudTime);if(choice==='cloud'){applyCloudPayload(payload,'Cloud restauré en local');return;}if(choice==='local'){await pushLocalToCloud('user_kept_local',{skipRemoteCheck:true});return;}if(choice.startsWith('fusion')){const merged=mergeStates(localState(),cloudToState(payload));window.bladeLocal.replaceState(merged,{touch:true,reason:'before_cloud_merge'});await pushLocalToCloud('merged',{skipRemoteCheck:true});return;}setSyncStatus('Synchro en attente de choix');return;}
-      if(localTime>cloudTime+1000){await pushLocalToCloud('local_newer',{skipRemoteCheck:true});return;}
+      if(cloudTime>localTime+SYNC_CLOCK_SKEW_MS){applyCloudPayload(payload,'Cloud plus récent restauré en local');return;}
+      if(localTime>cloudTime+SYNC_CLOCK_SKEW_MS){await pushLocalToCloud('local_newer',{skipRemoteCheck:true});return;}
       setSyncStatus('Synchronisé');
     }catch(error){cloudSync.lastError=error?.message||String(error);setSyncStatus(navigator.onLine?'Firestore indisponible':'Hors ligne');}
   }
@@ -876,7 +862,7 @@ try{
   window.addEventListener('online',()=>{if(cloudSync.user){setSyncStatus('Connexion revenue, synchronisation...');pushLocalToCloud('online');}});
   window.addEventListener('offline',()=>setSyncStatus('Hors ligne, sauvegarde locale active'));
   syncEls.saveNow?.addEventListener('click',()=>pushLocalToCloud('manual_save'));
-  syncEls.push?.addEventListener('click',()=>pushLocalToCloud('manual_push'));
+  syncEls.push?.addEventListener('click',()=>{if(confirm('Envoyer la sauvegarde locale vers le cloud et remplacer la sauvegarde cloud actuelle ?'))pushLocalToCloud('manual_push',{skipRemoteCheck:true});});
   syncEls.pull?.addEventListener('click',()=>{if(confirm('Restaurer la sauvegarde cloud sur cet appareil ? Une archive locale sera créée avant remplacement.'))restoreCloudToLocal();});
 
   onAuthStateChanged(auth,user=>{
