@@ -45,7 +45,7 @@
 <section id="productView" style="display:none"><div class="card"><button class="primary" id="backToCollectionBtn">← Retour à la collection</button><div id="productDetailContent" style="margin-top:14px"></div></div></section>
 <section id="partView" style="display:none"><div class="card"><button class="primary" id="backFromPartBtn">← Retour à la collection</button><div id="partDetailContent" style="margin-top:14px"></div></div></section>
 <section id="settingsView" style="display:none"><div class="accountGrid"><div class="card"><h2>Paramètres → Compte</h2><div class="note">Le compte Firebase identifie l'utilisateur et active la synchronisation Firestore. La collection reste toujours sauvegardée localement en premier.</div><div class="kv"><b>État</b><span id="accountStatus">Non connecté</span></div><div class="kv"><b>Email</b><span id="accountEmail">—</span></div><div class="kv"><b>Nom</b><span id="accountName">—</span></div><div class="kv"><b>Synchro</b><span id="syncStatus">Hors compte</span></div><div class="kv"><b>Produits</b><span id="productSourceStatus">Chargement...</span></div><div class="kv"><b>Pièces</b><span id="partSourceStatus">Chargement...</span></div><div class="kv"><b>Locale</b><span id="syncLocalAt">—</span></div><div class="kv"><b>Cloud</b><span id="syncCloudAt">—</span></div><div class="accountActions"><button class="primary" id="syncSaveNowBtn">Sauvegarder maintenant</button><button class="good" id="syncPullBtn">Restaurer depuis le cloud</button><button class="warn" id="syncPushBtn">Envoyer la sauvegarde locale vers le cloud</button></div></div><div class="card"><h2>Connexion</h2><div class="accountForm"><input id="authEmail" type="email" autocomplete="email" placeholder="Adresse email"><input id="authPassword" type="password" autocomplete="current-password" placeholder="Mot de passe"></div><div class="accountActions"><button class="primary" id="authSignupBtn">Créer un compte</button><button class="good" id="authLoginBtn">Se connecter</button><button class="warn" id="authResetBtn">Mot de passe oublié</button><button class="danger" id="authLogoutBtn">Déconnexion</button></div><div id="authMessage" class="small" style="margin-top:10px">Firebase Auth se charge…</div></div><div class="card"><h2>Sauvegarde locale</h2><div class="note">Les coches, statuts, doublons, notes, prix d'achat, valeurs estimées, dates d'achat, photos personnelles et priorités sont sauvegardés automatiquement dans ce navigateur. Les mises à jour de l'application ne suppriment pas ces données.</div><div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px"><button class="primary" id="exportBtn2">Exporter ma collection</button><button class="good" id="importBtn">Importer une sauvegarde</button><button class="warn" id="sampleBtn">Télécharger modèle vide</button><button class="danger" id="resetBtn">Archiver puis réinitialiser</button><input class="hiddenFile" type="file" id="importFile" accept="application/json"></div></div></div></section>
-<section id="adminView" style="display:none"><div class="card"><h2>Admin produits Firestore</h2><div class="note">Administration visible uniquement pour les UID autorisés. Les actions écrivent dans la collection Firestore <b>products</b> si les règles Firestore l'autorisent.</div><div class="accountActions"><input id="adminSearch" placeholder="Rechercher code, nom, vague..." style="min-width:260px"><button class="primary" id="adminReloadBtn">Recharger</button><button class="good" id="adminExportBtn">Exporter JSON</button><button class="warn" id="adminImportBtn">Importer JSON</button><button id="adminFallbackBtn">Télécharger products-fallback.json</button><input class="hiddenFile" type="file" id="adminImportFile" accept="application/json"></div><div id="adminStatus" class="small" style="margin-top:10px">Admin non initialisé.</div></div><div class="card" style="margin-top:14px"><h2 id="adminFormTitle">Ajouter / modifier un produit</h2><div class="adminForm"><input id="adminId" placeholder="ID document (auto depuis code/nom)"><input id="adminCode" placeholder="Code"><input id="adminName" placeholder="Nom"><input id="adminCat" placeholder="Catégorie"><input id="adminWave" placeholder="Vague"><input id="adminLine" placeholder="Ligne"><select id="adminType"><option value="">Type inconnu</option><option value="Attack">Attaque</option><option value="Defense">Défense</option><option value="Stamina">Endurance</option><option value="Balance">Équilibre</option><option value="Mixed">Mixte</option></select><input id="adminColor" placeholder="Couleur / variante"><input id="adminDate" placeholder="Date de sortie"><input id="adminPrice" placeholder="Prix"><input id="adminImagePath" placeholder="imagePath personnalisé"><input id="adminBuyUrl" placeholder="Lien achat / affilié"><input id="adminBlade" placeholder="Blade(s), séparés par virgule"><input id="adminRatchet" placeholder="Ratchet(s), séparés par virgule"><input id="adminBit" placeholder="Bit(s), séparés par virgule"><input id="adminOrder" type="number" placeholder="Ordre d'affichage"><label class="pill"><input id="adminActive" type="checkbox" checked> Actif</label></div><div class="accountActions"><button class="primary" id="adminSaveBtn">Enregistrer dans Firestore</button><button id="adminNewBtn">Nouveau</button><button class="warn" id="adminDeactivateBtn">Désactiver</button><button class="good" id="adminReactivateBtn">Réactiver</button><button class="danger" id="adminDeleteBtn">Supprimer</button></div></div><div class="card" style="margin-top:14px"><h2>Produits</h2><div class="tableBox"><table><thead><tr><th>Code</th><th>Nom</th><th>Type</th><th>Catégorie</th><th>Vague</th><th>Actif</th><th>Image</th><th>Actions</th></tr></thead><tbody id="adminProductsBody"></tbody></table></div></div></section>
+<section id="adminView" style="display:none"><div class="card"><h2>Admin produits Firestore</h2><div class="note">Administration visible uniquement pour les UID autorisés. Les actions écrivent dans la collection Firestore <b>products</b> si les règles Firestore l'autorisent.</div><div class="accountActions"><input id="adminSearch" placeholder="Rechercher code, nom, vague..." style="min-width:260px"><button class="primary" id="adminReloadBtn">Recharger</button><button class="good" id="adminExportBtn">Exporter JSON</button><button class="warn" id="adminImportBtn">Importer JSON</button><button id="adminFallbackBtn">Télécharger products-fallback.json</button><input class="hiddenFile" type="file" id="adminImportFile" accept="application/json"></div><div id="adminStatus" class="small" style="margin-top:10px">Admin non initialisé.</div></div><div class="card" style="margin-top:14px"><h2>Admin statistiques</h2><div class="note">Totaux agrégés Firestore, sans notes, prix personnels ni liste d'utilisateurs. La lecture dépend des règles Firestore admin.</div><div class="accountActions"><button class="primary" id="adminStatsReloadBtn">Recharger les statistiques</button></div><div id="adminStatsStatus" class="small" style="margin-top:10px">Statistiques non chargées.</div><div class="cards" style="margin-top:14px"><div class="card"><div class="num" id="adminStatsUsers">—</div><div class="label">Utilisateurs Firestore</div></div><div class="card"><div class="num" id="adminStatsOwned">—</div><div class="label">Produits possédés</div></div><div class="card"><div class="num" id="adminStatsWishlist">—</div><div class="label">Wishlist</div></div><div class="card"><div class="num" id="adminStatsDuplicates">—</div><div class="label">Doublons</div></div></div></div><div class="card" style="margin-top:14px"><h2 id="adminFormTitle">Ajouter / modifier un produit</h2><div class="adminForm"><input id="adminId" placeholder="ID document (auto depuis code/nom)"><input id="adminCode" placeholder="Code"><input id="adminName" placeholder="Nom"><input id="adminCat" placeholder="Catégorie"><input id="adminWave" placeholder="Vague"><input id="adminLine" placeholder="Ligne"><select id="adminType"><option value="">Type inconnu</option><option value="Attack">Attaque</option><option value="Defense">Défense</option><option value="Stamina">Endurance</option><option value="Balance">Équilibre</option><option value="Mixed">Mixte</option></select><input id="adminColor" placeholder="Couleur / variante"><input id="adminDate" placeholder="Date de sortie"><input id="adminPrice" placeholder="Prix"><input id="adminImagePath" placeholder="imagePath personnalisé"><input id="adminBuyUrl" placeholder="Lien achat / affilié"><input id="adminBlade" placeholder="Blade(s), séparés par virgule"><input id="adminRatchet" placeholder="Ratchet(s), séparés par virgule"><input id="adminBit" placeholder="Bit(s), séparés par virgule"><input id="adminOrder" type="number" placeholder="Ordre d'affichage"><label class="pill"><input id="adminActive" type="checkbox" checked> Actif</label></div><div class="accountActions"><button class="primary" id="adminSaveBtn">Enregistrer dans Firestore</button><button id="adminNewBtn">Nouveau</button><button class="warn" id="adminDeactivateBtn">Désactiver</button><button class="good" id="adminReactivateBtn">Réactiver</button><button class="danger" id="adminDeleteBtn">Supprimer</button></div></div><div class="card" style="margin-top:14px"><h2>Produits</h2><div class="tableBox"><table><thead><tr><th>Code</th><th>Nom</th><th>Type</th><th>Catégorie</th><th>Vague</th><th>Actif</th><th>Image</th><th>Actions</th></tr></thead><tbody id="adminProductsBody"></tbody></table></div></div></section>
 </main><div id="toast" class="toast"></div><div id="imageModal" class="modal"><div class="modalInner"><div class="modalHeader"><b id="modalTitle"></b><button class="closeBtn" id="modalClose">Fermer</button></div><img id="modalImg" alt="Photo agrandie"></div></div>
 <script>
 const products=[];
@@ -71,6 +71,10 @@ function safePlainText(value,max=500){return String(value||'').replace(/[<>`]/g,
 function typeOf(p){return safePlainText(p.type||'',40)}
 const TYPE_LABELS={Attack:'Attaque',Defense:'Défense',Stamina:'Endurance',Balance:'Équilibre',Mixed:'Mixte'};
 const TYPE_ORDER=['Attack','Defense','Stamina','Balance','Mixed',''];
+window.bladeAnalyticsQueue=[];
+window.bladeTrack=function(name,params={}){window.bladeAnalyticsQueue.push({name,params});};
+window.addEventListener('beforeinstallprompt',()=>window.bladeTrack?.('pwa_install_prompt'));
+window.addEventListener('appinstalled',()=>window.bladeTrack?.('pwa_installed'));
 function typeLabel(value){return TYPE_LABELS[value]||value||'Type inconnu'}
 function slugText(value){return String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'')||'unknown'}
 function partIdFor(kind,name){return `${kind}-${slugText(name)}`}
@@ -230,6 +234,9 @@ function isFuture(p){const text=String(p.date||'');if(/\bTBA\b/i.test(text))retu
 function moneyNum(v){const n=parseFloat(String(v||'').replace(',','.').replace(/[^0-9.]/g,''));return isNaN(n)?0:n}
 function fillFilters(){const keep={category:$('#category').value,wave:$('#wave').value,year:$('#year').value};$('#category').innerHTML='<option value="">Toutes catégories</option>';$('#wave').innerHTML='<option value="">Toutes vagues</option>';$('#year').innerHTML='<option value="">Toutes années</option>';[...new Set(products.map(p=>p.cat))].sort().forEach(c=>$('#category').innerHTML+=`<option>${c}</option>`);[...new Set(products.map(p=>p.wave))].sort().forEach(w=>$('#wave').innerHTML+=`<option>${w}</option>`);[...new Set(products.flatMap(yearsOf))].sort().forEach(y=>$('#year').innerHTML+=`<option>${y}</option>`);Object.entries(keep).forEach(([k,v])=>{if(v&&$('#'+k).querySelector(`option[value="${CSS.escape(v)}"],option`))$('#'+k).value=v});}
 function statusOf(p){const r=rec(p); if(r.status)return r.status; return owned(p)?'owned':'missing'}
+function analyticsProductParams(p){return {product_id:idOf(p),category:p.cat||'',wave:p.wave||'',type:typeOf(p)||''}}
+function analyticsQty(value){return parseInt(value||'1',10)||0}
+function trackCollectionMutation(p,beforeOwned,beforeStatus,beforeQty,beforeOwnedCount){const afterOwned=owned(p),afterStatus=statusOf(p),afterQty=analyticsQty(rec(p).qty),params=analyticsProductParams(p);if(!beforeOwned&&afterOwned){window.bladeTrack?.('product_owned_added',params);if(beforeOwnedCount===0)window.bladeTrack?.('collection_started',params)}if(beforeOwned&&!afterOwned)window.bladeTrack?.('product_owned_removed',params);if(beforeStatus!=='wanted'&&afterStatus==='wanted')window.bladeTrack?.('wishlist_added',params);if((beforeStatus!=='duplicate'&&afterStatus==='duplicate')||(beforeQty<=1&&afterQty>1))window.bladeTrack?.('duplicate_added',params)}
 function colorOf(p){const r=rec(p);return (r.color&&String(r.color).trim()) || p.color || 'À vérifier';}
 function filtered(){const q=$('#search').value.toLowerCase().trim(), c=$('#category').value, w=$('#wave').value, y=$('#year').value, s=$('#status').value, pr=$('#priority').value;return products.filter(p=>{const r=rec(p), st=statusOf(p); const txt=(Object.values(p).join(' ')+' '+colorOf(p)+' '+(r.note||'')+' '+(r.condition||'')).toLowerCase();return (!q||txt.includes(q))&&(!c||p.cat===c)&&(!w||p.wave===w)&&(!y||yearsOf(p).includes(y))&&(!s||(s==='owned'?owned(p):s==='missing'?!owned(p):st===s))&&(!pr||r.priority===pr)});}
 function resetCollectionFilters(){['search','category','wave','year','status','priority'].forEach(id=>{const el=$('#'+id);if(el)el.value=''})}
@@ -307,7 +314,7 @@ function render(){updateDisplayModeButtons();let list=filtered();
     $('#tbody').innerHTML=list.map(p=>{const r=rec(p), id=idOf(p);return `<tr class="${owned(p)?'ownedRow':''}"><td><input type="checkbox" ${owned(p)?'checked':''} data-action="owned" data-id="${id}"></td><td class="photoCell"><img class="thumb" src="${imgOf(p)}" loading="lazy" decoding="async" data-action="openImage" data-id="${id}" data-try="0" onerror="nextImg(this)" alt="${esc(p.name)}"><div class="photoBtns"><label class="photoBtn primary"><input type="file" accept="image/*" data-action="imagefile" data-id="${id}" style="display:none">Photo</label><button class="photoBtn danger" data-action="removeImage" data-id="${id}">X</button></div></td><td class="code">${p.code||'—'}</td><td><b class="clickName" data-action="details" data-id="${id}">${p.name}</b><div style="margin-top:6px"><button class="mini primary" data-action="details" data-id="${id}">Ouvrir fiche</button></div></td><td>${buyButton(p)}</td><td>${typeOf(p)?`<span class="chip">${esc(typeLabel(typeOf(p)))}</span>`:'—'}</td><td><span class="chip">${p.cat}</span></td><td><span class="chip">${p.wave}</span></td><td class="colorCell"><input class="mini colorInput" data-action="color" data-id="${id}" placeholder="Couleur / variante" value="${esc(colorOf(p))}"></td><td class="${isFuture(p)?'future':''}">${p.date||'—'}</td><td class="prices">${p.price}</td><td><div class="rowControls"><select class="mini" data-action="status" data-id="${id}"><option value="">Manquant</option><option value="owned" ${statusOf(p)==='owned'?'selected':''}>Je l’ai</option><option value="wanted" ${statusOf(p)==='wanted'?'selected':''}>Je le veux</option><option value="not_interested" ${statusOf(p)==='not_interested'?'selected':''}>Pas intéressé</option><option value="duplicate" ${statusOf(p)==='duplicate'?'selected':''}>Doublon</option></select><input class="mini" data-action="qty" data-id="${id}" type="number" min="0" placeholder="Qté" value="${esc(r.qty)}"><select class="mini" data-action="condition" data-id="${id}"><option value="">État</option><option ${r.condition==='Neuf scellé'?'selected':''}>Neuf scellé</option><option ${r.condition==='Complet ouvert'?'selected':''}>Complet ouvert</option><option ${r.condition==='Incomplet'?'selected':''}>Incomplet</option><option ${r.condition==='Abîmé'?'selected':''}>Abîmé</option></select></div></td><td><div class="rowControls"><input class="mini" data-action="paid" data-id="${id}" placeholder="Prix payé" value="${esc(r.paid)}"><input class="mini" data-action="estimated" data-id="${id}" placeholder="Valeur actuelle" value="${esc(r.estimated)}"><input class="mini" data-action="buyDate" data-id="${id}" type="date" value="${esc(r.buyDate)}"><select class="mini" data-action="priority" data-id="${id}"><option value="">Priorité</option><option ${r.priority==='Haute'?'selected':''}>Haute</option><option ${r.priority==='Moyenne'?'selected':''}>Moyenne</option><option ${r.priority==='Basse'?'selected':''}>Basse</option></select></div></td><td><textarea data-action="note" data-id="${id}" placeholder="État, variante, où l'acheter…">${esc(r.note)}</textarea></td></tr>`}).join('')||`<tr><td colspan="14" class="empty">Aucun résultat.</td></tr>`;
   }
   bindRows(); stats(); renderCompletionStatsPanels(); renderHome(); renderExtraViews();}
-function bindRows(){$$('[data-action]').forEach(el=>{const action=el.dataset.action;if(action==='partToCollection'){el.onclick=function(){const term=this.dataset.term||''; $('#search').value=term; goView('collection');};return;} if(action==='partToParts'){el.onclick=function(){goView('parts');};return;} if(action==='buy'){el.onclick=function(){const p=products.find(x=>idOf(x)===this.dataset.id), url=p?buyUrlOf(p):''; if(url){window.open(url,'_blank','noopener,noreferrer');return;} toast('Lien achat a ajouter');};return;} if(action==='details'){el.onclick=function(){const p=products.find(x=>idOf(x)===this.dataset.id); if(p)showProductPage(p)};return;} if(action==='partSearch'){el.onclick=function(){showPartPage(this.dataset.kind||'', this.dataset.term||'');};return;} if(action==='openImage'){el.onclick=function(){const p=products.find(x=>idOf(x)===this.dataset.id); if(p)openImage(p,this.src)};return;} if(action==='openPartImage'){el.onclick=function(){const part=partsCatalog.find(x=>x.id===this.dataset.partId)||partDoc(this.dataset.kind||'blade',this.dataset.term||'');$('#modalTitle').textContent=part.name;$('#modalImg').src=this.src||imgOfPart(part);$('#imageModal').style.display='flex'};return;} if(action==='removeImage'){el.onclick=function(){const p=products.find(x=>idOf(x)===this.dataset.id); if(!p)return; rec(p).img=''; saveState(); render();};return;} el.onchange=el.oninput=async function(){const p=products.find(x=>idOf(x)===this.dataset.id); if(!p)return; const r=rec(p); const a=this.dataset.action; if(a==='imagefile'){const f=this.files&&this.files[0]; if(!f)return; r.img=await fileToDataURL(f); saveState(); render(); return;} if(a==='owned'){r.owned=this.checked; r.status=this.checked?'owned':'';} else {r[a]=this.value; if(a==='status')r.owned=(this.value==='owned'||this.value==='duplicate');} saveRaw(); stats(); if(a==='owned') render();};});}
+function bindRows(){$$('[data-action]').forEach(el=>{const action=el.dataset.action;if(action==='partToCollection'){el.onclick=function(){const term=this.dataset.term||''; $('#search').value=term; goView('collection');};return;} if(action==='partToParts'){el.onclick=function(){goView('parts');};return;} if(action==='buy'){el.onclick=function(){const p=products.find(x=>idOf(x)===this.dataset.id), url=p?buyUrlOf(p):''; if(url){window.open(url,'_blank','noopener,noreferrer');return;} toast('Lien achat a ajouter');};return;} if(action==='details'){el.onclick=function(){const p=products.find(x=>idOf(x)===this.dataset.id); if(p)showProductPage(p)};return;} if(action==='partSearch'){el.onclick=function(){showPartPage(this.dataset.kind||'', this.dataset.term||'');};return;} if(action==='openImage'){el.onclick=function(){const p=products.find(x=>idOf(x)===this.dataset.id); if(p)openImage(p,this.src)};return;} if(action==='openPartImage'){el.onclick=function(){const part=partsCatalog.find(x=>x.id===this.dataset.partId)||partDoc(this.dataset.kind||'blade',this.dataset.term||'');$('#modalTitle').textContent=part.name;$('#modalImg').src=this.src||imgOfPart(part);$('#imageModal').style.display='flex'};return;} if(action==='removeImage'){el.onclick=function(){const p=products.find(x=>idOf(x)===this.dataset.id); if(!p)return; rec(p).img=''; saveState(); render();};return;} el.onchange=el.oninput=async function(){const p=products.find(x=>idOf(x)===this.dataset.id); if(!p)return; const r=rec(p); const a=this.dataset.action; const beforeOwned=owned(p), beforeStatus=statusOf(p), beforeQty=analyticsQty(r.qty), beforeOwnedCount=products.filter(owned).length; if(a==='imagefile'){const f=this.files&&this.files[0]; if(!f)return; r.img=await fileToDataURL(f); saveState(); render(); return;} if(a==='owned'){r.owned=this.checked; r.status=this.checked?'owned':'';} else {r[a]=this.value; if(a==='status')r.owned=(this.value==='owned'||this.value==='duplicate');} if(['owned','status','qty'].includes(a))trackCollectionMutation(p,beforeOwned,beforeStatus,beforeQty,beforeOwnedCount); saveRaw(); stats(); if(a==='owned') render();};});}
 function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
 function stats(){const t=products.length,o=products.filter(owned).length,spent=products.reduce((sum,p)=>sum+moneyNum(rec(p).paid),0),estimated=products.reduce((sum,p)=>sum+moneyNum(rec(p).estimated),0),wanted=products.filter(p=>statusOf(p)==='wanted').length;$('#totalCount').textContent=t;$('#ownedCount').textContent=o;$('#missingCount').textContent=t-o;$('#wantedCount').textContent=wanted;$('#percentCount').textContent=(t?Math.round(o/t*100):0)+'%';$('#spentCount').textContent=spent?spent.toFixed(2)+' €':'0';$('#valueCount').textContent=estimated?estimated.toFixed(2)+' €':'0';const renderGroup=(el,keys,filterFn)=>{$(el).innerHTML=keys.map(k=>{const arr=products.filter(p=>filterFn(p,k));const got=arr.filter(owned).length;const pct=arr.length?Math.round(got/arr.length*100):0;return `<div class="statLine"><div><b>${k}</b><div class="small">${got}/${arr.length}</div></div><div class="bar"><span style="width:${pct}%"></span></div><div>${pct}%</div></div>`}).join('')};renderGroup('#catStats',[...new Set(products.map(p=>p.cat))].sort(),(p,k)=>p.cat===k);renderGroup('#yearStats',[...new Set(products.flatMap(yearsOf))].sort(),(p,k)=>yearsOf(p).includes(k));renderAchievements(o,t);renderPurchases(spent,estimated);}
 function renderAchievements(o,t){const cats=[...new Set(products.map(p=>p.cat))];const ratio=t?o/t:0;const a=[['Premier achat',o>=1],['10 produits possédés',o>=10],['25 produits possédés',o>=25],['50% de la collection',ratio>=.5],['75% de la collection',ratio>=.75],['Collection complète',t>0&&o===t],...cats.map(c=>[c+' complet',products.filter(p=>p.cat===c).every(owned)])];$('#achievements').innerHTML=a.map(x=>`<div class="achievement ${x[1]?'done':''}"><b>${x[0]}</b><span>${x[1]?'✅':'⬜'}</span></div>`).join('');}
@@ -387,6 +394,7 @@ function showPartPage(kind,term,options={}){
   }
   const uses=products.filter(p=>productPartValues(p,kind).includes(term));
   const part=partDoc(kind,term);
+  window.bladeTrack?.('part_detail_opened',{part_id:part.id,type:kind});
   const ownedUses=uses.filter(owned);
   const variants=[...new Set(uses.map(p=>p.wave).filter(Boolean))].join(' / ')||'—';
   const cats=[...new Set(uses.map(p=>p.cat).filter(Boolean))].join(' / ')||'—';
@@ -403,6 +411,7 @@ function showPartPage(kind,term,options={}){
 }
 function showProductPage(p,options={}){
   const r=rec(p), parts=normalizeProductParts(p.parts,p.name), id=idOf(p);
+  window.bladeTrack?.('product_detail_opened',analyticsProductParams(p));
   const content=packContents(p);
   const rel=similarProducts(p);
   const partBlock=(label,kind,vals)=>`<div class="kv"><b>${label}</b><span>${vals.length?vals.map(val=>`<span class="partLink" data-action="partSearch" data-kind="${kind}" data-term="${esc(val)}">${esc(val)}</span> <span class="small">(${productsUsingPart(kind,val,p).length} autre(s) produit(s))</span>`).join('<br>'):'—'}</span></div>`;
@@ -516,6 +525,36 @@ function renderAdmin(){
   $$('[data-admin-action]').forEach(btn=>btn.onclick=()=>handleAdminRowAction(btn.dataset.adminAction,btn.dataset.id));
   adminSetStatus(`${adminState.products.length} produit(s) Firestore charges. ${list.length} affiche(s).`);
 }
+function adminSetStatsStatus(message){const el=$('#adminStatsStatus');if(el)el.textContent=message}
+function adminSetStatsValues(stats={users:'—',owned:'—',wishlist:'—',duplicates:'—'}){const users=$('#adminStatsUsers'),owned=$('#adminStatsOwned'),wishlist=$('#adminStatsWishlist'),duplicates=$('#adminStatsDuplicates');if(users)users.textContent=stats.users;if(owned)owned.textContent=stats.owned;if(wishlist)wishlist.textContent=stats.wishlist;if(duplicates)duplicates.textContent=stats.duplicates}
+function adminCloudRecordOwned(r){return !!r&&(!!r.owned||r.status==='owned'||r.status==='duplicate')}
+function adminCloudRecordDuplicate(r){return !!r&&(r.status==='duplicate'||analyticsQty(r.qty)>1)}
+async function adminLoadUsageStats(){
+  if(!adminGuard())return;
+  if(!adminState.api.collectionGroup){adminSetStatsStatus('Statistiques indisponibles : SDK Firestore incomplet.');return}
+  adminSetStatsStatus('Chargement des statistiques Firestore...');
+  adminSetStatsValues({users:'…',owned:'…',wishlist:'…',duplicates:'…'});
+  try{
+    const snap=await adminState.api.getDocs(adminState.api.collectionGroup(adminState.db,'data'));
+    const users=new Set();let ownedTotal=0,wishlistTotal=0,duplicateTotal=0;
+    snap.forEach(docSnap=>{
+      if(docSnap.id!=='collection')return;
+      const uid=docSnap.ref?.parent?.parent?.id||docSnap.ref?.path||'unknown';
+      users.add(uid);
+      const items=docSnap.data()?.items||{};
+      Object.values(items).forEach(record=>{
+        if(adminCloudRecordOwned(record))ownedTotal+=1;
+        if(record?.status==='wanted')wishlistTotal+=1;
+        if(adminCloudRecordDuplicate(record))duplicateTotal+=1;
+      });
+    });
+    adminSetStatsValues({users:users.size,owned:ownedTotal,wishlist:wishlistTotal,duplicates:duplicateTotal});
+    adminSetStatsStatus(`Statistiques mises a jour depuis ${users.size} sauvegarde(s) utilisateur.`);
+  }catch(error){
+    adminSetStatsValues();
+    adminSetStatsStatus(`Statistiques indisponibles : ${error?.message||error}. Verifie les regles Firestore admin.`);
+  }
+}
 function syncVisibleProductsFromAdmin(){if(adminState.products.length)applyProducts(adminState.products,'firestore')}
 async function adminLoadProducts(){
   if(!adminGuard())return;
@@ -584,6 +623,7 @@ function bindAdminUi(){
   $('#adminExportBtn')?.addEventListener('click',adminExportProducts);
   $('#adminFallbackBtn')?.addEventListener('click',adminDownloadFallback);
   $('#adminImportBtn')?.addEventListener('click',()=>$('#adminImportFile')?.click());
+  $('#adminStatsReloadBtn')?.addEventListener('click',adminLoadUsageStats);
   $('#adminImportFile')?.addEventListener('change',e=>adminImportProducts(e.target.files?.[0]));
   $('#adminSaveBtn')?.addEventListener('click',adminSaveProduct);
   $('#adminNewBtn')?.addEventListener('click',clearAdminForm);
@@ -601,8 +641,9 @@ function downloadBlob(filename,blob){const a=document.createElement('a');a.href=
 function shareStats(){const total=products.length, own=products.filter(owned).length, pct=total?Math.round(own/total*100):0;return {total,own,pct,top:groupCompletion(p=>p.cat,3).sort((a,b)=>b.pct-a.pct).slice(0,3)}}
 function createShareCanvas(){const {total,own,pct,top}=shareStats();const c=document.createElement('canvas');c.width=1080;c.height=1080;const ctx=c.getContext('2d');const grad=ctx.createLinearGradient(0,0,1080,1080);grad.addColorStop(0,'#0b1020');grad.addColorStop(.55,'#172554');grad.addColorStop(1,'#020617');ctx.fillStyle=grad;ctx.fillRect(0,0,1080,1080);ctx.fillStyle='#60a5fa';ctx.beginPath();ctx.arc(880,170,220,0,Math.PI*2);ctx.fill();ctx.globalAlpha=.18;ctx.fillStyle='#ffffff';ctx.beginPath();ctx.arc(880,170,130,0,Math.PI*2);ctx.fill();ctx.globalAlpha=1;ctx.fillStyle='#f8fbff';ctx.font='900 82px Arial';ctx.fillText('BladeBase',86,145);ctx.fillStyle='#bfdbfe';ctx.font='700 34px Arial';ctx.fillText('Ma collection Beyblade X Hasbro',90,202);ctx.fillStyle='#ffffff';ctx.font='900 190px Arial';ctx.fillText(`${pct}%`,86,460);ctx.fillStyle='#dbeafe';ctx.font='800 48px Arial';ctx.fillText(`${own} / ${total} produits possédés`,96,540);ctx.fillStyle='#13213f';ctx.strokeStyle='#3b82f6';ctx.lineWidth=4;roundRect(ctx,86,610,908,250,34,true,true);ctx.fillStyle='#eaf3ff';ctx.font='900 38px Arial';ctx.fillText('Top catégories',126,680);ctx.font='700 30px Arial';top.forEach((g,i)=>{ctx.fillStyle=['#60a5fa','#22c55e','#f59e0b'][i]||'#c084fc';ctx.fillRect(130,725+i*48,Math.max(8,Math.round(650*g.pct/100)),22);ctx.fillStyle='#eaf3ff';ctx.fillText(`${g.name} · ${g.got}/${g.total}`,130,750+i*48)});ctx.fillStyle='#93c5fd';ctx.font='800 32px Arial';ctx.fillText('bladebase.fr',86,960);return c}
 function roundRect(ctx,x,y,w,h,r,fill,stroke){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();if(fill)ctx.fill();if(stroke)ctx.stroke()}
-async function downloadShareImage(){try{downloadBlob('ma-collection-bladebase.png',await canvasBlob(createShareCanvas()))}catch(e){toast('Image de partage indisponible')}}
-async function nativeShareImage(){try{const blob=await canvasBlob(createShareCanvas());const file=new File([blob],'ma-collection-bladebase.png',{type:'image/png'});if(navigator.canShare?.({files:[file]})){await navigator.share({title:'Ma collection BladeBase',text:`Ma collection BladeBase : ${shareStats().pct}%`,files:[file]});}else{downloadBlob('ma-collection-bladebase.png',blob)}}catch(e){downloadShareImage()}}
+function shareAnalyticsParams(method){const s=shareStats();return {method,owned_count:s.own,total_count:s.total,completion_percent:s.pct}}
+async function downloadShareImage(){try{downloadBlob('ma-collection-bladebase.png',await canvasBlob(createShareCanvas()));window.bladeTrack?.('share_collection',shareAnalyticsParams('download'))}catch(e){toast('Image de partage indisponible')}}
+async function nativeShareImage(){try{const blob=await canvasBlob(createShareCanvas());const file=new File([blob],'ma-collection-bladebase.png',{type:'image/png'});if(navigator.canShare?.({files:[file]})){await navigator.share({title:'Ma collection BladeBase',text:`Ma collection BladeBase : ${shareStats().pct}%`,files:[file]});window.bladeTrack?.('share_collection',shareAnalyticsParams('native_share'));}else{downloadBlob('ma-collection-bladebase.png',blob);window.bladeTrack?.('share_collection',shareAnalyticsParams('download_fallback'));}}catch(e){downloadShareImage()}}
 function toast(msg){const t=$('#toast');t.textContent=msg;t.style.display='block';clearTimeout(window.__toast);window.__toast=setTimeout(()=>t.style.display='none',1800);}
 let swRefreshing=false;
 function canUseServiceWorker(){return 'serviceWorker' in navigator && ['http:','https:'].includes(location.protocol)}
@@ -729,6 +770,28 @@ async function loadFirebaseConfig(){
     return null;
   }
 }
+function cleanAnalyticsParams(params={}){
+  const clean={};
+  Object.entries(params||{}).forEach(([key,value])=>{
+    if(value===undefined||value===null||value==='')return;
+    if(typeof value==='number'||typeof value==='boolean')clean[key]=value;
+    else clean[key]=String(value).slice(0,100);
+  });
+  return clean;
+}
+async function initBladeAnalytics(app){
+  try{
+    const {getAnalytics,isSupported,logEvent}=await import("https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js");
+    if(!(await isSupported()))return;
+    const analytics=getAnalytics(app);
+    const send=(name,params={})=>{try{logEvent(analytics,name,cleanAnalyticsParams(params));}catch(error){authDebug('Analytics event ignored',name,error);}};
+    const queued=Array.isArray(window.bladeAnalyticsQueue)?window.bladeAnalyticsQueue:[];
+    window.bladeTrack=send;
+    queued.splice(0).forEach(item=>send(item.name,item.params));
+  }catch(error){
+    authDebug('Firebase Analytics indisponible',error);
+  }
+}
 
 try{
   const firebaseConfig=await loadFirebaseConfig();
@@ -740,18 +803,19 @@ try{
     import("https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js")
   ]);
   const {browserLocalPersistence,createUserWithEmailAndPassword,getAuth,onAuthStateChanged,sendPasswordResetEmail,setPersistence,signInWithEmailAndPassword,signOut,useDeviceLanguage}=firebaseAuth;
-  const {collection,deleteDoc,doc,getDoc,getDocs,setDoc,getFirestore,initializeFirestore,persistentLocalCache,persistentSingleTabManager}=firestoreSdk;
+  const {collection,collectionGroup,deleteDoc,doc,getDoc,getDocs,setDoc,getFirestore,initializeFirestore,persistentLocalCache,persistentSingleTabManager}=firestoreSdk;
   const app=initializeApp(firebaseConfig);
+  initBladeAnalytics(app);
   const auth=getAuth(app);
   let db;
   try{db=initializeFirestore(app,{localCache:persistentLocalCache({tabManager:persistentSingleTabManager()})});}
   catch(e){db=getFirestore(app);}
   cloudSync.db=db;
-  cloudSync.firestore={collection,doc,getDoc,getDocs,setDoc};
+  cloudSync.firestore={collection,collectionGroup,doc,getDoc,getDocs,setDoc};
   window.bladeLoadFirestoreProducts?.(db,{collection,getDocs});
   window.bladeLoadFirestoreParts?.(db,{collection,getDocs});
   window.bladeLoadProductUpdates?.(db,{collection,getDocs});
-  window.bladeInitAdmin?.(db,{collection,deleteDoc,doc,getDocs,setDoc});
+  window.bladeInitAdmin?.(db,{collection,collectionGroup,deleteDoc,doc,getDocs,setDoc});
   useDeviceLanguage?.(auth);
   await setPersistence(auth,browserLocalPersistence);
 
@@ -886,11 +950,11 @@ try{
   });
 
   authEls.signup?.addEventListener("click",async()=>{
-    try{const {email,password}=authCredentials();await createUserWithEmailAndPassword(auth,email,password);authToast("Compte créé");}
+    try{const {email,password}=authCredentials();await createUserWithEmailAndPassword(auth,email,password);window.bladeTrack?.('sign_up',{method:'email'});authToast("Compte créé");}
     catch(error){setAuthMessage(authErrorMessage(error));}
   });
   authEls.login?.addEventListener("click",async()=>{
-    try{const {email,password}=authCredentials();await signInWithEmailAndPassword(auth,email,password);authToast("Connecté");}
+    try{const {email,password}=authCredentials();await signInWithEmailAndPassword(auth,email,password);window.bladeTrack?.('login',{method:'email'});authToast("Connecté");}
     catch(error){setAuthMessage(authErrorMessage(error));}
   });
   authEls.reset?.addEventListener("click",async()=>{
