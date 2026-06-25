@@ -17,7 +17,27 @@ const apply = args.has("apply");
 const credentialsPath = args.get("credentials") || process.env.GOOGLE_APPLICATION_CREDENTIALS;
 const partsPath = args.get("file") || "data/parts-fallback.json";
 const collectionName = args.get("collection") || "parts";
-const validTypes = new Set(["blade", "ratchet", "bit"]);
+const partKindsByGeneration = {
+  x: ["blade", "ratchet", "bit"],
+  bakuten: ["attackRing", "weightDisk", "bladeBase", "bitChip", "spinGear", "supportPart", "engineGear", "runningCore", "accessory"],
+  metal: ["faceBolt", "energyRing", "fusionWheel", "spinTrack", "performanceTip", "accessory"],
+  burst: ["layer", "disc", "driver", "chip", "armor", "accessory"]
+};
+const partTypeAliases = new Map([
+  ["attackring", "attackRing"], ["attackrings", "attackRing"],
+  ["weightdisk", "weightDisk"], ["weightdisks", "weightDisk"],
+  ["bladebase", "bladeBase"], ["bladebases", "bladeBase"],
+  ["bitchip", "bitChip"], ["bitchips", "bitChip"],
+  ["spingear", "spinGear"], ["spingears", "spinGear"],
+  ["supportpart", "supportPart"], ["supportparts", "supportPart"],
+  ["enginegear", "engineGear"], ["enginegears", "engineGear"],
+  ["runningcore", "runningCore"], ["runningcores", "runningCore"],
+  ["facebolt", "faceBolt"], ["facebolts", "faceBolt"],
+  ["energyring", "energyRing"], ["energyrings", "energyRing"],
+  ["fusionwheel", "fusionWheel"], ["fusionwheels", "fusionWheel"],
+  ["spintrack", "spinTrack"], ["spintracks", "spinTrack"],
+  ["performancetip", "performanceTip"], ["performancetips", "performanceTip"]
+]);
 
 function fail(message) {
   console.error(`Erreur: ${message}`);
@@ -28,18 +48,34 @@ function cleanText(value, max = 500) {
   return String(value || "").replace(/[<>`]/g, "").replace(/\s+/g, " ").trim().slice(0, max);
 }
 
+function normalizeGeneration(value) {
+  const raw = cleanText(value || "x", 60).toLowerCase().replace(/[\s_]+/g, "-");
+  const aliases = new Map([["beyblade-x", "x"], ["beyblade-burst", "burst"], ["bust", "burst"], ["metal-fight", "metal"], ["bakuten-shoot", "bakuten"]]);
+  const generation = aliases.get(raw) || raw;
+  return partKindsByGeneration[generation] ? generation : "x";
+}
+
+function normalizePartKind(value, generation) {
+  const raw = cleanText(value, 80);
+  const key = raw.toLowerCase().replace(/[\s_-]+/g, "");
+  const alias = partTypeAliases.get(key) || raw;
+  return partKindsByGeneration[generation].includes(alias) ? alias : "";
+}
 function cleanList(value, max = 160) {
   const raw = Array.isArray(value) ? value : value ? [value] : [];
   return [...new Set(raw.map((item) => cleanText(item, max)).filter(Boolean))];
 }
 
 function normalizePart(part) {
-  const type = cleanText(part.type, 20).toLowerCase();
+  const generation = normalizeGeneration(part.generation || part.gen);
+  const rawType = normalizePartKind(part.type, generation);
+  const type = rawType || partKindsByGeneration[generation][0];
   const productIds = cleanList(part.productIds, 180);
   return {
-    id: cleanText(part.id || `${type}-${part.name}`, 180),
+    id: cleanText(part.id || `${generation === "x" ? "" : `${generation}-`}${type}-${part.name}`, 180),
+    generation,
     type,
-    typeLabel: cleanText(part.typeLabel || type, 40),
+    typeLabel: cleanText(part.typeLabel || type, 60),
     name: cleanText(part.name, 120),
     imagePath: cleanText(part.imagePath, 260),
     productIds,
@@ -48,9 +84,7 @@ function normalizePart(part) {
     usageCount: Number.isFinite(Number(part.usageCount)) ? Number(part.usageCount) : productIds.length,
     source: cleanText(part.source || "products", 40)
   };
-}
-
-async function loadJson(filePath) {
+}async function loadJson(filePath) {
   const absolutePath = path.resolve(filePath);
   const content = await readFile(absolutePath, "utf8");
   return JSON.parse(content);
@@ -66,7 +100,7 @@ const errors = [];
 parts.forEach((part, index) => {
   if (!part.id) errors.push(`Piece #${index + 1}: id manquant.`);
   if (!part.name) errors.push(`Piece #${index + 1}: name manquant.`);
-  if (!validTypes.has(part.type)) errors.push(`${part.id || `Piece #${index + 1}`}: type invalide "${part.type}".`);
+  if (!partKindsByGeneration[part.generation]?.includes(part.type)) errors.push(`${part.id || `Piece #${index + 1}`}: type invalide "${part.type}" pour ${part.generation}.`);
   if (part.id && ids.has(part.id)) errors.push(`ID duplique: ${part.id}`);
   if (part.id) ids.add(part.id);
 });
