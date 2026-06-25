@@ -17,8 +17,43 @@ const apply = args.has("apply");
 const credentialsPath = args.get("credentials") || process.env.GOOGLE_APPLICATION_CREDENTIALS;
 const productsPath = args.get("file") || "data/products-fallback.json";
 const collectionName = args.get("collection") || "products";
+const preferRest = args.has("prefer-rest") || process.env.FIRESTORE_PREFER_REST === "1";
 const validTypes = new Set(["", "Attack", "Defense", "Stamina", "Balance", "Mixed"]);
 const validGenerations = new Set(["x", "burst", "metal", "bakuten"]);
+const partKindsByGeneration = {
+  x: [
+    { id: "blade", plural: "blades", max: 90 },
+    { id: "ratchet", plural: "ratchets", max: 40 },
+    { id: "bit", plural: "bits", max: 40 }
+  ],
+  bakuten: [
+    { id: "attackRing", plural: "attackRings", max: 90 },
+    { id: "weightDisk", plural: "weightDisks", max: 90 },
+    { id: "bladeBase", plural: "bladeBases", max: 90 },
+    { id: "bitChip", plural: "bitChips", max: 90 },
+    { id: "spinGear", plural: "spinGears", max: 90 },
+    { id: "supportPart", plural: "supportParts", max: 90 },
+    { id: "engineGear", plural: "engineGears", max: 90 },
+    { id: "runningCore", plural: "runningCores", max: 90 },
+    { id: "accessory", plural: "accessories", max: 90 }
+  ],
+  metal: [
+    { id: "faceBolt", plural: "faceBolts", max: 90 },
+    { id: "energyRing", plural: "energyRings", max: 90 },
+    { id: "fusionWheel", plural: "fusionWheels", max: 90 },
+    { id: "spinTrack", plural: "spinTracks", max: 90 },
+    { id: "performanceTip", plural: "performanceTips", max: 90 },
+    { id: "accessory", plural: "accessories", max: 90 }
+  ],
+  burst: [
+    { id: "layer", plural: "layers", max: 90 },
+    { id: "disc", plural: "discs", max: 90 },
+    { id: "driver", plural: "drivers", max: 90 },
+    { id: "chip", plural: "chips", max: 90 },
+    { id: "armor", plural: "armors", max: 90 },
+    { id: "accessory", plural: "accessories", max: 90 }
+  ]
+};
 
 function fail(message) {
   console.error(`Erreur: ${message}`);
@@ -47,6 +82,10 @@ function makeProductParts(blades = [], ratchets = [], bits = [], source = "manua
   };
 }
 
+function partFieldValue(parts, definition) {
+  return parts?.[definition.plural] ?? parts?.[definition.id] ?? parts?.[definition.id.toLowerCase()] ?? [];
+}
+
 function inferProductPartsFromName(name = "") {
   const base = plainText(name, 220)
     .replace(/\s*\([^)]*\)\s*$/, "")
@@ -61,19 +100,6 @@ function inferProductPartsFromName(name = "") {
   return makeProductParts([], [], [], "auto");
 }
 
-function normalizeProductParts(parts = {}, name = "") {
-  const normalized = makeProductParts(
-    parts.blades ?? parts.blade,
-    parts.ratchets ?? parts.ratchet,
-    parts.bits ?? parts.bit,
-    parts.source || "manual"
-  );
-  if (!normalized.blades.length && !normalized.ratchets.length && !normalized.bits.length && name && normalized.source !== "catalog") {
-    return inferProductPartsFromName(name);
-  }
-  return normalized;
-}
-
 function normalizeGeneration(value) {
   const raw = String(value || "x").trim().toLowerCase();
   if (raw === "beyblade-x") return "x";
@@ -83,12 +109,31 @@ function normalizeGeneration(value) {
   return raw || "x";
 }
 
+function normalizeProductParts(parts = {}, name = "", generation = "x") {
+  const gen = normalizeGeneration(generation);
+  const definitions = partKindsByGeneration[gen] || partKindsByGeneration.x;
+  const normalized = { source: plainText(parts?.source || "manual", 30) };
+  definitions.forEach((definition) => {
+    normalized[definition.plural] = normalizePartList(partFieldValue(parts, definition), definition.max);
+  });
+  if (gen === "x") {
+    normalized.blades = normalizePartList(parts?.blades ?? parts?.blade ?? normalized.blades);
+    normalized.ratchets = normalizePartList(parts?.ratchets ?? parts?.ratchet ?? normalized.ratchets, 40);
+    normalized.bits = normalizePartList(parts?.bits ?? parts?.bit ?? normalized.bits, 40);
+    if (!normalized.blades.length && !normalized.ratchets.length && !normalized.bits.length && name && normalized.source !== "catalog") {
+      return inferProductPartsFromName(name);
+    }
+  }
+  return normalized;
+}
+
 function normalizeProduct(product) {
   const rawOrder = product.displayOrder ?? product.order;
   const displayOrder = rawOrder === "" || rawOrder === undefined ? NaN : Number(rawOrder);
+  const generation = normalizeGeneration(product.generation || product.gen || product.series);
   const normalized = {
     id: String(product.id || product.code || product.name || "").trim(),
-    generation: normalizeGeneration(product.generation || product.gen || product.series),
+    generation,
     code: String(product.code || "").trim(),
     name: String(product.name || "").trim(),
     cat: String(product.cat || "").trim(),
@@ -102,7 +147,7 @@ function normalizeProduct(product) {
     buyUrl: String(product.buyUrl || product.affiliateUrl || product.purchaseUrl || "").trim(),
     note: String(product.note || "").trim(),
     active: product.active === false ? false : true,
-    parts: normalizeProductParts(product.parts, product.name)
+    parts: normalizeProductParts(product.parts, product.name, generation)
   };
   if (Number.isFinite(displayOrder)) normalized.displayOrder = displayOrder;
   return normalized;
@@ -128,8 +173,9 @@ products.forEach((product, index) => {
   if (product.id) ids.add(product.id);
   if (!validTypes.has(product.type)) errors.push(`${product.id || `Produit #${index + 1}`}: type invalide "${product.type}".`);
   if (!validGenerations.has(product.generation)) errors.push(`${product.id || `Produit #${index + 1}`}: generation invalide "${product.generation}".`);
-  if (!product.parts || !Array.isArray(product.parts.blades) || !Array.isArray(product.parts.ratchets) || !Array.isArray(product.parts.bits)) {
-    errors.push(`${product.id || `Produit #${index + 1}`}: parts invalide.`);
+  const definitions = partKindsByGeneration[product.generation] || [];
+  if (!product.parts || definitions.some((definition) => !Array.isArray(product.parts[definition.plural]))) {
+    errors.push(`${product.id || `Produit #${index + 1}`}: parts invalide pour ${product.generation}.`);
   }
 });
 
@@ -158,6 +204,7 @@ initializeApp({
 });
 
 const db = getFirestore();
+if (preferRest) db.settings({ preferRest: true });
 const chunkSize = 450;
 let written = 0;
 
