@@ -1,4 +1,4 @@
-const APP_VERSION = "2026.06.25.02";
+const APP_VERSION = "2026.06.25.04";
 const APP_CACHE = `bladebase-app-${APP_VERSION}`;
 const STATIC_CACHE = `bladebase-static-${APP_VERSION}`;
 
