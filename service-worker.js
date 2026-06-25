@@ -1,4 +1,4 @@
-const APP_VERSION = "2026.06.25.06";
+const APP_VERSION = "2026.06.25.07";
 const APP_CACHE = `bladebase-app-${APP_VERSION}`;
 const STATIC_CACHE = `bladebase-static-${APP_VERSION}`;
 
@@ -12,6 +12,7 @@ const CORE_ASSETS = [
   "./data/parts-fallback.json",
   "./images/Logo-banniere.png",
   "./images/Icone-1024.png",
+  "./images/manifest.json",
   "./icons/bladebase-icon-192.png",
   "./icons/bladebase-icon-512.png",
   "./icons/bladebase-maskable-192.png",
