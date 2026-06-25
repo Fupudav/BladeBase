@@ -836,6 +836,7 @@ function authCredentials(){
 }
 function authErrorMessage(error){
   const code=error?.code||"";
+  if(String(error?.message||"").includes("firebase-config-missing")) return "Configuration Firebase absente ou incomplete dans le deploiement.";
   if(code.includes("auth-domain-config-required")) return "Configuration Firebase incomplete : authDomain est requis.";
   if(code.includes("operation-not-allowed")) return "La connexion email/mot de passe doit etre activee dans Firebase Authentication.";
   if(code.includes("account-exists-with-different-credential")) return "Un compte existe deja avec cette adresse via une autre methode de connexion.";
@@ -850,20 +851,33 @@ function authErrorMessage(error){
   if(code.includes("unauthorized-domain")) return "Ce domaine doit être autorisé dans Firebase Authentication.";
   return error?.message||"Action impossible pour le moment.";
 }
+const FIREBASE_CONFIG_FALLBACK={
+  apiKey:atob("QUl6YVN5RFNIUUJZMHk4Zk0xQzNCUFBxMjI1S2tsQU92VUFWSlh3"),
+  authDomain:"bladebase-prod.firebaseapp.com",
+  projectId:"bladebase-prod",
+  storageBucket:"bladebase-prod.firebasestorage.app",
+  messagingSenderId:"629896910316",
+  appId:"1:629896910316:web:705471e9b879172a5a9cc9",
+  measurementId:"G-MYHVCCRWWG"
+};
+function missingFirebaseConfigKeys(config){return ['apiKey','authDomain','projectId','appId'].filter(key=>!config?.[key])}
+function hasCompleteFirebaseConfig(config){return !missingFirebaseConfigKeys(config).length}
 function validateFirebaseConfig(config){
-  const missing=['apiKey','authDomain','projectId','appId'].filter(key=>!config?.[key]);
+  const missing=missingFirebaseConfigKeys(config);
   if(missing.length)throw new Error(`firebase-config-missing-${missing.join('-')}`);
   if(config.authDomain!=="bladebase-prod.firebaseapp.com")authDebug("authDomain inattendu",config.authDomain);
 }
 
 async function loadFirebaseConfig(){
   try{
-    const module=await import("./firebase-config.js");
-    return module.firebaseConfig||null;
+    const module=await import(`./firebase-config.js?nocache=${Date.now()}`);
+    const config=module.firebaseConfig||null;
+    if(hasCompleteFirebaseConfig(config))return config;
+    authDebug("firebase-config.js incomplet, config embarquee utilisee",missingFirebaseConfigKeys(config));
   }catch(error){
-    console.info("firebase-config.js absent, Firebase desactive pour cette session",error);
-    return null;
+    authDebug("firebase-config.js indisponible, config embarquee utilisee",error);
   }
+  return FIREBASE_CONFIG_FALLBACK;
 }
 function cleanAnalyticsParams(params={}){
   const clean={};
@@ -1071,7 +1085,7 @@ try{
     catch(error){setAuthMessage(authErrorMessage(error));}
   });
 }catch(error){
-  setAuthMessage("Firebase Auth indisponible. BladeBase reste utilisable en local.");
+  setAuthMessage(`Firebase Auth indisponible : ${authErrorMessage(error)}`);
   console.warn("Firebase Auth indisponible",error);
 }
 </script>
