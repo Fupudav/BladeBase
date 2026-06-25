@@ -1,6 +1,7 @@
 [
     {
         "id":  "F9580",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "F9580",
         "name":  "Sword Dran 3-60F",
@@ -26,6 +27,7 @@
     },
     {
         "id":  "F9581",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "F9581",
         "name":  "Helm Knight 3-80N",
@@ -51,6 +53,7 @@
     },
     {
         "id":  "F9582",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "F9582",
         "name":  "Arrow Wizard 4-80B",
@@ -76,6 +79,7 @@
     },
     {
         "id":  "F9583",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "F9583",
         "name":  "Scythe Incendio 4-60T",
@@ -101,6 +105,7 @@
     },
     {
         "id":  "G0184",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "G0184",
         "name":  "Lance Knight 4-80HN",
@@ -126,6 +131,7 @@
     },
     {
         "id":  "G0193",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "G0193",
         "name":  "Claw Leon 5-60P",
@@ -151,6 +157,7 @@
     },
     {
         "id":  "G1536",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "G1536",
         "name":  "Buster Dran 1-60A",
@@ -176,6 +183,7 @@
     },
     {
         "id":  "G1537",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "G1537",
         "name":  "Wand Wizard 5-70DB",
@@ -201,6 +209,7 @@
     },
     {
         "id":  "G1538",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "G1538",
         "name":  "Wand Wizard 1-60R",
@@ -226,6 +235,7 @@
     },
     {
         "id":  "G1539",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "G1539",
         "name":  "Shadow Shinobi 1-80MN",
@@ -251,6 +261,7 @@
     },
     {
         "id":  "G1673",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "G1673",
         "name":  "Scarlet Garuda 4-70TP",
@@ -276,6 +287,7 @@
     },
     {
         "id":  "G1674",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "G1674",
         "name":  "Sterling Wolf 3-80FB",
@@ -301,6 +313,7 @@
     },
     {
         "id":  "G1675",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "G1675",
         "name":  "Shelter Drake 7-80GP",
@@ -326,6 +339,7 @@
     },
     {
         "id":  "G1676",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "G1676",
         "name":  "Rock Golem 1-60UN",
@@ -351,6 +365,7 @@
     },
     {
         "id":  "G1751",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "G1751",
         "name":  "Buster Dran 5-70DB",
@@ -376,6 +391,7 @@
     },
     {
         "id":  "G1752",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "G1752",
         "name":  "Hammer Incendio 3-70H",
@@ -401,6 +417,7 @@
     },
     {
         "id":  "G2738",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "G2738",
         "name":  "Stun Medusa 9-60GB",
@@ -426,6 +443,7 @@
     },
     {
         "id":  "G2739",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "G2739",
         "name":  "Rudder Phoenix 4-70LF",
@@ -451,6 +469,7 @@
     },
     {
         "id":  "G2740",
+        "generation":  "x",
         "cat":  "Basic/Unique Line Starter Packs",
         "code":  "G2740",
         "name":  "Feather Phoenix 2-60N",
@@ -476,6 +495,7 @@
     },
     {
         "id":  "G1677",
+        "generation":  "x",
         "cat":  "Custom Line Starter Packs",
         "code":  "G1677",
         "name":  "Courage Dran S 6-60V",
@@ -501,6 +521,7 @@
     },
     {
         "id":  "G1678",
+        "generation":  "x",
         "cat":  "Custom Line Starter Packs",
         "code":  "G1678",
         "name":  "Reaper Incendio T 4-70K",
@@ -526,6 +547,7 @@
     },
     {
         "id":  "G1679",
+        "generation":  "x",
         "cat":  "Custom Line Starter Packs",
         "code":  "G1679",
         "name":  "Arc Wizard R 4-55LO",
@@ -551,6 +573,7 @@
     },
     {
         "id":  "G1680",
+        "generation":  "x",
         "cat":  "Custom Line Starter Packs",
         "code":  "G1680",
         "name":  "Dark Perseus B 6-80W",
@@ -576,6 +599,7 @@
     },
     {
         "id":  "G1681",
+        "generation":  "x",
         "cat":  "Custom Line Starter Packs",
         "code":  "G1681",
         "name":  "Brush Fox J 9-70GR",
@@ -601,6 +625,7 @@
     },
     {
         "id":  "G1682",
+        "generation":  "x",
         "cat":  "Custom Line Starter Packs",
         "code":  "G1682",
         "name":  "Fort Hornet R 7-60T",
@@ -626,6 +651,7 @@
     },
     {
         "id":  "G1683",
+        "generation":  "x",
         "cat":  "Custom Line Starter Packs",
         "code":  "G1683",
         "name":  "Wriggle Kraken S 3-85O",
@@ -651,6 +677,7 @@
     },
     {
         "id":  "G1684",
+        "generation":  "x",
         "cat":  "Custom Line Starter Packs",
         "code":  "G1684",
         "name":  "Antler Stag B 2-60HN",
@@ -676,6 +703,7 @@
     },
     {
         "id":  "G2746",
+        "generation":  "x",
         "cat":  "Custom Line Starter Packs",
         "code":  "G2746",
         "name":  "Reaper Rhino C 4-55D",
@@ -701,6 +729,7 @@
     },
     {
         "id":  "G2747",
+        "generation":  "x",
         "cat":  "Custom Line Starter Packs",
         "code":  "G2747",
         "name":  "Flame Cerberus W 5-80WB",
@@ -726,6 +755,7 @@
     },
     {
         "id":  "G2748",
+        "generation":  "x",
         "cat":  "Custom Line Starter Packs",
         "code":  "G2748",
         "name":  "Fang Leon T 4-60U",
@@ -751,6 +781,7 @@
     },
     {
         "id":  "G2742",
+        "generation":  "x",
         "cat":  "Infinity Starter Packs",
         "code":  "G2742",
         "name":  "Strike Dran 4-50FF",
@@ -776,6 +807,7 @@
     },
     {
         "id":  "G2750",
+        "generation":  "x",
         "cat":  "Infinity Starter Packs",
         "code":  "G2750",
         "name":  "Hurricane Enlil IS 7-55T",
@@ -801,6 +833,7 @@
     },
     {
         "id":  "G3497",
+        "generation":  "x",
         "cat":  "Infinity Starter Packs",
         "code":  "G3497",
         "name":  "Valor Bison FB",
@@ -822,6 +855,7 @@
     },
     {
         "id":  "G4561",
+        "generation":  "x",
         "cat":  "Infinity Starter Packs",
         "code":  "G4561",
         "name":  "Rocket Griffon H",
@@ -843,6 +877,7 @@
     },
     {
         "id":  "G4562",
+        "generation":  "x",
         "cat":  "Infinity Starter Packs",
         "code":  "G4562",
         "name":  "Rage Ragna FE 4-55Y",
@@ -868,6 +903,7 @@
     },
     {
         "id":  "G4563",
+        "generation":  "x",
         "cat":  "Infinity Starter Packs",
         "code":  "G4563",
         "name":  "Armor Knight GV 8-70UN",
@@ -893,6 +929,7 @@
     },
     {
         "id":  "G4567",
+        "generation":  "x",
         "cat":  "Infinity Starter Packs",
         "code":  "G4567",
         "name":  "Shatter Horus 9-65GB",
@@ -918,6 +955,7 @@
     },
     {
         "id":  "G4571",
+        "generation":  "x",
         "cat":  "Infinity Starter Packs",
         "code":  "G4571",
         "name":  "Ring Aether 0-80DS",
@@ -943,6 +981,7 @@
     },
     {
         "id":  "G4572",
+        "generation":  "x",
         "cat":  "Infinity Starter Packs",
         "code":  "G4572",
         "name":  "Blitz Bahamut BK 1-50I",
@@ -968,6 +1007,7 @@
     },
     {
         "id":  "Glory_Valkerion_LF",
+        "generation":  "x",
         "cat":  "Infinity Starter Packs",
         "code":  "",
         "name":  "Glory Valkerion LF",
@@ -989,6 +1029,7 @@
     },
     {
         "id":  "G0188",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G0188",
         "name":  "Steel Samurai 4-80T",
@@ -1014,6 +1055,7 @@
     },
     {
         "id":  "G0192",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G0192",
         "name":  "Horn Rhino 3-80S",
@@ -1039,6 +1081,7 @@
     },
     {
         "id":  "G0194",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G0194",
         "name":  "Keel Shark 3-60LF",
@@ -1064,6 +1107,7 @@
     },
     {
         "id":  "G0195",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G0195",
         "name":  "Talon Ptera 3-80B",
@@ -1089,6 +1133,7 @@
     },
     {
         "id":  "G0283",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G0283",
         "name":  "Sting Unicorn 5-60GP",
@@ -1114,6 +1159,7 @@
     },
     {
         "id":  "G0284",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G0284",
         "name":  "Roar Tyranno 9-60GF",
@@ -1139,6 +1185,7 @@
     },
     {
         "id":  "G0285",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G0285",
         "name":  "Scythe Incendio 3-80B",
@@ -1164,6 +1211,7 @@
     },
     {
         "id":  "G0286",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G0286",
         "name":  "Savage Bear 3-60S",
@@ -1189,6 +1237,7 @@
     },
     {
         "id":  "G1530",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G1530",
         "name":  "Cowl Sphinx 9-80GN",
@@ -1214,6 +1263,7 @@
     },
     {
         "id":  "G1531",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G1531",
         "name":  "Arrow Wizard 4-80GB",
@@ -1239,6 +1289,7 @@
     },
     {
         "id":  "G1533",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G1533",
         "name":  "Obsidian Shell 4-60D",
@@ -1264,6 +1315,7 @@
     },
     {
         "id":  "G1534",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G1534",
         "name":  "Keel Shark 1-60Q",
@@ -1289,6 +1341,7 @@
     },
     {
         "id":  "G1669",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G1669",
         "name":  "Tide Whale 5-80E",
@@ -1314,6 +1367,7 @@
     },
     {
         "id":  "G1670",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G1670",
         "name":  "Dagger Dran 4-70Q",
@@ -1339,6 +1393,7 @@
     },
     {
         "id":  "G1671",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G1671",
         "name":  "Lance Knight 3-60LF",
@@ -1364,6 +1419,7 @@
     },
     {
         "id":  "G1754",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G1754",
         "name":  "Yell Kong 3-60GB",
@@ -1389,6 +1445,7 @@
     },
     {
         "id":  "G1755",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G1755",
         "name":  "Arrow Wizard 4-80O",
@@ -1414,6 +1471,7 @@
     },
     {
         "id":  "G1756",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G1756",
         "name":  "Soar Phoenix 5-80H",
@@ -1439,6 +1497,7 @@
     },
     {
         "id":  "G2731",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G2731",
         "name":  "Scale Shark 4-50UF",
@@ -1464,6 +1523,7 @@
     },
     {
         "id":  "G2732",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G2732",
         "name":  "Shelter Drake 5-70O",
@@ -1489,6 +1549,7 @@
     },
     {
         "id":  "G2733",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G2733",
         "name":  "Gust Bat 3-85GP",
@@ -1514,6 +1575,7 @@
     },
     {
         "id":  "G2734",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G2734",
         "name":  "Curse Mummy 7-55W",
@@ -1539,6 +1601,7 @@
     },
     {
         "id":  "G3392",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G3392",
         "name":  "Ridge Triceratops 9-80GN",
@@ -1564,6 +1627,7 @@
     },
     {
         "id":  "G3611",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G3611",
         "name":  "Buster Dran 5-70DB",
@@ -1589,6 +1653,7 @@
     },
     {
         "id":  "G2735",
+        "generation":  "x",
         "cat":  "Booster Packs",
         "code":  "G2735",
         "name":  "Savage Bear 5-60F",
@@ -1614,6 +1679,7 @@
     },
     {
         "id":  "G0190",
+        "generation":  "x",
         "cat":  "Dual Packs",
         "code":  "G0190",
         "name":  "Knife Shinobi and Keel Shark Dual Pack",
@@ -1636,6 +1702,7 @@
     },
     {
         "id":  "G0196",
+        "generation":  "x",
         "cat":  "Dual Packs",
         "code":  "G0196",
         "name":  "Chain Incendio and Arrow Wizard Dual Pack",
@@ -1658,6 +1725,7 @@
     },
     {
         "id":  "G0197",
+        "generation":  "x",
         "cat":  "Dual Packs",
         "code":  "G0197",
         "name":  "Tail Viper and Sword Dran Dual Pack",
@@ -1680,6 +1748,7 @@
     },
     {
         "id":  "G0198",
+        "generation":  "x",
         "cat":  "Dual Packs",
         "code":  "G0198",
         "name":  "Yell Kong and Helm Knight Dual Pack",
@@ -1702,6 +1771,7 @@
     },
     {
         "id":  "G0199",
+        "generation":  "x",
         "cat":  "Dual Packs",
         "code":  "G0199",
         "name":  "Bite Croc and Sting Unicorn Dual Pack",
@@ -1724,6 +1794,7 @@
     },
     {
         "id":  "G0282",
+        "generation":  "x",
         "cat":  "Dual Packs",
         "code":  "G0282",
         "name":  "Gale Wyvern and Tail Viper Dual Pack",
@@ -1746,6 +1817,7 @@
     },
     {
         "id":  "G1542",
+        "generation":  "x",
         "cat":  "Dual Packs",
         "code":  "G1542",
         "name":  "Beat Tyranno and Knife Shinobi Dual Pack",
@@ -1768,6 +1840,7 @@
     },
     {
         "id":  "G1543",
+        "generation":  "x",
         "cat":  "Dual Packs",
         "code":  "G1543",
         "name":  "Gale Wyvern and Sword Dran Dual Pack",
@@ -1790,6 +1863,7 @@
     },
     {
         "id":  "G1685",
+        "generation":  "x",
         "cat":  "Dual Packs",
         "code":  "G1685",
         "name":  "Cowl Sphinx and Crest Leon Dual Pack",
@@ -1812,6 +1886,7 @@
     },
     {
         "id":  "G1686",
+        "generation":  "x",
         "cat":  "Dual Packs",
         "code":  "G1686",
         "name":  "Pearl Tiger and Gill Shark Dual Pack",
@@ -1834,6 +1909,7 @@
     },
     {
         "id":  "G1687",
+        "generation":  "x",
         "cat":  "Dual Packs",
         "code":  "G1687",
         "name":  "Circle Ghost and Chain Incendio Dual Pack",
@@ -1856,6 +1932,7 @@
     },
     {
         "id":  "G1688",
+        "generation":  "x",
         "cat":  "Dual Packs",
         "code":  "G1688",
         "name":  "Tackle Goat and Sword Dran Dual Pack",
@@ -1878,6 +1955,7 @@
     },
     {
         "id":  "G2754",
+        "generation":  "x",
         "cat":  "Dual Packs",
         "code":  "G2754",
         "name":  "Calibur Samurai and Obsidian Shell Dual Pack",
@@ -1900,6 +1978,7 @@
     },
     {
         "id":  "G2755",
+        "generation":  "x",
         "cat":  "Dual Packs",
         "code":  "G2755",
         "name":  "Circle Ghost and Hack Viking Dual Pack",
@@ -1922,6 +2001,7 @@
     },
     {
         "id":  "G2758",
+        "generation":  "x",
         "cat":  "Dual Packs",
         "code":  "G2758",
         "name":  "Spear Scorpio and Tail Viper Dual Pack",
@@ -1944,6 +2024,7 @@
     },
     {
         "id":  "G1844",
+        "generation":  "x",
         "cat":  "Bey Packs/Sets",
         "code":  "G1844",
         "name":  "Beyblade 25th Anniversary Set",
@@ -1963,6 +2044,7 @@
     },
     {
         "id":  "G3028",
+        "generation":  "x",
         "cat":  "Bey Packs/Sets",
         "code":  "G3028",
         "name":  "X-treme Battlers Pack",
@@ -1982,6 +2064,7 @@
     },
     {
         "id":  "G3195",
+        "generation":  "x",
         "cat":  "Bey Packs/Sets",
         "code":  "G3195",
         "name":  "X-treme Expansion Pack",
@@ -2001,6 +2084,7 @@
     },
     {
         "id":  "G3393",
+        "generation":  "x",
         "cat":  "Bey Packs/Sets",
         "code":  "G3393",
         "name":  "Yggdrasil Team Pack",
@@ -2020,6 +2104,7 @@
     },
     {
         "id":  "F9589",
+        "generation":  "x",
         "cat":  "Multipack Sets",
         "code":  "F9589",
         "name":  "The Mandalorian and Moff Gideon Multipack Set",
@@ -2042,6 +2127,7 @@
     },
     {
         "id":  "G0287",
+        "generation":  "x",
         "cat":  "Multipack Sets",
         "code":  "G0287",
         "name":  "Iron Man and Thanos Multipack Set",
@@ -2064,6 +2150,7 @@
     },
     {
         "id":  "G0288",
+        "generation":  "x",
         "cat":  "Multipack Sets",
         "code":  "G0288",
         "name":  "Spider-Man and Venom Multipack Set",
@@ -2086,6 +2173,7 @@
     },
     {
         "id":  "G0290",
+        "generation":  "x",
         "cat":  "Multipack Sets",
         "code":  "G0290",
         "name":  "Luke Skywalker and Darth Vader Multipack Set",
@@ -2108,6 +2196,7 @@
     },
     {
         "id":  "G0352",
+        "generation":  "x",
         "cat":  "Multipack Sets",
         "code":  "G0352",
         "name":  "Optimus Primal and Starscream Multipack Set",
@@ -2130,6 +2219,7 @@
     },
     {
         "id":  "G0353",
+        "generation":  "x",
         "cat":  "Multipack Sets",
         "code":  "G0353",
         "name":  "Optimus Prime and Megatron Multipack Set",
@@ -2152,6 +2242,7 @@
     },
     {
         "id":  "G1690",
+        "generation":  "x",
         "cat":  "Multipack Sets",
         "code":  "G1690",
         "name":  "Captain America and Red Hulk Multipack Set",
@@ -2174,6 +2265,7 @@
     },
     {
         "id":  "G1691",
+        "generation":  "x",
         "cat":  "Multipack Sets",
         "code":  "G1691",
         "name":  "Miles Morales and Green Goblin Multipack Set",
@@ -2196,6 +2288,7 @@
     },
     {
         "id":  "G1692",
+        "generation":  "x",
         "cat":  "Multipack Sets",
         "code":  "G1692",
         "name":  "Bumblebee and Shockwave Multipack Set",
@@ -2218,6 +2311,7 @@
     },
     {
         "id":  "G1694",
+        "generation":  "x",
         "cat":  "Multipack Sets",
         "code":  "G1694",
         "name":  "Obi-Wan Kenobi and General Grievous Multipack Set",
@@ -2240,6 +2334,7 @@
     },
     {
         "id":  "G1695",
+        "generation":  "x",
         "cat":  "Multipack Sets",
         "code":  "G1695",
         "name":  "Chewbacca and Stormtrooper Multipack Set",
@@ -2262,6 +2357,7 @@
     },
     {
         "id":  "G1898",
+        "generation":  "x",
         "cat":  "Multipack Sets",
         "code":  "G1898",
         "name":  "T. Rex and Mosasaurus Multipack Set",
@@ -2284,6 +2380,7 @@
     },
     {
         "id":  "G1899",
+        "generation":  "x",
         "cat":  "Multipack Sets",
         "code":  "G1899",
         "name":  "Spinosaurus and Quetzalcoatlus Multipack Set",
@@ -2306,6 +2403,7 @@
     },
     {
         "id":  "G3061",
+        "generation":  "x",
         "cat":  "Multipack Sets",
         "code":  "G3061",
         "name":  "Grogu and Snowtrooper Multipack Set",
@@ -2328,6 +2426,7 @@
     },
     {
         "id":  "F9584",
+        "generation":  "x",
         "cat":  "X-Over Project",
         "code":  "F9584",
         "name":  "Dranzer Spiral 3-80T (Red)",
@@ -2353,6 +2452,7 @@
     },
     {
         "id":  "F9585",
+        "generation":  "x",
         "cat":  "X-Over Project",
         "code":  "F9585",
         "name":  "Dranzer Spiral 3-80T (Green)",
@@ -2378,6 +2478,7 @@
     },
     {
         "id":  "G1842",
+        "generation":  "x",
         "cat":  "X-Over Project",
         "code":  "G1842",
         "name":  "Dranzer Spiral 3-80T",
@@ -2403,6 +2504,7 @@
     },
     {
         "id":  "G1843",
+        "generation":  "x",
         "cat":  "X-Over Project",
         "code":  "G1843",
         "name":  "Driger Slash 4-80P",
@@ -2428,6 +2530,7 @@
     },
     {
         "id":  "G2218",
+        "generation":  "x",
         "cat":  "X-Over Project",
         "code":  "G2218",
         "name":  "Draciel Shield 7-60D",
@@ -2453,6 +2556,7 @@
     },
     {
         "id":  "F9578",
+        "generation":  "x",
         "cat":  "Beystadiums",
         "code":  "F9578",
         "name":  "Beystadium (2024)",
@@ -2472,6 +2576,7 @@
     },
     {
         "id":  "G0318",
+        "generation":  "x",
         "cat":  "Beystadiums",
         "code":  "G0318",
         "name":  "Tournament Beystadium",
@@ -2491,6 +2596,7 @@
     },
     {
         "id":  "G0841",
+        "generation":  "x",
         "cat":  "Beystadiums",
         "code":  "G0841",
         "name":  "Clash & Carry Beystadium",
@@ -2510,6 +2616,7 @@
     },
     {
         "id":  "G1546",
+        "generation":  "x",
         "cat":  "Beystadiums",
         "code":  "G1546",
         "name":  "Beystadium (2026)",
@@ -2529,6 +2636,7 @@
     },
     {
         "id":  "G1863",
+        "generation":  "x",
         "cat":  "Beystadiums",
         "code":  "G1863",
         "name":  "Wide Beystadium",
@@ -2548,6 +2656,7 @@
     },
     {
         "id":  "G1864",
+        "generation":  "x",
         "cat":  "Beystadiums",
         "code":  "G1864",
         "name":  "Double Xtreme Motorized Beystadium",
@@ -2567,6 +2676,7 @@
     },
     {
         "id":  "F9588",
+        "generation":  "x",
         "cat":  "Battle Sets",
         "code":  "F9588",
         "name":  "Xtreme Battle Set",
@@ -2586,6 +2696,7 @@
     },
     {
         "id":  "G0842",
+        "generation":  "x",
         "cat":  "Battle Sets",
         "code":  "G0842",
         "name":  "Drop Attack Battle Set",
@@ -2605,6 +2716,7 @@
     },
     {
         "id":  "G1940",
+        "generation":  "x",
         "cat":  "Battle Sets",
         "code":  "G1940",
         "name":  "Sneak Attack Battle Set",
@@ -2624,6 +2736,7 @@
     },
     {
         "id":  "F9324",
+        "generation":  "x",
         "cat":  "Accessories",
         "code":  "F9324",
         "name":  "Soar Phoenix Deluxe String Launcher Set",
@@ -2645,6 +2758,7 @@
     },
     {
         "id":  "G0440",
+        "generation":  "x",
         "cat":  "Accessories",
         "code":  "G0440",
         "name":  "Winder Launcher",
@@ -2664,6 +2778,7 @@
     },
     {
         "id":  "G1491",
+        "generation":  "x",
         "cat":  "Accessories",
         "code":  "G1491",
         "name":  "Cobalt Dragoon Deluxe Left-Spin String Launcher Set",
@@ -2685,6 +2800,7 @@
     },
     {
         "id":  "G1862",
+        "generation":  "x",
         "cat":  "Accessories",
         "code":  "G1862",
         "name":  "Victory Grip Launcher Set",
@@ -2704,6 +2820,7 @@
     },
     {
         "id":  "G2350",
+        "generation":  "x",
         "cat":  "Accessories",
         "code":  "G2350",
         "name":  "Clip & Rip Launcher Set",
@@ -2723,6 +2840,7 @@
     },
     {
         "id":  "G3083",
+        "generation":  "x",
         "cat":  "Accessories",
         "code":  "G3083",
         "name":  "Bite Croc Deluxe String Launcher & Custom Grip Set",
@@ -2744,6 +2862,7 @@
     },
     {
         "id":  "G3491",
+        "generation":  "x",
         "cat":  "Accessories",
         "code":  "G3491",
         "name":  "Meteoroid Dragoon Deluxe Left-Spin String Launcher Set",

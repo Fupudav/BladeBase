@@ -1,6 +1,7 @@
 [
   {
     "id": "bit-a",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "A",
@@ -19,6 +20,7 @@
   },
   {
     "id": "bit-b",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "B",
@@ -43,6 +45,7 @@
   },
   {
     "id": "bit-d",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "D",
@@ -67,6 +70,7 @@
   },
   {
     "id": "bit-db",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "DB",
@@ -90,6 +94,7 @@
   },
   {
     "id": "bit-ds",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "DS",
@@ -108,6 +113,7 @@
   },
   {
     "id": "bit-e",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "E",
@@ -126,6 +132,7 @@
   },
   {
     "id": "bit-f",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "F",
@@ -147,6 +154,7 @@
   },
   {
     "id": "bit-fb",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "FB",
@@ -165,6 +173,7 @@
   },
   {
     "id": "bit-ff",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "FF",
@@ -183,6 +192,7 @@
   },
   {
     "id": "bit-gb",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "GB",
@@ -210,6 +220,7 @@
   },
   {
     "id": "bit-gf",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "GF",
@@ -228,6 +239,7 @@
   },
   {
     "id": "bit-gn",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "GN",
@@ -249,6 +261,7 @@
   },
   {
     "id": "bit-gp",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "GP",
@@ -273,6 +286,7 @@
   },
   {
     "id": "bit-gr",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "GR",
@@ -291,6 +305,7 @@
   },
   {
     "id": "bit-h",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "H",
@@ -312,6 +327,7 @@
   },
   {
     "id": "bit-hn",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "HN",
@@ -333,6 +349,7 @@
   },
   {
     "id": "bit-i",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "I",
@@ -351,6 +368,7 @@
   },
   {
     "id": "bit-k",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "K",
@@ -369,6 +387,7 @@
   },
   {
     "id": "bit-lf",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "LF",
@@ -393,6 +412,7 @@
   },
   {
     "id": "bit-lo",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "LO",
@@ -411,6 +431,7 @@
   },
   {
     "id": "bit-mn",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "MN",
@@ -429,6 +450,7 @@
   },
   {
     "id": "bit-n",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "N",
@@ -450,6 +472,7 @@
   },
   {
     "id": "bit-o",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "O",
@@ -474,6 +497,7 @@
   },
   {
     "id": "bit-p",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "P",
@@ -495,6 +519,7 @@
   },
   {
     "id": "bit-q",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "Q",
@@ -516,6 +541,7 @@
   },
   {
     "id": "bit-r",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "R",
@@ -534,6 +560,7 @@
   },
   {
     "id": "bit-s",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "S",
@@ -555,6 +582,7 @@
   },
   {
     "id": "bit-t",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "T",
@@ -591,6 +619,7 @@
   },
   {
     "id": "bit-tp",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "TP",
@@ -609,6 +638,7 @@
   },
   {
     "id": "bit-u",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "U",
@@ -627,6 +657,7 @@
   },
   {
     "id": "bit-uf",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "UF",
@@ -645,6 +676,7 @@
   },
   {
     "id": "bit-un",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "UN",
@@ -666,6 +698,7 @@
   },
   {
     "id": "bit-v",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "V",
@@ -684,6 +717,7 @@
   },
   {
     "id": "bit-w",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "W",
@@ -705,6 +739,7 @@
   },
   {
     "id": "bit-wb",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "WB",
@@ -723,6 +758,7 @@
   },
   {
     "id": "bit-y",
+    "generation": "x",
     "type": "bit",
     "typeLabel": "Bit",
     "name": "Y",
@@ -741,6 +777,7 @@
   },
   {
     "id": "blade-antler-stag-b",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Antler Stag B",
@@ -759,6 +796,7 @@
   },
   {
     "id": "blade-arc-wizard-r",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Arc Wizard R",
@@ -777,6 +815,7 @@
   },
   {
     "id": "blade-armor-knight-gv",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Armor Knight GV",
@@ -795,6 +834,7 @@
   },
   {
     "id": "blade-arrow-wizard",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Arrow Wizard",
@@ -822,6 +862,7 @@
   },
   {
     "id": "blade-beat-tyranno",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Beat Tyranno",
@@ -840,6 +881,7 @@
   },
   {
     "id": "blade-bite-croc",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Bite Croc",
@@ -861,6 +903,7 @@
   },
   {
     "id": "blade-blitz-bahamut-bk",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Blitz Bahamut BK",
@@ -879,6 +922,7 @@
   },
   {
     "id": "blade-brush-fox-j",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Brush Fox J",
@@ -897,6 +941,7 @@
   },
   {
     "id": "blade-bumblebee",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Bumblebee",
@@ -915,6 +960,7 @@
   },
   {
     "id": "blade-buster-dran",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Buster Dran",
@@ -938,6 +984,7 @@
   },
   {
     "id": "blade-calibur-samurai",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Calibur Samurai",
@@ -956,6 +1003,7 @@
   },
   {
     "id": "blade-captain-america",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Captain America",
@@ -974,6 +1022,7 @@
   },
   {
     "id": "blade-chain-incendio",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Chain Incendio",
@@ -995,6 +1044,7 @@
   },
   {
     "id": "blade-chewbacca",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Chewbacca",
@@ -1013,6 +1063,7 @@
   },
   {
     "id": "blade-circle-ghost",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Circle Ghost",
@@ -1034,6 +1085,7 @@
   },
   {
     "id": "blade-claw-leon",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Claw Leon",
@@ -1052,6 +1104,7 @@
   },
   {
     "id": "blade-cobalt-dragoon",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Cobalt Dragoon",
@@ -1070,6 +1123,7 @@
   },
   {
     "id": "blade-courage-dran-s",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Courage Dran S",
@@ -1088,6 +1142,7 @@
   },
   {
     "id": "blade-cowl-sphinx",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Cowl Sphinx",
@@ -1109,6 +1164,7 @@
   },
   {
     "id": "blade-crest-leon",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Crest Leon",
@@ -1127,6 +1183,7 @@
   },
   {
     "id": "blade-curse-mummy",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Curse Mummy",
@@ -1145,6 +1202,7 @@
   },
   {
     "id": "blade-dagger-dran",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Dagger Dran",
@@ -1163,6 +1221,7 @@
   },
   {
     "id": "blade-dark-perseus-b",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Dark Perseus B",
@@ -1181,6 +1240,7 @@
   },
   {
     "id": "blade-darth-vader",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Darth Vader",
@@ -1199,6 +1259,7 @@
   },
   {
     "id": "blade-draciel-shield",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Draciel Shield",
@@ -1217,6 +1278,7 @@
   },
   {
     "id": "blade-dranzer-spiral",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Dranzer Spiral",
@@ -1241,6 +1303,7 @@
   },
   {
     "id": "blade-driger-slash",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Driger Slash",
@@ -1259,6 +1322,7 @@
   },
   {
     "id": "blade-fang-leon-t",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Fang Leon T",
@@ -1277,6 +1341,7 @@
   },
   {
     "id": "blade-feather-phoenix",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Feather Phoenix",
@@ -1295,6 +1360,7 @@
   },
   {
     "id": "blade-flame-cerberus-w",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Flame Cerberus W",
@@ -1313,6 +1379,7 @@
   },
   {
     "id": "blade-fort-hornet-r",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Fort Hornet R",
@@ -1331,6 +1398,7 @@
   },
   {
     "id": "blade-gale-wyvern",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Gale Wyvern",
@@ -1352,6 +1420,7 @@
   },
   {
     "id": "blade-general-grievous",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "General Grievous",
@@ -1370,6 +1439,7 @@
   },
   {
     "id": "blade-gill-shark",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Gill Shark",
@@ -1388,6 +1458,7 @@
   },
   {
     "id": "blade-glory-valkerion-lf",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Glory Valkerion LF",
@@ -1404,6 +1475,7 @@
   },
   {
     "id": "blade-green-goblin",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Green Goblin",
@@ -1422,6 +1494,7 @@
   },
   {
     "id": "blade-grogu",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Grogu",
@@ -1440,6 +1513,7 @@
   },
   {
     "id": "blade-gust-bat",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Gust Bat",
@@ -1458,6 +1532,7 @@
   },
   {
     "id": "blade-hack-viking",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Hack Viking",
@@ -1476,6 +1551,7 @@
   },
   {
     "id": "blade-hammer-incendio",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Hammer Incendio",
@@ -1494,6 +1570,7 @@
   },
   {
     "id": "blade-helm-knight",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Helm Knight",
@@ -1515,6 +1592,7 @@
   },
   {
     "id": "blade-horn-rhino",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Horn Rhino",
@@ -1533,6 +1611,7 @@
   },
   {
     "id": "blade-hurricane-enlil-is",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Hurricane Enlil IS",
@@ -1551,6 +1630,7 @@
   },
   {
     "id": "blade-iron-man",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Iron Man",
@@ -1569,6 +1649,7 @@
   },
   {
     "id": "blade-keel-shark",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Keel Shark",
@@ -1593,6 +1674,7 @@
   },
   {
     "id": "blade-knife-shinobi",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Knife Shinobi",
@@ -1614,6 +1696,7 @@
   },
   {
     "id": "blade-lance-knight",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Lance Knight",
@@ -1635,6 +1718,7 @@
   },
   {
     "id": "blade-luke-skywalker",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Luke Skywalker",
@@ -1653,6 +1737,7 @@
   },
   {
     "id": "blade-megatron",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Megatron",
@@ -1671,6 +1756,7 @@
   },
   {
     "id": "blade-meteoroid-dragoon",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Meteoroid Dragoon",
@@ -1689,6 +1775,7 @@
   },
   {
     "id": "blade-miles-morales",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Miles Morales",
@@ -1707,6 +1794,7 @@
   },
   {
     "id": "blade-moff-gideon",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Moff Gideon",
@@ -1725,6 +1813,7 @@
   },
   {
     "id": "blade-mosasaurus",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Mosasaurus",
@@ -1743,6 +1832,7 @@
   },
   {
     "id": "blade-obi-wan-kenobi",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Obi-Wan Kenobi",
@@ -1761,6 +1851,7 @@
   },
   {
     "id": "blade-obsidian-shell",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Obsidian Shell",
@@ -1782,6 +1873,7 @@
   },
   {
     "id": "blade-optimus-primal",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Optimus Primal",
@@ -1800,6 +1892,7 @@
   },
   {
     "id": "blade-optimus-prime",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Optimus Prime",
@@ -1818,6 +1911,7 @@
   },
   {
     "id": "blade-pearl-tiger",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Pearl Tiger",
@@ -1836,6 +1930,7 @@
   },
   {
     "id": "blade-quetzalcoatlus",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Quetzalcoatlus",
@@ -1854,6 +1949,7 @@
   },
   {
     "id": "blade-rage-ragna-fe",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Rage Ragna FE",
@@ -1872,6 +1968,7 @@
   },
   {
     "id": "blade-reaper-incendio-t",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Reaper Incendio T",
@@ -1890,6 +1987,7 @@
   },
   {
     "id": "blade-reaper-rhino-c",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Reaper Rhino C",
@@ -1908,6 +2006,7 @@
   },
   {
     "id": "blade-red-hulk",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Red Hulk",
@@ -1926,6 +2025,7 @@
   },
   {
     "id": "blade-ridge-triceratops",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Ridge Triceratops",
@@ -1944,6 +2044,7 @@
   },
   {
     "id": "blade-ring-aether",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Ring Aether",
@@ -1962,6 +2063,7 @@
   },
   {
     "id": "blade-roar-tyranno",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Roar Tyranno",
@@ -1980,6 +2082,7 @@
   },
   {
     "id": "blade-rock-golem",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Rock Golem",
@@ -1998,6 +2101,7 @@
   },
   {
     "id": "blade-rocket-griffon-h",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Rocket Griffon H",
@@ -2016,6 +2120,7 @@
   },
   {
     "id": "blade-rudder-phoenix",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Rudder Phoenix",
@@ -2034,6 +2139,7 @@
   },
   {
     "id": "blade-savage-bear",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Savage Bear",
@@ -2055,6 +2161,7 @@
   },
   {
     "id": "blade-scale-shark",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Scale Shark",
@@ -2073,6 +2180,7 @@
   },
   {
     "id": "blade-scarlet-garuda",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Scarlet Garuda",
@@ -2091,6 +2199,7 @@
   },
   {
     "id": "blade-scythe-incendio",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Scythe Incendio",
@@ -2112,6 +2221,7 @@
   },
   {
     "id": "blade-shadow-shinobi",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Shadow Shinobi",
@@ -2130,6 +2240,7 @@
   },
   {
     "id": "blade-shatter-horus",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Shatter Horus",
@@ -2148,6 +2259,7 @@
   },
   {
     "id": "blade-shelter-drake",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Shelter Drake",
@@ -2169,6 +2281,7 @@
   },
   {
     "id": "blade-shockwave",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Shockwave",
@@ -2187,6 +2300,7 @@
   },
   {
     "id": "blade-snowtrooper",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Snowtrooper",
@@ -2205,6 +2319,7 @@
   },
   {
     "id": "blade-soar-phoenix",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Soar Phoenix",
@@ -2226,6 +2341,7 @@
   },
   {
     "id": "blade-spear-scorpio",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Spear Scorpio",
@@ -2244,6 +2360,7 @@
   },
   {
     "id": "blade-spider-man",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Spider-Man",
@@ -2262,6 +2379,7 @@
   },
   {
     "id": "blade-spinosaurus",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Spinosaurus",
@@ -2280,6 +2398,7 @@
   },
   {
     "id": "blade-starscream",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Starscream",
@@ -2298,6 +2417,7 @@
   },
   {
     "id": "blade-steel-samurai",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Steel Samurai",
@@ -2316,6 +2436,7 @@
   },
   {
     "id": "blade-sterling-wolf",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Sterling Wolf",
@@ -2334,6 +2455,7 @@
   },
   {
     "id": "blade-sting-unicorn",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Sting Unicorn",
@@ -2355,6 +2477,7 @@
   },
   {
     "id": "blade-stormtrooper",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Stormtrooper",
@@ -2373,6 +2496,7 @@
   },
   {
     "id": "blade-strike-dran",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Strike Dran",
@@ -2391,6 +2515,7 @@
   },
   {
     "id": "blade-stun-medusa",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Stun Medusa",
@@ -2409,6 +2534,7 @@
   },
   {
     "id": "blade-sword-dran",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Sword Dran",
@@ -2436,6 +2562,7 @@
   },
   {
     "id": "blade-t-rex",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "T. Rex",
@@ -2454,6 +2581,7 @@
   },
   {
     "id": "blade-tackle-goat",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Tackle Goat",
@@ -2472,6 +2600,7 @@
   },
   {
     "id": "blade-tail-viper",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Tail Viper",
@@ -2496,6 +2625,7 @@
   },
   {
     "id": "blade-talon-ptera",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Talon Ptera",
@@ -2514,6 +2644,7 @@
   },
   {
     "id": "blade-thanos",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Thanos",
@@ -2532,6 +2663,7 @@
   },
   {
     "id": "blade-the-mandalorian",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "The Mandalorian",
@@ -2550,6 +2682,7 @@
   },
   {
     "id": "blade-tide-whale",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Tide Whale",
@@ -2568,6 +2701,7 @@
   },
   {
     "id": "blade-valor-bison-fb",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Valor Bison FB",
@@ -2586,6 +2720,7 @@
   },
   {
     "id": "blade-venom",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Venom",
@@ -2604,6 +2739,7 @@
   },
   {
     "id": "blade-wand-wizard",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Wand Wizard",
@@ -2625,6 +2761,7 @@
   },
   {
     "id": "blade-wriggle-kraken-s",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Wriggle Kraken S",
@@ -2643,6 +2780,7 @@
   },
   {
     "id": "blade-yell-kong",
+    "generation": "x",
     "type": "blade",
     "typeLabel": "Blade",
     "name": "Yell Kong",
@@ -2664,6 +2802,7 @@
   },
   {
     "id": "ratchet-0-80",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "0-80",
@@ -2682,6 +2821,7 @@
   },
   {
     "id": "ratchet-1-50",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "1-50",
@@ -2700,6 +2840,7 @@
   },
   {
     "id": "ratchet-1-60",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "1-60",
@@ -2727,6 +2868,7 @@
   },
   {
     "id": "ratchet-1-80",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "1-80",
@@ -2745,6 +2887,7 @@
   },
   {
     "id": "ratchet-2-60",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "2-60",
@@ -2766,6 +2909,7 @@
   },
   {
     "id": "ratchet-3-60",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "3-60",
@@ -2796,6 +2940,7 @@
   },
   {
     "id": "ratchet-3-70",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "3-70",
@@ -2814,6 +2959,7 @@
   },
   {
     "id": "ratchet-3-80",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "3-80",
@@ -2853,6 +2999,7 @@
   },
   {
     "id": "ratchet-3-85",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "3-85",
@@ -2874,6 +3021,7 @@
   },
   {
     "id": "ratchet-4-50",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "4-50",
@@ -2895,6 +3043,7 @@
   },
   {
     "id": "ratchet-4-55",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "4-55",
@@ -2919,6 +3068,7 @@
   },
   {
     "id": "ratchet-4-60",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "4-60",
@@ -2943,6 +3093,7 @@
   },
   {
     "id": "ratchet-4-70",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "4-70",
@@ -2970,6 +3121,7 @@
   },
   {
     "id": "ratchet-4-80",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "4-80",
@@ -3003,6 +3155,7 @@
   },
   {
     "id": "ratchet-5-60",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "5-60",
@@ -3027,6 +3180,7 @@
   },
   {
     "id": "ratchet-5-70",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "5-70",
@@ -3053,6 +3207,7 @@
   },
   {
     "id": "ratchet-5-80",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "5-80",
@@ -3077,6 +3232,7 @@
   },
   {
     "id": "ratchet-6-60",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "6-60",
@@ -3095,6 +3251,7 @@
   },
   {
     "id": "ratchet-6-80",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "6-80",
@@ -3113,6 +3270,7 @@
   },
   {
     "id": "ratchet-7-55",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "7-55",
@@ -3134,6 +3292,7 @@
   },
   {
     "id": "ratchet-7-60",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "7-60",
@@ -3155,6 +3314,7 @@
   },
   {
     "id": "ratchet-7-80",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "7-80",
@@ -3173,6 +3333,7 @@
   },
   {
     "id": "ratchet-8-70",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "8-70",
@@ -3191,6 +3352,7 @@
   },
   {
     "id": "ratchet-9-60",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "9-60",
@@ -3212,6 +3374,7 @@
   },
   {
     "id": "ratchet-9-65",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "9-65",
@@ -3230,6 +3393,7 @@
   },
   {
     "id": "ratchet-9-70",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "9-70",
@@ -3248,6 +3412,7 @@
   },
   {
     "id": "ratchet-9-80",
+    "generation": "x",
     "type": "ratchet",
     "typeLabel": "Ratchet",
     "name": "9-80",
