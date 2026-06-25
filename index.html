@@ -325,6 +325,7 @@ function resetCollectionFilters(){['search','category','wave','year','status','p
 let displayMode=(window.matchMedia&&window.matchMedia('(max-width: 700px)').matches)?'grid':'list';
 let imageManifestStatus='loading';
 let imageManifest=null;
+let imageManifestIncomplete=false;
 const missingLocalImages=new Set();
 const imageExtensions=['webp','jpg','jpeg','png'];
 function updateDisplayModeButtons(){const list=$('#listMode'),grid=$('#gridMode');if(!list||!grid)return;list.classList.toggle('activeMini',displayMode==='list');grid.classList.toggle('activeMini',displayMode==='grid')}
@@ -337,12 +338,16 @@ function placeholderImg(p){
 }
 function normalizeImageFileName(file){return String(file||'').replace(/^\.?\/?images\//,'').replace(/^\/+/,'')}
 function localImageBases(p){return [...new Set([p.code].map(x=>String(x||'').trim()).filter(Boolean))]}
-function localImageFiles(p){return localImageBases(p).flatMap(base=>[...generationImageFolders(productGeneration(p)).flatMap(gen=>imageExtensions.map(ext=>`${gen}/${base}.${ext}`)),...imageExtensions.map(ext=>`${base}.${ext}`)])}
+function localImageFiles(p){const generation=productGeneration(p);return localImageBases(p).flatMap(base=>{const root=imageExtensions.map(ext=>`${base}.${ext}`),genFiles=generationImageFolders(generation).flatMap(gen=>imageExtensions.map(ext=>`${gen}/${base}.${ext}`));return [...new Set(generation===DEFAULT_GENERATION?[...root,...genFiles]:[...genFiles,...root])];})}
 function localImagePathFromFile(file){return `images/${normalizeImageFileName(file).split('/').map(encodeURIComponent).join('/')}`}
 function productImagePath(p){const img=normalizeImageFileName(p.imagePath||'');return img?localImagePathFromFile(img):''}
 function localImageCandidates(p){
   const files=localImageFiles(p);
-  if(imageManifestStatus==='loaded')return files.filter(file=>imageManifest.has(normalizeImageFileName(file))).map(localImagePathFromFile);
+  if(imageManifestStatus==='loaded'){
+    const known=files.filter(file=>imageManifest.has(normalizeImageFileName(file))).map(localImagePathFromFile);
+    if(known.length||!imageManifestIncomplete)return known;
+    return files.map(localImagePathFromFile).filter(path=>!missingLocalImages.has(path));
+  }
   if(imageManifestStatus==='missing')return files.map(localImagePathFromFile).filter(path=>!missingLocalImages.has(path));
   return [];
 }
@@ -354,9 +359,11 @@ async function loadImageManifest(){
     const data=await res.json();
     const files=Array.isArray(data)?data:(Array.isArray(data.files)?data.files:[]);
     imageManifest=new Set(files.map(normalizeImageFileName).filter(Boolean));
+    imageManifestIncomplete=imageManifest.size<20;
     imageManifestStatus='loaded';
   }catch(e){
     imageManifest=null;
+    imageManifestIncomplete=true;
     imageManifestStatus='missing';
   }
   render();
@@ -370,7 +377,11 @@ function partImagePath(part){const img=normalizeImageFileName(part.imagePath||''
 function localPartImageFiles(part){const folder=partImageFolder(part.type);return [part.id,slugText(part.name)].flatMap(base=>[...generationImageFolders(partGeneration(part)).flatMap(gen=>imageExtensions.map(ext=>`parts/${gen}/${folder}/${base}.${ext}`)),...imageExtensions.map(ext=>`parts/${folder}/${base}.${ext}`)])}
 function localPartImageCandidates(part){
   const files=localPartImageFiles(part);
-  if(imageManifestStatus==='loaded')return files.filter(file=>imageManifest.has(normalizeImageFileName(file))).map(localImagePathFromFile);
+  if(imageManifestStatus==='loaded'){
+    const known=files.filter(file=>imageManifest.has(normalizeImageFileName(file))).map(localImagePathFromFile);
+    if(known.length||!imageManifestIncomplete)return known;
+    return files.map(localImagePathFromFile).filter(path=>!missingLocalImages.has(path));
+  }
   if(imageManifestStatus==='missing')return files.map(localImagePathFromFile).filter(path=>!missingLocalImages.has(path));
   return [];
 }

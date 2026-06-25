@@ -58,10 +58,11 @@ jobs:
           mkdir -p images
           python - <<'PY'
           import json
+          from datetime import datetime, timezone
           from pathlib import Path
           exts = {'.jpg', '.jpeg', '.png', '.webp'}
           files = sorted(p.relative_to('images').as_posix() for p in Path('images').rglob('*') if p.is_file() and p.suffix.lower() in exts)
-          Path('images/manifest.json').write_text(json.dumps(files, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          Path('images/manifest.json').write_text(json.dumps({'generatedAt': datetime.now(timezone.utc).isoformat(), 'files': files}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
           PY
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
