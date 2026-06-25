@@ -892,28 +892,36 @@ try{
   const firebaseConfig=await loadFirebaseConfig();
   if(!firebaseConfig)throw new Error("firebase-config-missing");
   validateFirebaseConfig(firebaseConfig);
-  const [{initializeApp},firebaseAuth,firestoreSdk]=await Promise.all([
+  const [{initializeApp},firebaseAuth]=await Promise.all([
     import("https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js"),
-    import("https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js"),
-    import("https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js")
+    import("https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js")
   ]);
   const {browserLocalPersistence,createUserWithEmailAndPassword,getAuth,onAuthStateChanged,sendPasswordResetEmail,setPersistence,signInWithEmailAndPassword,signOut,useDeviceLanguage}=firebaseAuth;
-  const {collection,collectionGroup,deleteDoc,doc,getDoc,getDocs,setDoc,getFirestore,initializeFirestore,persistentLocalCache,persistentSingleTabManager}=firestoreSdk;
   const app=initializeApp(firebaseConfig);
   initBladeAnalytics(app);
   const auth=getAuth(app);
-  let db;
-  try{db=initializeFirestore(app,{localCache:persistentLocalCache({tabManager:persistentSingleTabManager()})});}
-  catch(e){db=getFirestore(app);}
-  cloudSync.db=db;
-  cloudSync.firestore={collection,collectionGroup,doc,getDoc,getDocs,setDoc};
-  window.bladeLoadFirestoreProducts?.(db,{collection,getDocs});
-  window.bladeLoadFirestoreParts?.(db,{collection,getDocs});
-  window.bladeLoadProductUpdates?.(db,{collection,getDocs});
-  window.bladeInitAdmin?.(db,{collection,collectionGroup,deleteDoc,doc,getDocs,setDoc});
   useDeviceLanguage?.(auth);
-  await setPersistence(auth,browserLocalPersistence);
+  try{await setPersistence(auth,browserLocalPersistence);}
+  catch(error){authDebug('Persistance Auth locale indisponible, session par defaut utilisee',error);}
 
+  let db=null, collection, collectionGroup, deleteDoc, doc, getDoc, getDocs, setDoc;
+  try{
+    const firestoreSdk=await import("https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js");
+    ({collection,collectionGroup,deleteDoc,doc,getDoc,getDocs,setDoc}=firestoreSdk);
+    const {getFirestore,initializeFirestore,persistentLocalCache,persistentSingleTabManager}=firestoreSdk;
+    try{db=initializeFirestore(app,{localCache:persistentLocalCache({tabManager:persistentSingleTabManager()})});}
+    catch(error){authDebug('Cache Firestore persistant indisponible, fallback Firestore standard',error);db=getFirestore(app);}
+    cloudSync.db=db;
+    cloudSync.firestore={collection,collectionGroup,doc,getDoc,getDocs,setDoc};
+    window.bladeLoadFirestoreProducts?.(db,{collection,getDocs});
+    window.bladeLoadFirestoreParts?.(db,{collection,getDocs});
+    window.bladeLoadProductUpdates?.(db,{collection,getDocs});
+    window.bladeInitAdmin?.(db,{collection,collectionGroup,deleteDoc,doc,getDocs,setDoc});
+  }catch(error){
+    cloudSync.db=null;
+    setSyncStatus('Firestore indisponible');
+    authDebug('Firestore indisponible, Auth reste actif',error);
+  }
   const refFor=(uid,path)=>doc(db,`users/${uid}/${path}`);
   const collectionFor=(uid,path)=>collection(db,`users/${uid}/${path}`);
   function cloudUpdatedAtFrom(payload){return payload?.meta?.updatedAt||payload?.meta?.localUpdatedAt||payload?.collectionUpdatedAt||payload?.settingsUpdatedAt||''}
@@ -999,7 +1007,7 @@ try{
     finally{cloudSync.busy=false;setSyncButtonsDisabled(false);}
   }
   async function restoreCloudToLocal(){
-    if(!cloudSync.user)return;
+    if(!cloudSync.user||!cloudSync.db){setSyncStatus('Firestore indisponible');return;}
     setSyncStatus('Lecture du cloud...');
     const payload=await readCloudPayload(cloudSync.user.uid);
     if(payload.empty){setSyncStatus('Aucune sauvegarde cloud');return;}
@@ -1035,7 +1043,7 @@ try{
       if(authEls.name)authEls.name.textContent=user.displayName||"—";
       setAuthMessage("Session Firebase active. La synchronisation Firestore est disponible.");
       authEls.logout?.removeAttribute("disabled");
-      initialCloudReconcile(user);
+      if(cloudSync.db)initialCloudReconcile(user);else setSyncStatus('Firestore indisponible');
     }else{
       cloudSync.user=null;cloudSync.ready=false;cloudSync.cloudUpdatedAt='';setSyncStatus('Hors compte');updateLocalSyncUi();
       if(authEls.status)authEls.status.textContent="Non connecté";
