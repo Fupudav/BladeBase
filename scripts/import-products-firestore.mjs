@@ -18,6 +18,7 @@ const credentialsPath = args.get("credentials") || process.env.GOOGLE_APPLICATIO
 const productsPath = args.get("file") || "data/products-fallback.json";
 const collectionName = args.get("collection") || "products";
 const validTypes = new Set(["", "Attack", "Defense", "Stamina", "Balance", "Mixed"]);
+const validGenerations = new Set(["x", "burst", "metal", "bakuten"]);
 
 function fail(message) {
   console.error(`Erreur: ${message}`);
@@ -67,27 +68,44 @@ function normalizeProductParts(parts = {}, name = "") {
     parts.bits ?? parts.bit,
     parts.source || "manual"
   );
-  if (!normalized.blades.length && !normalized.ratchets.length && !normalized.bits.length && name) {
+  if (!normalized.blades.length && !normalized.ratchets.length && !normalized.bits.length && name && normalized.source !== "catalog") {
     return inferProductPartsFromName(name);
   }
   return normalized;
 }
 
+function normalizeGeneration(value) {
+  const raw = String(value || "x").trim().toLowerCase();
+  if (raw === "beyblade-x") return "x";
+  if (raw === "beyblade-burst" || raw === "bust") return "burst";
+  if (raw === "metal-fight") return "metal";
+  if (raw === "bakuten-shoot") return "bakuten";
+  return raw || "x";
+}
+
 function normalizeProduct(product) {
-  return {
+  const rawOrder = product.displayOrder ?? product.order;
+  const displayOrder = rawOrder === "" || rawOrder === undefined ? NaN : Number(rawOrder);
+  const normalized = {
     id: String(product.id || product.code || product.name || "").trim(),
+    generation: normalizeGeneration(product.generation || product.gen || product.series),
     code: String(product.code || "").trim(),
     name: String(product.name || "").trim(),
     cat: String(product.cat || "").trim(),
     wave: String(product.wave || "").trim(),
+    line: String(product.line || "").trim(),
     date: String(product.date || "").trim(),
     price: String(product.price || "").trim(),
     color: String(product.color || "").trim(),
     type: String(product.type || "").trim(),
     imagePath: String(product.imagePath || "").trim(),
+    buyUrl: String(product.buyUrl || product.affiliateUrl || product.purchaseUrl || "").trim(),
     note: String(product.note || "").trim(),
+    active: product.active === false ? false : true,
     parts: normalizeProductParts(product.parts, product.name)
   };
+  if (Number.isFinite(displayOrder)) normalized.displayOrder = displayOrder;
+  return normalized;
 }
 
 async function loadJson(filePath) {
@@ -109,6 +127,7 @@ products.forEach((product, index) => {
   if (product.id && ids.has(product.id)) errors.push(`ID duplique: ${product.id}`);
   if (product.id) ids.add(product.id);
   if (!validTypes.has(product.type)) errors.push(`${product.id || `Produit #${index + 1}`}: type invalide "${product.type}".`);
+  if (!validGenerations.has(product.generation)) errors.push(`${product.id || `Produit #${index + 1}`}: generation invalide "${product.generation}".`);
   if (!product.parts || !Array.isArray(product.parts.blades) || !Array.isArray(product.parts.ratchets) || !Array.isArray(product.parts.bits)) {
     errors.push(`${product.id || `Produit #${index + 1}`}: parts invalide.`);
   }
