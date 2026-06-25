@@ -52,6 +52,8 @@ const products=[];
 const partsCatalog=[];
 const allProducts=[];
 const allPartsCatalog=[];
+const fallbackProductsCatalog=[];
+const fallbackPartsCatalog=[];
 let productUpdates=[];
 const PRODUCT_FALLBACK_URL='./data/products-fallback.json';
 const PARTS_FALLBACK_URL='./data/parts-fallback.json';
@@ -133,7 +135,7 @@ function inferProductPartsFromName(name=''){
 }
 function normalizeProductParts(parts={},name=''){
   const normalized=makeProductParts(parts.blades??parts.blade,parts.ratchets??parts.ratchet,parts.bits??parts.bit,parts.source||'manual');
-  if(!normalized.blades.length&&!normalized.ratchets.length&&!normalized.bits.length&&name)return inferProductPartsFromName(name);
+  if(!normalized.blades.length&&!normalized.ratchets.length&&!normalized.bits.length&&name&&normalized.source!=='catalog')return inferProductPartsFromName(name);
   return normalized;
 }
 function normalizeProduct(p={},fallbackId=''){
@@ -155,14 +157,14 @@ function ensureCustomProducts(){if(!Array.isArray(state.customProducts))state.cu
 function updateProductSourceUi(source,count,total){
   const el=$('#productSourceStatus');
   if(!el)return;
-  const label=source==='firestore'?'Firestore':source==='fallback'?'Fallback local':source==='empty'?'Indisponible':'Chargement';
+  const label=source==='firestore'?'Firestore':source==='firestore+fallback'?'Firestore + fallback local':source==='fallback'?'Fallback local':source==='empty'?'Indisponible':'Chargement';
   const suffix=total&&total!==count?` / ${total} toutes générations`:'';
   el.textContent=count!==undefined?`${label} ${generationLabel(activeGeneration)} (${count} produits${suffix})`:label;
 }
 function updatePartSourceUi(source,count,total){
   const el=$('#partSourceStatus');
   if(!el)return;
-  const label=source==='firestore'?'Firestore':source==='fallback'?'Fallback local':source==='empty'?'Indisponible':'Chargement';
+  const label=source==='firestore'?'Firestore':source==='firestore+fallback'?'Firestore + fallback local':source==='fallback'?'Fallback local':source==='empty'?'Indisponible':'Chargement';
   const suffix=total&&total!==count?` / ${total} toutes générations`:'';
   el.textContent=count!==undefined?`${label} ${generationLabel(activeGeneration)} (${count} pièces${suffix})`:label;
 }
@@ -172,9 +174,16 @@ function syncActiveGenerationParts(source=window.bladePartsSource||'fallback'){
   updatePartSourceUi(source,partsCatalog.length,allPartsCatalog.length);
   renderExtraViews();
 }
+function normalizePartsList(nextParts){return nextParts.map((p,i)=>normalizePartDoc(p,p.id||String(i))).filter(p=>p.name&&['blade','ratchet','bit'].includes(p.type))}
 function applyParts(nextParts,source='fallback'){
-  allPartsCatalog.splice(0,allPartsCatalog.length,...nextParts.map((p,i)=>normalizePartDoc(p,p.id||String(i))).filter(p=>p.name&&['blade','ratchet','bit'].includes(p.type)));
+  allPartsCatalog.splice(0,allPartsCatalog.length,...normalizePartsList(nextParts));
   syncActiveGenerationParts(source);
+}
+function mergeFirestoreWithFallback(firestoreItems,fallbackItems,itemGeneration){
+  const normalizedFirestore=firestoreItems;
+  const firestoreGenerations=new Set(normalizedFirestore.map(itemGeneration));
+  const fallbackOnly=fallbackItems.filter(item=>!firestoreGenerations.has(itemGeneration(item)));
+  return {items:[...normalizedFirestore,...fallbackOnly],usedFallback:fallbackOnly.length>0};
 }
 function syncActiveGenerationProducts(source=window.bladeProductsSource||'fallback'){
   products.splice(0,products.length,...activeGenerationProducts().filter(p=>p.name&&p.active!==false).sort((a,b)=>(Number(a.displayOrder)||999999)-(Number(b.displayOrder)||999999)||(a.code||'').localeCompare(b.code||'','fr')||a.name.localeCompare(b.name,'fr')));
@@ -186,8 +195,9 @@ function syncActiveGenerationProducts(source=window.bladeProductsSource||'fallba
   renderExtraViews();
   renderHome();
 }
+function normalizeProductsList(nextProducts){return nextProducts.map((p,i)=>normalizeProduct(p,p.id||p.code||String(i))).filter(p=>p.name)}
 function applyProducts(nextProducts,source='fallback'){
-  allProducts.splice(0,allProducts.length,...nextProducts.map((p,i)=>normalizeProduct(p,p.id||p.code||String(i))).filter(p=>p.name));
+  allProducts.splice(0,allProducts.length,...normalizeProductsList(nextProducts));
   syncActiveGenerationProducts(source);
 }
 async function loadFallbackProducts(){
@@ -196,7 +206,8 @@ async function loadFallbackProducts(){
     if(!res.ok)throw new Error('fallback products missing');
     const data=await res.json();
     const list=Array.isArray(data)?data:(Array.isArray(data.products)?data.products:[]);
-    applyProducts(list,'fallback');
+    fallbackProductsCatalog.splice(0,fallbackProductsCatalog.length,...normalizeProductsList(list));
+    applyProducts(fallbackProductsCatalog,'fallback');
   }catch(e){
     console.warn('Fallback produits indisponible',e);
     applyProducts([],'empty');
@@ -210,17 +221,26 @@ async function loadFallbackParts(){
     if(!res.ok)throw new Error('fallback parts missing');
     const data=await res.json();
     const list=Array.isArray(data)?data:(Array.isArray(data.parts)?data.parts:[]);
-    applyParts(list,'fallback');
+    fallbackPartsCatalog.splice(0,fallbackPartsCatalog.length,...normalizePartsList(list));
+    applyParts(fallbackPartsCatalog,'fallback');
   }catch(e){
     console.warn('Fallback pièces indisponible',e);
     applyParts([],'empty');
   }
 }
 window.bladeApplyFirestoreProducts=function(nextProducts){
-  if(Array.isArray(nextProducts)&&nextProducts.length)applyProducts(nextProducts,'firestore');
+  if(Array.isArray(nextProducts)&&nextProducts.length){
+    const normalizedFirestore=normalizeProductsList(nextProducts);
+    const merged=mergeFirestoreWithFallback(normalizedFirestore,fallbackProductsCatalog,productGeneration);
+    applyProducts(merged.items,merged.usedFallback?'firestore+fallback':'firestore');
+  }
 };
 window.bladeApplyFirestoreParts=function(nextParts){
-  if(Array.isArray(nextParts)&&nextParts.length)applyParts(nextParts,'firestore');
+  if(Array.isArray(nextParts)&&nextParts.length){
+    const normalizedFirestore=normalizePartsList(nextParts);
+    const merged=mergeFirestoreWithFallback(normalizedFirestore,fallbackPartsCatalog,partGeneration);
+    applyParts(merged.items,merged.usedFallback?'firestore+fallback':'firestore');
+  }
 };
 window.bladeLoadFirestoreProducts=async function(db,api){
   await window.bladeProductsFallbackReady;
