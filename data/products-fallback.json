@@ -2900,10 +2900,16 @@
         "active": true,
         "displayOrder": 30000,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -2924,10 +2930,16 @@
         "active": true,
         "displayOrder": 30001,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -2948,10 +2960,16 @@
         "active": true,
         "displayOrder": 30002,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -2972,10 +2990,16 @@
         "active": true,
         "displayOrder": 30003,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -2996,10 +3020,16 @@
         "active": true,
         "displayOrder": 30004,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3020,10 +3050,16 @@
         "active": true,
         "displayOrder": 30005,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3044,10 +3080,16 @@
         "active": true,
         "displayOrder": 30006,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3068,10 +3110,16 @@
         "active": true,
         "displayOrder": 30007,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3092,10 +3140,16 @@
         "active": true,
         "displayOrder": 30008,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3116,10 +3170,16 @@
         "active": true,
         "displayOrder": 30009,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3140,10 +3200,16 @@
         "active": true,
         "displayOrder": 30010,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3164,10 +3230,16 @@
         "active": true,
         "displayOrder": 30011,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3188,10 +3260,16 @@
         "active": true,
         "displayOrder": 30012,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3212,10 +3290,16 @@
         "active": true,
         "displayOrder": 30013,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3236,10 +3320,16 @@
         "active": true,
         "displayOrder": 30014,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3260,10 +3350,16 @@
         "active": true,
         "displayOrder": 30015,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3284,10 +3380,16 @@
         "active": true,
         "displayOrder": 30016,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3308,10 +3410,16 @@
         "active": true,
         "displayOrder": 30017,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3332,10 +3440,16 @@
         "active": true,
         "displayOrder": 30018,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3356,10 +3470,16 @@
         "active": true,
         "displayOrder": 30019,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3380,10 +3500,16 @@
         "active": true,
         "displayOrder": 30020,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3404,10 +3530,16 @@
         "active": true,
         "displayOrder": 30021,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3428,10 +3560,16 @@
         "active": true,
         "displayOrder": 30022,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3452,10 +3590,16 @@
         "active": true,
         "displayOrder": 30023,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3476,10 +3620,16 @@
         "active": true,
         "displayOrder": 30024,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3500,10 +3650,16 @@
         "active": true,
         "displayOrder": 30025,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3524,10 +3680,16 @@
         "active": true,
         "displayOrder": 30026,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3548,10 +3710,16 @@
         "active": true,
         "displayOrder": 30027,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3572,10 +3740,16 @@
         "active": true,
         "displayOrder": 30028,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3596,10 +3770,16 @@
         "active": true,
         "displayOrder": 30029,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3620,10 +3800,16 @@
         "active": true,
         "displayOrder": 30030,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3644,10 +3830,16 @@
         "active": true,
         "displayOrder": 30031,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3668,10 +3860,16 @@
         "active": true,
         "displayOrder": 30032,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3692,10 +3890,16 @@
         "active": true,
         "displayOrder": 30033,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3716,10 +3920,16 @@
         "active": true,
         "displayOrder": 30034,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3740,10 +3950,16 @@
         "active": true,
         "displayOrder": 30035,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3764,10 +3980,16 @@
         "active": true,
         "displayOrder": 30036,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3788,10 +4010,16 @@
         "active": true,
         "displayOrder": 30037,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3812,10 +4040,16 @@
         "active": true,
         "displayOrder": 30038,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3836,10 +4070,16 @@
         "active": true,
         "displayOrder": 30039,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3860,10 +4100,16 @@
         "active": true,
         "displayOrder": 30040,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3884,10 +4130,16 @@
         "active": true,
         "displayOrder": 30041,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3908,10 +4160,16 @@
         "active": true,
         "displayOrder": 30042,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3932,10 +4190,16 @@
         "active": true,
         "displayOrder": 30043,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3956,10 +4220,16 @@
         "active": true,
         "displayOrder": 30044,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -3980,10 +4250,16 @@
         "active": true,
         "displayOrder": 30045,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4004,10 +4280,16 @@
         "active": true,
         "displayOrder": 30046,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4028,10 +4310,16 @@
         "active": true,
         "displayOrder": 30047,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4052,10 +4340,16 @@
         "active": true,
         "displayOrder": 30048,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4076,10 +4370,16 @@
         "active": true,
         "displayOrder": 30049,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4100,10 +4400,16 @@
         "active": true,
         "displayOrder": 30050,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4124,10 +4430,16 @@
         "active": true,
         "displayOrder": 30051,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4148,10 +4460,16 @@
         "active": true,
         "displayOrder": 30052,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4172,10 +4490,16 @@
         "active": true,
         "displayOrder": 30053,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4196,10 +4520,16 @@
         "active": true,
         "displayOrder": 30054,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4220,10 +4550,16 @@
         "active": true,
         "displayOrder": 30055,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4244,10 +4580,16 @@
         "active": true,
         "displayOrder": 30056,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4268,10 +4610,16 @@
         "active": true,
         "displayOrder": 30057,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4292,10 +4640,16 @@
         "active": true,
         "displayOrder": 30058,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4316,10 +4670,16 @@
         "active": true,
         "displayOrder": 30059,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4340,10 +4700,16 @@
         "active": true,
         "displayOrder": 30060,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4364,10 +4730,16 @@
         "active": true,
         "displayOrder": 30061,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4388,10 +4760,16 @@
         "active": true,
         "displayOrder": 30062,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4412,10 +4790,16 @@
         "active": true,
         "displayOrder": 30063,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4436,10 +4820,16 @@
         "active": true,
         "displayOrder": 30064,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4460,10 +4850,16 @@
         "active": true,
         "displayOrder": 30065,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4484,10 +4880,16 @@
         "active": true,
         "displayOrder": 30066,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4508,10 +4910,16 @@
         "active": true,
         "displayOrder": 30067,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4532,10 +4940,16 @@
         "active": true,
         "displayOrder": 30068,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4556,10 +4970,16 @@
         "active": true,
         "displayOrder": 30069,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4580,10 +5000,16 @@
         "active": true,
         "displayOrder": 30070,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4604,10 +5030,16 @@
         "active": true,
         "displayOrder": 30071,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4628,10 +5060,16 @@
         "active": true,
         "displayOrder": 30072,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4652,10 +5090,16 @@
         "active": true,
         "displayOrder": 30073,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4676,10 +5120,16 @@
         "active": true,
         "displayOrder": 30074,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4700,10 +5150,16 @@
         "active": true,
         "displayOrder": 30075,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4724,10 +5180,16 @@
         "active": true,
         "displayOrder": 30076,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4748,10 +5210,16 @@
         "active": true,
         "displayOrder": 30077,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4772,10 +5240,16 @@
         "active": true,
         "displayOrder": 30078,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4796,10 +5270,16 @@
         "active": true,
         "displayOrder": 30079,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4820,10 +5300,16 @@
         "active": true,
         "displayOrder": 30080,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4844,10 +5330,16 @@
         "active": true,
         "displayOrder": 30081,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4868,10 +5360,16 @@
         "active": true,
         "displayOrder": 30082,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4892,10 +5390,16 @@
         "active": true,
         "displayOrder": 30083,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4916,10 +5420,16 @@
         "active": true,
         "displayOrder": 30084,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4940,10 +5450,16 @@
         "active": true,
         "displayOrder": 30085,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4964,10 +5480,16 @@
         "active": true,
         "displayOrder": 30086,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -4988,10 +5510,16 @@
         "active": true,
         "displayOrder": 30087,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5012,10 +5540,16 @@
         "active": true,
         "displayOrder": 30088,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5036,10 +5570,16 @@
         "active": true,
         "displayOrder": 30089,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5060,10 +5600,16 @@
         "active": true,
         "displayOrder": 30090,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5084,10 +5630,16 @@
         "active": true,
         "displayOrder": 30091,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5108,10 +5660,16 @@
         "active": true,
         "displayOrder": 30092,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5132,10 +5690,16 @@
         "active": true,
         "displayOrder": 30093,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5156,10 +5720,16 @@
         "active": true,
         "displayOrder": 30094,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5180,10 +5750,16 @@
         "active": true,
         "displayOrder": 30095,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5204,10 +5780,16 @@
         "active": true,
         "displayOrder": 30096,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5228,10 +5810,16 @@
         "active": true,
         "displayOrder": 30097,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5252,10 +5840,16 @@
         "active": true,
         "displayOrder": 30098,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5276,10 +5870,16 @@
         "active": true,
         "displayOrder": 30099,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5300,10 +5900,16 @@
         "active": true,
         "displayOrder": 30100,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5324,10 +5930,16 @@
         "active": true,
         "displayOrder": 30101,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5348,10 +5960,16 @@
         "active": true,
         "displayOrder": 30102,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5372,10 +5990,16 @@
         "active": true,
         "displayOrder": 30103,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5396,10 +6020,16 @@
         "active": true,
         "displayOrder": 30104,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5420,10 +6050,16 @@
         "active": true,
         "displayOrder": 30105,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5444,10 +6080,16 @@
         "active": true,
         "displayOrder": 30106,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5468,10 +6110,16 @@
         "active": true,
         "displayOrder": 30107,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5492,10 +6140,16 @@
         "active": true,
         "displayOrder": 30108,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5516,10 +6170,16 @@
         "active": true,
         "displayOrder": 30109,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5540,10 +6200,16 @@
         "active": true,
         "displayOrder": 30110,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5564,10 +6230,16 @@
         "active": true,
         "displayOrder": 30111,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5588,10 +6260,16 @@
         "active": true,
         "displayOrder": 30112,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5612,10 +6290,16 @@
         "active": true,
         "displayOrder": 30113,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5636,10 +6320,16 @@
         "active": true,
         "displayOrder": 30114,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5660,10 +6350,16 @@
         "active": true,
         "displayOrder": 30115,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5684,10 +6380,16 @@
         "active": true,
         "displayOrder": 30116,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5708,10 +6410,16 @@
         "active": true,
         "displayOrder": 30117,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5732,10 +6440,16 @@
         "active": true,
         "displayOrder": 30118,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5756,10 +6470,16 @@
         "active": true,
         "displayOrder": 30119,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5780,10 +6500,16 @@
         "active": true,
         "displayOrder": 30120,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5804,10 +6530,16 @@
         "active": true,
         "displayOrder": 30121,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5828,10 +6560,16 @@
         "active": true,
         "displayOrder": 30122,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5852,10 +6590,16 @@
         "active": true,
         "displayOrder": 30123,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5876,10 +6620,16 @@
         "active": true,
         "displayOrder": 30124,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5900,10 +6650,16 @@
         "active": true,
         "displayOrder": 30125,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5924,10 +6680,16 @@
         "active": true,
         "displayOrder": 30126,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5948,10 +6710,16 @@
         "active": true,
         "displayOrder": 30127,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5972,10 +6740,16 @@
         "active": true,
         "displayOrder": 30128,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -5996,10 +6770,16 @@
         "active": true,
         "displayOrder": 30129,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6020,10 +6800,16 @@
         "active": true,
         "displayOrder": 30130,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6044,10 +6830,16 @@
         "active": true,
         "displayOrder": 30131,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6068,10 +6860,16 @@
         "active": true,
         "displayOrder": 30132,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6092,10 +6890,16 @@
         "active": true,
         "displayOrder": 30133,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6116,10 +6920,16 @@
         "active": true,
         "displayOrder": 30134,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6140,10 +6950,16 @@
         "active": true,
         "displayOrder": 30135,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6164,10 +6980,16 @@
         "active": true,
         "displayOrder": 30136,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6188,10 +7010,16 @@
         "active": true,
         "displayOrder": 30137,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6212,10 +7040,16 @@
         "active": true,
         "displayOrder": 30138,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6236,10 +7070,16 @@
         "active": true,
         "displayOrder": 30139,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6260,10 +7100,16 @@
         "active": true,
         "displayOrder": 30140,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6284,10 +7130,16 @@
         "active": true,
         "displayOrder": 30141,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6308,10 +7160,16 @@
         "active": true,
         "displayOrder": 30142,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6332,10 +7190,16 @@
         "active": true,
         "displayOrder": 30143,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6356,10 +7220,16 @@
         "active": true,
         "displayOrder": 30144,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6380,10 +7250,16 @@
         "active": true,
         "displayOrder": 30145,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6404,10 +7280,16 @@
         "active": true,
         "displayOrder": 30146,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6428,10 +7310,16 @@
         "active": true,
         "displayOrder": 30147,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6452,10 +7340,16 @@
         "active": true,
         "displayOrder": 30148,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6476,10 +7370,16 @@
         "active": true,
         "displayOrder": 30149,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6500,10 +7400,16 @@
         "active": true,
         "displayOrder": 30150,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6524,10 +7430,16 @@
         "active": true,
         "displayOrder": 30151,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6548,10 +7460,16 @@
         "active": true,
         "displayOrder": 30152,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6572,10 +7490,16 @@
         "active": true,
         "displayOrder": 30153,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6596,10 +7520,16 @@
         "active": true,
         "displayOrder": 30154,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6620,10 +7550,16 @@
         "active": true,
         "displayOrder": 30155,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6644,10 +7580,16 @@
         "active": true,
         "displayOrder": 30156,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6668,10 +7610,16 @@
         "active": true,
         "displayOrder": 30157,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6692,10 +7640,16 @@
         "active": true,
         "displayOrder": 30158,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6716,10 +7670,16 @@
         "active": true,
         "displayOrder": 30159,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6740,10 +7700,16 @@
         "active": true,
         "displayOrder": 30160,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     },
     {
@@ -6764,10 +7730,16 @@
         "active": true,
         "displayOrder": 30161,
         "parts": {
-            "blades": [],
-            "ratchets": [],
-            "bits": [],
-            "source": "catalog"
+            "source": "catalog",
+            "attackRings": [],
+            "weightDisks": [],
+            "bladeBases": [],
+            "bitChips": [],
+            "spinGears": [],
+            "supportParts": [],
+            "engineGears": [],
+            "runningCores": [],
+            "accessories": []
         }
     }
 ]
