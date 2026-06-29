@@ -3,6 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "test": "node tests/smoke.test.mjs",
+    "test:smoke": "node tests/smoke.test.mjs",
     "import:products": "node scripts/import-products-firestore.mjs",
     "import:parts": "node scripts/import-parts-firestore.mjs"
   },
